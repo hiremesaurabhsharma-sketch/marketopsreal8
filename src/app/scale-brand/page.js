@@ -219,6 +219,103 @@ export default function ScaleBrandPage() {
           </div>
         </section>
 
+        {/* --- BRAND SHOWCASE --- */}
+        
+        {/* Infinite Logo Marquee */}
+        <section className="py-20 bg-white border-y border-slate-100 overflow-hidden relative">
+          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10"></div>
+          
+          <div className="text-center mb-10 relative z-20">
+             <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase">Trusted by 20+ Global Brands</h3>
+          </div>
+
+          <div className="flex animate-marquee w-max gap-8 py-4">
+            {[
+              "The Func Lab", "Apsara Tea", "HNI Corp", "Stanphord", "SleepSmith", 
+              "Mint and Oak", "Moha", "Kimirica", "VIVID", "Vimal Agro", 
+              "Medisynth", "Bassino Impex", "Bitcorp", "Casa Bleu", 
+              "Aroura Achar 1944", "Shankara", "GK Hair", "VI John", "Bayars Coffee"
+            ].map((brand, i) => (
+              <div key={i} className="flex items-center justify-center px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
+                <span className="text-xl font-black text-slate-800 tracking-tight">{brand}</span>
+              </div>
+            ))}
+            {/* Duplicate for infinite effect */}
+            {[
+              "The Func Lab", "Apsara Tea", "HNI Corp", "Stanphord", "SleepSmith", 
+              "Mint and Oak", "Moha", "Kimirica", "VIVID", "Vimal Agro", 
+              "Medisynth", "Bassino Impex", "Bitcorp", "Casa Bleu", 
+              "Aroura Achar 1944", "Shankara", "GK Hair", "VI John", "Bayars Coffee"
+            ].map((brand, i) => (
+              <div key={i+20} className="flex items-center justify-center px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
+                <span className="text-xl font-black text-slate-800 tracking-tight">{brand}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Top Brands Results Driven Showcase */}
+        <section className="max-w-[1200px] mx-auto px-6 py-24">
+           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+             <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">Case Studies</span>
+             <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Brands We've Scaled</h2>
+             <p className="text-slate-600 text-lg font-medium">Real results for industry-leading brands.</p>
+           </div>
+           
+           <div className="grid md:grid-cols-2 gap-8">
+             {[
+               { name: "Kimirica", result: "Scaled E-commerce Sales by 3x", icon: "shopping_bag", color: "blue", bg: "from-blue-500 to-blue-700" },
+               { name: "GK Hair", result: "Reduced CAC by 40%", icon: "content_cut", color: "emerald", bg: "from-emerald-400 to-emerald-600" },
+               { name: "VI John", result: "Generated 50k+ Leads", icon: "group_add", color: "purple", bg: "from-purple-500 to-purple-700" },
+               { name: "Shankara", result: "10x Organic Traffic Growth", icon: "trending_up", color: "amber", bg: "from-amber-400 to-amber-600" }
+             ].map((brand, i) => (
+               <div key={i} className={`bg-gradient-to-br ${brand.bg} rounded-[2.5rem] p-10 text-white relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 shadow-xl`}>
+                  <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700 pointer-events-none"></div>
+                  
+                  <div className="flex justify-between items-start mb-12 relative z-10">
+                     <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center">
+                       <span className="material-symbols-outlined text-3xl">{brand.icon}</span>
+                     </div>
+                     <span className="px-4 py-1.5 bg-white/20 backdrop-blur-md rounded-full text-sm font-bold tracking-widest uppercase">Verified</span>
+                  </div>
+                  
+                  <div className="relative z-10">
+                     <h3 className="text-3xl font-black mb-2 drop-shadow-md">{brand.name}</h3>
+                     <p className="text-white/90 text-xl font-medium">{brand.result}</p>
+                  </div>
+               </div>
+             ))}
+           </div>
+        </section>
+
+        {/* Wall of Fame Grid */}
+        <section className="max-w-[1200px] mx-auto px-6 pb-24">
+           <div className="bg-white rounded-[3rem] p-12 border border-slate-200 shadow-sm relative overflow-hidden">
+             <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400"></div>
+             
+             <div className="text-center mb-16">
+               <h2 className="text-3xl md:text-4xl font-black text-[#0f172a] mb-4">The Wall of Fame</h2>
+               <p className="text-slate-600 font-medium">We are proud to have partnered with these incredible brands.</p>
+             </div>
+
+             <div className="flex flex-wrap justify-center gap-4">
+                {[
+                  "The Func Lab", "Apsara Tea", "HNI Corp", "Stanphord", "SleepSmith", 
+                  "Mint and Oak", "Moha", "Kimirica", "VIVID", "Vimal Agro", 
+                  "Medisynth", "Bassino Impex", "Bitcorp", "Casa Bleu", 
+                  "Aroura Achar 1944", "Shankara", "GK Hair", "VI John", "Bayars Coffee"
+                ].map((brand, i) => (
+                  <div key={i} className="px-6 py-4 rounded-xl border border-slate-100 bg-slate-50 hover:bg-white hover:border-blue-200 hover:shadow-[0_10px_20px_rgba(59,130,246,0.1)] transition-all cursor-pointer group">
+                     <span className="text-lg font-black text-slate-400 group-hover:text-blue-600 transition-colors drop-shadow-sm">{brand}</span>
+                  </div>
+                ))}
+             </div>
+           </div>
+        </section>
+        
+        {/* --- END BRAND SHOWCASE --- */}
+
         {/* CTA Section */}
         <section className="max-w-[1000px] mx-auto px-6 py-32 text-center pb-40">
           <div className="bg-blue-600 rounded-[3rem] p-12 md:p-20 relative overflow-hidden shadow-[0_20px_60px_rgba(37,99,235,0.2)]">
