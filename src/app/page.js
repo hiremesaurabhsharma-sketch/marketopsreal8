@@ -71,7 +71,7 @@ export default function Home() {
               { name: "Bayars Coffee", domain: "bayarscoffee.com" }
             ].map((brand, i) => (
               <div key={i} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
-                <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" onError={(e) => e.target.style.display='none'} />
+                <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" />
                 <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
               </div>
             ))}
@@ -98,7 +98,7 @@ export default function Home() {
               { name: "Bayars Coffee", domain: "bayarscoffee.com" }
             ].map((brand, i) => (
               <div key={i+20} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
-                <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" onError={(e) => e.target.style.display='none'} />
+                <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" />
                 <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
               </div>
             ))}
