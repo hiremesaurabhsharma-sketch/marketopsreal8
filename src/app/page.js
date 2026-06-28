@@ -13,24 +13,24 @@ export default function Home() {
         
         <div className="relative z-10 max-w-5xl mt-10">
           <Reveal delay={100}>
-            <h1 className="text-5xl md:text-[80px] md:leading-[1.1] text-white font-medium tracking-tight mb-4 drop-shadow-sm">
+            <h1 className="text-4xl sm:text-5xl md:text-[80px] md:leading-[1.1] text-white font-medium tracking-tight mb-4 drop-shadow-sm px-2">
               Built For The Brands<br/>
               That <span className="font-bold text-[#0c4a6e] bg-gradient-to-r from-[#0ea5e9] to-[#0284c7] bg-clip-text text-transparent">Don’t Settle</span>
             </h1>
           </Reveal>
           
           <Reveal delay={300}>
-            <p className="text-lg md:text-2xl text-white/90 mt-6 mb-10 font-normal max-w-3xl mx-auto drop-shadow-sm">
+            <p className="text-base md:text-2xl text-white/90 mt-6 mb-10 font-normal max-w-3xl mx-auto drop-shadow-sm px-4">
               Trusted by brands that demand control, consistency and performance
             </p>
           </Reveal>
           
           <Reveal delay={500}>
-            <div className="mt-8 flex flex-col sm:flex-row gap-5 justify-center">
-              <Link className="rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#06b6d4] px-10 py-4 text-white text-lg font-bold shadow-[0_10px_20px_rgba(14,165,233,0.3)] transition-transform hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(14,165,233,0.4)]" href="/contact">
+            <div className="mt-8 flex flex-col sm:flex-row items-center gap-5 justify-center w-full">
+              <Link className="w-full sm:w-auto text-center rounded-full bg-gradient-to-r from-[#0ea5e9] to-[#06b6d4] px-10 py-4 text-white text-lg font-bold shadow-[0_10px_20px_rgba(14,165,233,0.3)] transition-transform hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(14,165,233,0.4)]" href="/contact">
                 Talk to Our Team
               </Link>
-              <a className="rounded-full bg-white/90 backdrop-blur-md px-10 py-4 text-[#0ea5e9] text-lg font-bold shadow-[0_10px_20px_rgba(0,0,0,0.05)] transition-all hover:-translate-y-1 hover:bg-white" href="#services">
+              <a className="w-full sm:w-auto text-center rounded-full bg-white/90 backdrop-blur-md px-10 py-4 text-[#0ea5e9] text-lg font-bold shadow-[0_10px_20px_rgba(0,0,0,0.05)] transition-all hover:-translate-y-1 hover:bg-white" href="#services">
                 See How we Work
               </a>
             </div>

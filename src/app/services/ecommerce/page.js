@@ -17,19 +17,19 @@ export default function EcommerceSolutions() {
               <span className="inline-block bg-blue-100 text-blue-700 text-xs px-5 py-2 rounded-full font-bold uppercase tracking-widest shadow-sm border border-blue-200">
                 Ecommerce Growth Partner
               </span>
-              <h1 className="text-5xl md:text-7xl font-black tracking-tight text-[#0f172a] leading-[1.1]">
+              <h1 className="text-4xl md:text-7xl font-black tracking-tight text-[#0f172a] leading-tight md:leading-[1.1]">
                 Stop Losing Sales. <br />
                 Start Scaling <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Revenue.</span>
               </h1>
-              <p className="text-slate-600 text-xl font-medium leading-relaxed max-w-lg">
+              <p className="text-slate-600 text-base sm:text-lg md:text-xl font-medium leading-relaxed max-w-lg">
                 We don't just build stores; we engineer highly profitable e-commerce ecosystems designed to capture attention, maximize Average Order Value, and create lifelong customers.
               </p>
               
-              <div className="flex flex-wrap gap-4 pt-4">
-                <Link className="inline-flex items-center justify-center text-white font-bold text-lg px-10 py-5 rounded-full bg-blue-600 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(37,99,235,0.3)] transition-all" href="/contact">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-4 w-full">
+                <Link className="w-full sm:w-auto text-center inline-flex items-center justify-center text-white font-bold text-base md:text-lg px-8 md:px-10 py-4 md:py-5 rounded-full bg-blue-600 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(37,99,235,0.3)] transition-all" href="/contact">
                   Scale My Store Now
                 </Link>
-                <div className="flex items-center gap-3 px-6 py-4 bg-white rounded-full border border-slate-200 shadow-sm">
+                <div className="w-full sm:w-auto flex items-center justify-center sm:justify-start gap-3 px-6 py-4 bg-white rounded-full border border-slate-200 shadow-sm">
                    <div className="flex -space-x-3">
                      {[1,2,3,4].map(i => (
                         <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center text-xs overflow-hidden">
