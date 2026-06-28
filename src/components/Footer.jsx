@@ -40,7 +40,7 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-bold mb-6">Connect</h4>
             <ul className="space-y-3 text-sm text-gray-400">
-              <li><a href="#" className="hover:text-cyan-400 transition-colors">WhatsApp</a></li>
+              <li><a href="https://wa.me/919111880088" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">WhatsApp</a></li>
               <li><a href="#" className="hover:text-cyan-400 transition-colors">Telegram</a></li>
               <li><a href="#" className="hover:text-cyan-400 transition-colors">LinkedIn</a></li>
               <li><a href="#" className="hover:text-cyan-400 transition-colors">Instagram</a></li>

@@ -22,7 +22,7 @@ export default function Header() {
         </nav>
         
         <div className="flex gap-3">
-          <a href="#" className="bg-gradient-to-r from-[#00c6ff] to-[#0072ff] px-6 py-2.5 rounded-full text-sm font-bold hover:opacity-90 transition-opacity shadow-[0_0_15px_rgba(0,198,255,0.4)] flex items-center gap-2">
+          <a href="https://wa.me/919111880088" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#00c6ff] to-[#0072ff] px-6 py-2.5 rounded-full text-sm font-bold hover:opacity-90 transition-opacity shadow-[0_0_15px_rgba(0,198,255,0.4)] flex items-center gap-2">
             <span>WhatsApp</span>
           </a>
         </div>
