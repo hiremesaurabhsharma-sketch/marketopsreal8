@@ -253,7 +253,7 @@ export default function ScaleBrandPage() {
               { name: "Bayars Coffee", domain: "bayarscoffee.com" }
             ].map((brand, i) => (
               <div key={i} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
-                <img src={`https://logo.clearbit.com/${brand.domain}`} alt={brand.name} className="h-8 w-auto object-contain rounded-md" onError={(e) => e.target.style.display='none'} />
+                <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" onError={(e) => e.target.style.display='none'} />
                 <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
               </div>
             ))}
@@ -280,7 +280,7 @@ export default function ScaleBrandPage() {
               { name: "Bayars Coffee", domain: "bayarscoffee.com" }
             ].map((brand, i) => (
               <div key={i+20} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
-                <img src={`https://logo.clearbit.com/${brand.domain}`} alt={brand.name} className="h-8 w-auto object-contain rounded-md" onError={(e) => e.target.style.display='none'} />
+                <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" onError={(e) => e.target.style.display='none'} />
                 <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
               </div>
             ))}
@@ -362,7 +362,7 @@ export default function ScaleBrandPage() {
                   >
                      <div className={`absolute inset-0 bg-gradient-to-r ${brand.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`}></div>
                      <div className="relative z-10 flex items-center gap-3">
-                       <img src={`https://logo.clearbit.com/${brand.domain}`} alt={brand.name} className="h-6 w-auto object-contain rounded bg-white/50 backdrop-blur-sm group-hover:bg-white transition-colors duration-300" onError={(e) => e.target.style.display='none'} />
+                       <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-6 w-6 object-contain rounded-full bg-white/50 backdrop-blur-sm group-hover:bg-white transition-colors duration-300" onError={(e) => e.target.style.display='none'} />
                        <span className="text-lg font-black text-slate-700 group-hover:text-white transition-colors duration-300">{brand.name}</span>
                        <span className="material-symbols-outlined text-[16px] text-slate-400 group-hover:text-white transition-colors duration-300 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0">open_in_new</span>
                      </div>
