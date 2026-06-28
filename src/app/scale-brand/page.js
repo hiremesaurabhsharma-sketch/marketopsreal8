@@ -297,26 +297,36 @@ export default function ScaleBrandPage() {
            
            <div className="grid md:grid-cols-2 gap-8">
              {[
-               { name: "Kimirica", result: "Scaled E-commerce Sales by 3x", icon: "shopping_bag", color: "blue", bg: "from-blue-500 to-blue-700" },
-               { name: "GK Hair", result: "Reduced CAC by 40%", icon: "content_cut", color: "emerald", bg: "from-emerald-400 to-emerald-600" },
-               { name: "VI John", result: "Generated 50k+ Leads", icon: "group_add", color: "purple", bg: "from-purple-500 to-purple-700" },
-               { name: "Shankara", result: "10x Organic Traffic Growth", icon: "trending_up", color: "amber", bg: "from-amber-400 to-amber-600" }
+               { name: "Kimirica", domain: "kimirica.shop", url: "https://www.kimirica.shop/", result: "Scaled E-commerce Sales by 3x", icon: "shopping_bag", color: "blue", bg: "from-blue-500 to-blue-700" },
+               { name: "GK Hair", domain: "gkhair.com", url: "https://www.gkhair.com/", result: "Reduced CAC by 40%", icon: "content_cut", color: "emerald", bg: "from-emerald-400 to-emerald-600" },
+               { name: "VI John", domain: "vijohnkart.com", url: "https://vijohnkart.com/", result: "Generated 50k+ Leads", icon: "group_add", color: "purple", bg: "from-purple-500 to-purple-700" },
+               { name: "Shankara", domain: "shankara.in", url: "https://www.shankara.in/", result: "10x Organic Traffic Growth", icon: "trending_up", color: "amber", bg: "from-amber-400 to-amber-600" }
              ].map((brand, i) => (
-               <div key={i} className={`bg-gradient-to-br ${brand.bg} rounded-[2.5rem] p-10 text-white relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500 shadow-xl`}>
+               <a key={i} href={brand.url} target="_blank" rel="noopener noreferrer" className={`bg-gradient-to-br ${brand.bg} rounded-[2.5rem] p-10 text-white relative overflow-hidden group hover:-translate-y-2 hover:shadow-2xl hover:shadow-${brand.color}-500/30 transition-all duration-500 shadow-xl cursor-pointer block`}>
                   <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700 pointer-events-none"></div>
                   
                   <div className="flex justify-between items-start mb-12 relative z-10">
-                     <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center">
-                       <span className="material-symbols-outlined text-3xl">{brand.icon}</span>
+                     <div className="w-16 h-16 bg-white/90 shadow-md backdrop-blur-md rounded-2xl flex items-center justify-center p-2 group-hover:scale-110 transition-transform duration-300">
+                       <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="w-full h-full object-contain rounded-xl" onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='block'; }} />
+                       <span style={{display: 'none'}} className="material-symbols-outlined text-3xl text-slate-800">{brand.icon}</span>
                      </div>
-                     <span className="px-4 py-1.5 bg-white/20 backdrop-blur-md rounded-full text-sm font-bold tracking-widest uppercase">Verified</span>
+                     <span className="px-4 py-1.5 bg-white/20 backdrop-blur-md rounded-full text-sm font-bold tracking-widest uppercase flex items-center gap-1">
+                       <span className="material-symbols-outlined text-[14px]">verified</span> Verified
+                     </span>
                   </div>
                   
-                  <div className="relative z-10">
-                     <h3 className="text-3xl font-black mb-2 drop-shadow-md">{brand.name}</h3>
-                     <p className="text-white/90 text-xl font-medium">{brand.result}</p>
+                  <div className="relative z-10 flex items-center justify-between">
+                     <div>
+                       <h3 className="text-3xl font-black mb-2 drop-shadow-md flex items-center gap-2">
+                         {brand.name} 
+                       </h3>
+                       <p className="text-white/90 text-xl font-medium">{brand.result}</p>
+                     </div>
+                     <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300">
+                        <span className="material-symbols-outlined text-white">arrow_forward</span>
+                     </div>
                   </div>
-               </div>
+               </a>
              ))}
            </div>
         </section>
