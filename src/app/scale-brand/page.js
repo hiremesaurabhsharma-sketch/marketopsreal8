@@ -232,24 +232,56 @@ export default function ScaleBrandPage() {
 
           <div className="flex animate-marquee w-max gap-8 py-4">
             {[
-              "The Func Lab", "Apsara Tea", "HNI Corp", "Stanphord", "SleepSmith", 
-              "Mint and Oak", "Moha", "Kimirica", "VIVID", "Vimal Agro", 
-              "Medisynth", "Bassino Impex", "Bitcorp", "Casa Bleu", 
-              "Aroura Achar 1944", "Shankara", "GK Hair", "VI John", "Bayars Coffee"
+              { name: "The Func Lab", domain: "thefunclab.com" },
+              { name: "Apsara Tea", domain: "apsaratea.in" },
+              { name: "HNI Corp", domain: "hnicorp.com" },
+              { name: "Stanphord", domain: "amazon.in" },
+              { name: "SleepSmith", domain: "amazon.in" },
+              { name: "Mint and Oak", domain: "mintandoak.in" },
+              { name: "Moha", domain: "moha.co.in" },
+              { name: "Kimirica", domain: "kimirica.shop" },
+              { name: "VIVID", domain: "amazon.in" },
+              { name: "Vimal Agro", domain: "vimalagro.com" },
+              { name: "Medisynth", domain: "medisynth.com" },
+              { name: "Bassino Impex", domain: "bassinoimpex.com" },
+              { name: "Bitcorp", domain: "bitcorp.in" },
+              { name: "Casa Bleu", domain: "casableustore.com" },
+              { name: "Aroura Achar 1944", domain: "arouraachar1944.com" },
+              { name: "Shankara", domain: "shankara.in" },
+              { name: "GK Hair", domain: "gkhair.com" },
+              { name: "VI John", domain: "vijohnkart.com" },
+              { name: "Bayars Coffee", domain: "bayarscoffee.com" }
             ].map((brand, i) => (
-              <div key={i} className="flex items-center justify-center px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
-                <span className="text-xl font-black text-slate-800 tracking-tight">{brand}</span>
+              <div key={i} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
+                <img src={`https://logo.clearbit.com/${brand.domain}`} alt={brand.name} className="h-8 w-auto object-contain rounded-md" onError={(e) => e.target.style.display='none'} />
+                <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
               </div>
             ))}
             {/* Duplicate for infinite effect */}
             {[
-              "The Func Lab", "Apsara Tea", "HNI Corp", "Stanphord", "SleepSmith", 
-              "Mint and Oak", "Moha", "Kimirica", "VIVID", "Vimal Agro", 
-              "Medisynth", "Bassino Impex", "Bitcorp", "Casa Bleu", 
-              "Aroura Achar 1944", "Shankara", "GK Hair", "VI John", "Bayars Coffee"
+              { name: "The Func Lab", domain: "thefunclab.com" },
+              { name: "Apsara Tea", domain: "apsaratea.in" },
+              { name: "HNI Corp", domain: "hnicorp.com" },
+              { name: "Stanphord", domain: "amazon.in" },
+              { name: "SleepSmith", domain: "amazon.in" },
+              { name: "Mint and Oak", domain: "mintandoak.in" },
+              { name: "Moha", domain: "moha.co.in" },
+              { name: "Kimirica", domain: "kimirica.shop" },
+              { name: "VIVID", domain: "amazon.in" },
+              { name: "Vimal Agro", domain: "vimalagro.com" },
+              { name: "Medisynth", domain: "medisynth.com" },
+              { name: "Bassino Impex", domain: "bassinoimpex.com" },
+              { name: "Bitcorp", domain: "bitcorp.in" },
+              { name: "Casa Bleu", domain: "casableustore.com" },
+              { name: "Aroura Achar 1944", domain: "arouraachar1944.com" },
+              { name: "Shankara", domain: "shankara.in" },
+              { name: "GK Hair", domain: "gkhair.com" },
+              { name: "VI John", domain: "vijohnkart.com" },
+              { name: "Bayars Coffee", domain: "bayarscoffee.com" }
             ].map((brand, i) => (
-              <div key={i+20} className="flex items-center justify-center px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
-                <span className="text-xl font-black text-slate-800 tracking-tight">{brand}</span>
+              <div key={i+20} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
+                <img src={`https://logo.clearbit.com/${brand.domain}`} alt={brand.name} className="h-8 w-auto object-contain rounded-md" onError={(e) => e.target.style.display='none'} />
+                <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
               </div>
             ))}
           </div>
@@ -301,25 +333,25 @@ export default function ScaleBrandPage() {
 
              <div className="flex flex-wrap justify-center gap-4">
                 {[
-                  { name: "The Func Lab", url: "https://thefunclab.com/", color: "from-blue-500 to-indigo-500" },
-                  { name: "Apsara Tea", url: "https://apsaratea.in/", color: "from-green-500 to-emerald-500" },
-                  { name: "HNI Corp", url: "https://www.hnicorp.com/", color: "from-slate-600 to-slate-800" },
-                  { name: "Stanphord", url: "https://www.amazon.in/stores/Stanphord/page/6E641905-7EC0-460D-BC6F-360181AE0C91", color: "from-orange-400 to-red-500" },
-                  { name: "SleepSmith", url: "https://www.amazon.in/stores/SleepSmith/page/47015169-675E-4F54-8E2E-255566AFF4C5", color: "from-indigo-400 to-purple-500" },
-                  { name: "Mint and Oak", url: "https://www.mintandoak.in/", color: "from-emerald-400 to-teal-500" },
-                  { name: "Moha", url: "https://www.moha.co.in/", color: "from-rose-400 to-pink-500" },
-                  { name: "Kimirica", url: "https://www.kimirica.shop/", color: "from-fuchsia-500 to-purple-600" },
-                  { name: "VIVID", url: "https://www.amazon.in/stores/VIVID/page/6123B38E-AB8B-48D0-9ED6-AB7E0CE3FF8C", color: "from-blue-400 to-cyan-500" },
-                  { name: "Vimal Agro", url: "https://www.vimalagro.com/", color: "from-green-600 to-lime-500" },
-                  { name: "Medisynth", url: "https://medisynth.com/", color: "from-sky-400 to-blue-500" },
-                  { name: "Bassino Impex", url: "https://bassinoimpex.com/", color: "from-amber-400 to-orange-500" },
-                  { name: "Bitcorp", url: "https://bitcorp.in/", color: "from-violet-500 to-purple-500" },
-                  { name: "Casa Bleu", url: "https://www.casableustore.com/", color: "from-blue-600 to-indigo-600" },
-                  { name: "Aroura Achar 1944", url: "https://www.arouraachar1944.com/", color: "from-red-500 to-rose-600" },
-                  { name: "Shankara", url: "https://www.shankara.in/", color: "from-amber-500 to-yellow-500" },
-                  { name: "GK Hair", url: "https://www.gkhair.com/", color: "from-zinc-700 to-black" },
-                  { name: "VI John", url: "https://vijohnkart.com/", color: "from-green-500 to-emerald-600" },
-                  { name: "Bayars Coffee", url: "https://bayarscoffee.com/", color: "from-orange-700 to-amber-800" },
+                  { name: "The Func Lab", url: "https://thefunclab.com/", domain: "thefunclab.com", color: "from-blue-500 to-indigo-500" },
+                  { name: "Apsara Tea", url: "https://apsaratea.in/", domain: "apsaratea.in", color: "from-green-500 to-emerald-500" },
+                  { name: "HNI Corp", url: "https://www.hnicorp.com/", domain: "hnicorp.com", color: "from-slate-600 to-slate-800" },
+                  { name: "Stanphord", url: "https://www.amazon.in/stores/Stanphord/page/6E641905-7EC0-460D-BC6F-360181AE0C91", domain: "amazon.in", color: "from-orange-400 to-red-500" },
+                  { name: "SleepSmith", url: "https://www.amazon.in/stores/SleepSmith/page/47015169-675E-4F54-8E2E-255566AFF4C5", domain: "amazon.in", color: "from-indigo-400 to-purple-500" },
+                  { name: "Mint and Oak", url: "https://www.mintandoak.in/", domain: "mintandoak.in", color: "from-emerald-400 to-teal-500" },
+                  { name: "Moha", url: "https://www.moha.co.in/", domain: "moha.co.in", color: "from-rose-400 to-pink-500" },
+                  { name: "Kimirica", url: "https://www.kimirica.shop/", domain: "kimirica.shop", color: "from-fuchsia-500 to-purple-600" },
+                  { name: "VIVID", url: "https://www.amazon.in/stores/VIVID/page/6123B38E-AB8B-48D0-9ED6-AB7E0CE3FF8C", domain: "amazon.in", color: "from-blue-400 to-cyan-500" },
+                  { name: "Vimal Agro", url: "https://www.vimalagro.com/", domain: "vimalagro.com", color: "from-green-600 to-lime-500" },
+                  { name: "Medisynth", url: "https://medisynth.com/", domain: "medisynth.com", color: "from-sky-400 to-blue-500" },
+                  { name: "Bassino Impex", url: "https://bassinoimpex.com/", domain: "bassinoimpex.com", color: "from-amber-400 to-orange-500" },
+                  { name: "Bitcorp", url: "https://bitcorp.in/", domain: "bitcorp.in", color: "from-violet-500 to-purple-500" },
+                  { name: "Casa Bleu", url: "https://www.casableustore.com/", domain: "casableustore.com", color: "from-blue-600 to-indigo-600" },
+                  { name: "Aroura Achar 1944", url: "https://www.arouraachar1944.com/", domain: "arouraachar1944.com", color: "from-red-500 to-rose-600" },
+                  { name: "Shankara", url: "https://www.shankara.in/", domain: "shankara.in", color: "from-amber-500 to-yellow-500" },
+                  { name: "GK Hair", url: "https://www.gkhair.com/", domain: "gkhair.com", color: "from-zinc-700 to-black" },
+                  { name: "VI John", url: "https://vijohnkart.com/", domain: "vijohnkart.com", color: "from-green-500 to-emerald-600" },
+                  { name: "Bayars Coffee", url: "https://bayarscoffee.com/", domain: "bayarscoffee.com", color: "from-orange-700 to-amber-800" },
                 ].map((brand, i) => (
                   <a 
                     key={i} 
@@ -329,7 +361,8 @@ export default function ScaleBrandPage() {
                     className="relative group overflow-hidden px-8 py-5 rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
                   >
                      <div className={`absolute inset-0 bg-gradient-to-r ${brand.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`}></div>
-                     <div className="relative z-10 flex items-center gap-2">
+                     <div className="relative z-10 flex items-center gap-3">
+                       <img src={`https://logo.clearbit.com/${brand.domain}`} alt={brand.name} className="h-6 w-auto object-contain rounded bg-white/50 backdrop-blur-sm group-hover:bg-white transition-colors duration-300" onError={(e) => e.target.style.display='none'} />
                        <span className="text-lg font-black text-slate-700 group-hover:text-white transition-colors duration-300">{brand.name}</span>
                        <span className="material-symbols-outlined text-[16px] text-slate-400 group-hover:text-white transition-colors duration-300 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0">open_in_new</span>
                      </div>
