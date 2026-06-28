@@ -38,41 +38,72 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats & Marquee Section */}
-      <section className="bg-white px-6 py-20 lg:py-32">
-        <div className="container mx-auto grid md:grid-cols-3 gap-10 items-center">
-          <Reveal direction="left">
-            <div className="border border-gray-200 rounded-full px-4 py-1.5 text-[10px] font-bold text-blue-500 uppercase tracking-widest inline-block mb-4 shadow-sm bg-white">
-              MarketOps Spent
-            </div>
-            <h3 className="flex items-center text-4xl md:text-6xl font-extrabold leading-none tracking-tight mb-4 text-gray-900">
-              $100M+
-            </h3>
-            <p className="text-base sm:text-lg text-gray-500 font-medium">
-              Just a normal month of paid advertising spends managed by MarketOps growth partners.
-            </p>
-          </Reveal>
-          
-          <div className="md:col-span-2 overflow-hidden relative rounded-3xl">
-            <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-white to-transparent z-20"></div>
-            <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-white to-transparent z-20"></div>
-            
-            <Reveal delay={200}>
-              <div className="flex animate-marquee w-max gap-6 py-6">
-                {['Skala Media', 'Suits Finance', 'Whop', 'Ooptics', 'Incogniton', 'TikTok', 'Google', 'Meta'].map((partner, i) => (
-                  <div key={i} className="flex flex-col items-center justify-center h-[140px] w-[220px] bg-gray-50 border border-gray-100 rounded-3xl flex-shrink-0 shadow-sm transition-shadow">
-                    <div className="text-xl font-extrabold text-gray-800 tracking-tight">{partner}</div>
-                  </div>
-                ))}
-                {['Skala Media', 'Suits Finance', 'Whop', 'Ooptics', 'Incogniton', 'TikTok', 'Google', 'Meta'].map((partner, i) => (
-                  <div key={i+10} className="flex flex-col items-center justify-center h-[140px] w-[220px] bg-gray-50 border border-gray-100 rounded-3xl flex-shrink-0 shadow-sm transition-shadow">
-                    <div className="text-xl font-extrabold text-gray-800 tracking-tight">{partner}</div>
-                  </div>
-                ))}
-              </div>
-            </Reveal>
-          </div>
+      {/* Infinite Logo Marquee */}
+      <section className="py-20 bg-white border-y border-slate-100 overflow-hidden relative">
+        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none"></div>
+        
+        <div className="text-center mb-10 relative z-20">
+           <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase">Trusted by 20+ Global Brands</h3>
         </div>
+
+        <Reveal delay={200}>
+          <div className="flex animate-marquee w-max gap-8 py-4">
+            {[
+              { name: "The Func Lab", domain: "thefunclab.com" },
+              { name: "Apsara Tea", domain: "apsaratea.in" },
+              { name: "HNI Corp", domain: "hnicorp.com" },
+              { name: "Stanphord", domain: "amazon.in" },
+              { name: "SleepSmith", domain: "amazon.in" },
+              { name: "Mint and Oak", domain: "mintandoak.in" },
+              { name: "Moha", domain: "moha.co.in" },
+              { name: "Kimirica", domain: "kimirica.shop" },
+              { name: "VIVID", domain: "amazon.in" },
+              { name: "Vimal Agro", domain: "vimalagro.com" },
+              { name: "Medisynth", domain: "medisynth.com" },
+              { name: "Bassino Impex", domain: "bassinoimpex.com" },
+              { name: "Bitcorp", domain: "bitcorp.in" },
+              { name: "Casa Bleu", domain: "casableustore.com" },
+              { name: "Aroura Achar 1944", domain: "arouraachar1944.com" },
+              { name: "Shankara", domain: "shankara.in" },
+              { name: "GK Hair", domain: "gkhair.com" },
+              { name: "VI John", domain: "vijohnkart.com" },
+              { name: "Bayars Coffee", domain: "bayarscoffee.com" }
+            ].map((brand, i) => (
+              <div key={i} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
+                <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" onError={(e) => e.target.style.display='none'} />
+                <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
+              </div>
+            ))}
+            {/* Duplicate for infinite effect */}
+            {[
+              { name: "The Func Lab", domain: "thefunclab.com" },
+              { name: "Apsara Tea", domain: "apsaratea.in" },
+              { name: "HNI Corp", domain: "hnicorp.com" },
+              { name: "Stanphord", domain: "amazon.in" },
+              { name: "SleepSmith", domain: "amazon.in" },
+              { name: "Mint and Oak", domain: "mintandoak.in" },
+              { name: "Moha", domain: "moha.co.in" },
+              { name: "Kimirica", domain: "kimirica.shop" },
+              { name: "VIVID", domain: "amazon.in" },
+              { name: "Vimal Agro", domain: "vimalagro.com" },
+              { name: "Medisynth", domain: "medisynth.com" },
+              { name: "Bassino Impex", domain: "bassinoimpex.com" },
+              { name: "Bitcorp", domain: "bitcorp.in" },
+              { name: "Casa Bleu", domain: "casableustore.com" },
+              { name: "Aroura Achar 1944", domain: "arouraachar1944.com" },
+              { name: "Shankara", domain: "shankara.in" },
+              { name: "GK Hair", domain: "gkhair.com" },
+              { name: "VI John", domain: "vijohnkart.com" },
+              { name: "Bayars Coffee", domain: "bayarscoffee.com" }
+            ].map((brand, i) => (
+              <div key={i+20} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
+                <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" onError={(e) => e.target.style.display='none'} />
+                <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
+              </div>
+            ))}
+          </div>
+        </Reveal>
       </section>
 
       {/* Services Section - Pinnacle Light Style */}
