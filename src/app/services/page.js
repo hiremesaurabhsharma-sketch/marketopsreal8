@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+
 
 export default function ServicesIndexPage() {
   const services = [
@@ -58,7 +57,7 @@ export default function ServicesIndexPage() {
 
   return (
     <>
-      <Navbar />
+
 
       <main className="max-w-[1200px] mx-auto px-margin-mobile md:px-12 py-[60px] select-none text-left relative z-10">
         
@@ -126,7 +125,7 @@ export default function ServicesIndexPage() {
 
       </main>
 
-      <Footer />
+
     </>
   );
 }

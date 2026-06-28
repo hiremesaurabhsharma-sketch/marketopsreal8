@@ -1,12 +1,11 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+
 
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <Navbar />
+
 
       <main className="max-w-[800px] mx-auto px-margin-mobile md:px-12 py-[60px] select-none text-left relative z-10 space-y-8 font-inter text-sm text-on-surface-variant leading-relaxed">
         
@@ -97,7 +96,7 @@ export default function PrivacyPolicyPage() {
 
       </main>
 
-      <Footer />
+
     </>
   );
 }

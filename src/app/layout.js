@@ -1,5 +1,7 @@
 import { Be_Vietnam_Pro, Inter, Outfit, Caveat } from "next/font/google";
 import "./globals.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const beVietnamPro = Be_Vietnam_Pro({
   variable: "--font-be-vietnam-pro",
@@ -47,7 +49,11 @@ export default function RootLayout({ children }) {
         <div className="liquid-glow"></div>
         <div className="liquid-glow-2"></div>
         
-        {children}
+        <Header />
+        <main className="flex-grow">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

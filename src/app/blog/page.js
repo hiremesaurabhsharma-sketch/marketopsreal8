@@ -1,7 +1,6 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+
 
 export default function BlogPage() {
   const posts = [
@@ -27,7 +26,7 @@ export default function BlogPage() {
 
   return (
     <>
-      <Navbar />
+
 
       {/* Main Content Canvas */}
       <main className="max-w-[1200px] mx-auto px-margin-mobile md:px-12 py-[60px] select-none relative z-10">
@@ -147,7 +146,7 @@ export default function BlogPage() {
         </div>
       </main>
 
-      <Footer />
+
     </>
   );
 }
