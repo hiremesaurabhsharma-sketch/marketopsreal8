@@ -47,17 +47,17 @@ export default function EcommerceSolutions() {
             <div className="lg:w-1/2 w-full relative">
               {/* "Man Mohne Wala" Floating Dashboard Graphic */}
               <div className="relative rounded-[2.5rem] bg-white p-8 shadow-[0_30px_100px_rgba(0,0,0,0.08)] border border-slate-100 transform rotate-[-2deg] hover:rotate-0 transition-transform duration-700">
-                <div className="absolute -top-6 -right-6 bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-white p-6 rounded-3xl shadow-xl animate-bounce" style={{animationDuration: '3s'}}>
+                <div className="absolute -top-6 -right-6 z-20 bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-white p-6 rounded-3xl shadow-xl animate-bounce" style={{animationDuration: '3s'}}>
                   <p className="text-sm font-bold opacity-80 uppercase tracking-widest">Monthly ROAS</p>
                   <p className="text-4xl font-black">4.8x 🚀</p>
                 </div>
                 
-                <div className="absolute -bottom-10 -left-10 bg-emerald-500 text-white p-6 rounded-3xl shadow-xl transform rotate-[5deg]">
+                <div className="absolute -bottom-10 -left-10 z-20 bg-emerald-500 text-white p-6 rounded-3xl shadow-xl transform rotate-[5deg]">
                   <p className="text-sm font-bold opacity-80 uppercase tracking-widest">Conversion Rate</p>
                   <p className="text-3xl font-black">+142% 📈</p>
                 </div>
 
-                <div className="space-y-6 opacity-90">
+                <div className="space-y-6 opacity-90 relative z-10">
                   <div className="flex justify-between items-end border-b border-slate-100 pb-4">
                      <div>
                        <p className="text-slate-400 font-bold text-sm">Total Sales</p>
