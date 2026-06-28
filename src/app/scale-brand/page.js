@@ -297,33 +297,43 @@ export default function ScaleBrandPage() {
            
            <div className="grid md:grid-cols-2 gap-8">
              {[
-               { name: "Kimirica", domain: "kimirica.shop", url: "https://www.kimirica.shop/", result: "Scaled E-commerce Sales by 3x", icon: "shopping_bag", color: "blue", bg: "from-blue-500 to-blue-700" },
-               { name: "GK Hair", domain: "gkhair.com", url: "https://www.gkhair.com/", result: "Reduced CAC by 40%", icon: "content_cut", color: "emerald", bg: "from-emerald-400 to-emerald-600" },
-               { name: "VI John", domain: "vijohnkart.com", url: "https://vijohnkart.com/", result: "Generated 50k+ Leads", icon: "group_add", color: "purple", bg: "from-purple-500 to-purple-700" },
-               { name: "Shankara", domain: "shankara.in", url: "https://www.shankara.in/", result: "10x Organic Traffic Growth", icon: "trending_up", color: "amber", bg: "from-amber-400 to-amber-600" }
+               { name: "Kimirica", domain: "kimirica.shop", url: "https://www.kimirica.shop/", result: "Scaled E-commerce Sales by 3x", icon: "shopping_bag", colorGlow: "from-blue-600 to-indigo-600", textGradient: "from-blue-400 to-indigo-300" },
+               { name: "GK Hair", domain: "gkhair.com", url: "https://www.gkhair.com/", result: "Reduced CAC by 40%", icon: "content_cut", colorGlow: "from-emerald-500 to-teal-500", textGradient: "from-emerald-400 to-teal-200" },
+               { name: "VI John", domain: "vijohnkart.com", url: "https://vijohnkart.com/", result: "Generated 50k+ Leads", icon: "group_add", colorGlow: "from-purple-600 to-fuchsia-600", textGradient: "from-purple-400 to-fuchsia-300" },
+               { name: "Shankara", domain: "shankara.in", url: "https://www.shankara.in/", result: "10x Organic Traffic Growth", icon: "trending_up", colorGlow: "from-amber-500 to-orange-600", textGradient: "from-amber-300 to-orange-400" }
              ].map((brand, i) => (
-               <a key={i} href={brand.url} target="_blank" rel="noopener noreferrer" className={`bg-gradient-to-br ${brand.bg} rounded-[2.5rem] p-10 text-white relative overflow-hidden group hover:-translate-y-2 hover:shadow-2xl hover:shadow-${brand.color}-500/30 transition-all duration-500 shadow-xl cursor-pointer block`}>
-                  <div className="absolute top-0 right-0 w-48 h-48 bg-white/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700 pointer-events-none"></div>
+               <a key={i} href={brand.url} target="_blank" rel="noopener noreferrer" className="relative group p-[2px] rounded-[2.5rem] bg-gradient-to-br from-slate-800 to-slate-950 shadow-2xl overflow-hidden block hover:-translate-y-2 transition-transform duration-500">
+                  {/* Glowing Background Orb */}
+                  <div className={`absolute -inset-20 bg-gradient-to-r ${brand.colorGlow} blur-[80px] opacity-20 group-hover:opacity-40 transition-opacity duration-700 pointer-events-none`}></div>
                   
-                  <div className="flex justify-between items-start mb-12 relative z-10">
-                     <div className="w-16 h-16 bg-white/90 shadow-md backdrop-blur-md rounded-2xl flex items-center justify-center p-2 group-hover:scale-110 transition-transform duration-300">
-                       <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="w-full h-full object-contain rounded-xl" onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='block'; }} />
-                       <span style={{display: 'none'}} className="material-symbols-outlined text-3xl text-slate-800">{brand.icon}</span>
+                  {/* Inner Glass Card */}
+                  <div className="relative h-full bg-slate-900/60 backdrop-blur-xl rounded-[2.4rem] p-8 md:p-10 border border-white/5 flex flex-col justify-between overflow-hidden">
+                     
+                     <div className="flex justify-between items-start mb-16 relative z-10">
+                        <div className="flex items-center gap-4">
+                           <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center p-2 border border-white/10 shadow-[0_0_15px_rgba(255,255,255,0.05)] group-hover:shadow-[0_0_25px_rgba(255,255,255,0.15)] transition-shadow duration-300">
+                             <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="w-full h-full object-contain rounded-xl drop-shadow-md" onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='block'; }} />
+                             <span style={{display: 'none'}} className="material-symbols-outlined text-3xl text-white">{brand.icon}</span>
+                           </div>
+                           <div>
+                             <h3 className="text-2xl font-black text-white drop-shadow-md">{brand.name}</h3>
+                             <span className="text-sm font-medium text-slate-400">Official Partner</span>
+                           </div>
+                        </div>
+                        <div className="px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center gap-1 text-xs font-bold uppercase tracking-widest backdrop-blur-md">
+                           <span className="material-symbols-outlined text-[14px]">verified</span>
+                        </div>
                      </div>
-                     <span className="px-4 py-1.5 bg-white/20 backdrop-blur-md rounded-full text-sm font-bold tracking-widest uppercase flex items-center gap-1">
-                       <span className="material-symbols-outlined text-[14px]">verified</span> Verified
-                     </span>
-                  </div>
-                  
-                  <div className="relative z-10 flex items-center justify-between">
-                     <div>
-                       <h3 className="text-3xl font-black mb-2 drop-shadow-md flex items-center gap-2">
-                         {brand.name} 
-                       </h3>
-                       <p className="text-white/90 text-xl font-medium">{brand.result}</p>
+                     
+                     <div className="relative z-10">
+                        <p className="text-slate-400 font-medium mb-3 text-sm uppercase tracking-wider">The Result</p>
+                        <h4 className={`text-4xl md:text-5xl font-black bg-gradient-to-r ${brand.textGradient} bg-clip-text text-transparent leading-tight drop-shadow-lg`}>
+                           {brand.result}
+                        </h4>
                      </div>
-                     <div className="w-12 h-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition-all duration-300">
-                        <span className="material-symbols-outlined text-white">arrow_forward</span>
+
+                     <div className="absolute bottom-8 right-8 w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-300 text-white translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 z-10">
+                        <span className="material-symbols-outlined">arrow_outward</span>
                      </div>
                   </div>
                </a>
