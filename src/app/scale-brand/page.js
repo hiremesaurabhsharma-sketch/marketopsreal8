@@ -301,14 +301,39 @@ export default function ScaleBrandPage() {
 
              <div className="flex flex-wrap justify-center gap-4">
                 {[
-                  "The Func Lab", "Apsara Tea", "HNI Corp", "Stanphord", "SleepSmith", 
-                  "Mint and Oak", "Moha", "Kimirica", "VIVID", "Vimal Agro", 
-                  "Medisynth", "Bassino Impex", "Bitcorp", "Casa Bleu", 
-                  "Aroura Achar 1944", "Shankara", "GK Hair", "VI John", "Bayars Coffee"
+                  { name: "The Func Lab", url: "https://thefunclab.com/", color: "from-blue-500 to-indigo-500" },
+                  { name: "Apsara Tea", url: "https://apsaratea.in/", color: "from-green-500 to-emerald-500" },
+                  { name: "HNI Corp", url: "https://www.hnicorp.com/", color: "from-slate-600 to-slate-800" },
+                  { name: "Stanphord", url: "https://www.amazon.in/stores/Stanphord/page/6E641905-7EC0-460D-BC6F-360181AE0C91", color: "from-orange-400 to-red-500" },
+                  { name: "SleepSmith", url: "https://www.amazon.in/stores/SleepSmith/page/47015169-675E-4F54-8E2E-255566AFF4C5", color: "from-indigo-400 to-purple-500" },
+                  { name: "Mint and Oak", url: "https://www.mintandoak.in/", color: "from-emerald-400 to-teal-500" },
+                  { name: "Moha", url: "https://www.moha.co.in/", color: "from-rose-400 to-pink-500" },
+                  { name: "Kimirica", url: "https://www.kimirica.shop/", color: "from-fuchsia-500 to-purple-600" },
+                  { name: "VIVID", url: "https://www.amazon.in/stores/VIVID/page/6123B38E-AB8B-48D0-9ED6-AB7E0CE3FF8C", color: "from-blue-400 to-cyan-500" },
+                  { name: "Vimal Agro", url: "https://www.vimalagro.com/", color: "from-green-600 to-lime-500" },
+                  { name: "Medisynth", url: "https://medisynth.com/", color: "from-sky-400 to-blue-500" },
+                  { name: "Bassino Impex", url: "https://bassinoimpex.com/", color: "from-amber-400 to-orange-500" },
+                  { name: "Bitcorp", url: "https://bitcorp.in/", color: "from-violet-500 to-purple-500" },
+                  { name: "Casa Bleu", url: "https://www.casableustore.com/", color: "from-blue-600 to-indigo-600" },
+                  { name: "Aroura Achar 1944", url: "https://www.arouraachar1944.com/", color: "from-red-500 to-rose-600" },
+                  { name: "Shankara", url: "https://www.shankara.in/", color: "from-amber-500 to-yellow-500" },
+                  { name: "GK Hair", url: "https://www.gkhair.com/", color: "from-zinc-700 to-black" },
+                  { name: "VI John", url: "https://vijohnkart.com/", color: "from-green-500 to-emerald-600" },
+                  { name: "Bayars Coffee", url: "https://bayarscoffee.com/", color: "from-orange-700 to-amber-800" },
                 ].map((brand, i) => (
-                  <div key={i} className="px-6 py-4 rounded-xl border border-slate-100 bg-slate-50 hover:bg-white hover:border-blue-200 hover:shadow-[0_10px_20px_rgba(59,130,246,0.1)] transition-all cursor-pointer group">
-                     <span className="text-lg font-black text-slate-400 group-hover:text-blue-600 transition-colors drop-shadow-sm">{brand}</span>
-                  </div>
+                  <a 
+                    key={i} 
+                    href={brand.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="relative group overflow-hidden px-8 py-5 rounded-2xl border border-slate-200 bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                  >
+                     <div className={`absolute inset-0 bg-gradient-to-r ${brand.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`}></div>
+                     <div className="relative z-10 flex items-center gap-2">
+                       <span className="text-lg font-black text-slate-700 group-hover:text-white transition-colors duration-300">{brand.name}</span>
+                       <span className="material-symbols-outlined text-[16px] text-slate-400 group-hover:text-white transition-colors duration-300 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0">open_in_new</span>
+                     </div>
+                  </a>
                 ))}
              </div>
            </div>
