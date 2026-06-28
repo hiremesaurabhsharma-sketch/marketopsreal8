@@ -47,63 +47,61 @@ export default function Home() {
            <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase">Trusted by 20+ Global Brands</h3>
         </div>
 
-        <Reveal delay={200}>
-          <div className="flex animate-marquee w-max gap-8 py-4">
-            {[
-              { name: "The Func Lab", domain: "thefunclab.com" },
-              { name: "Apsara Tea", domain: "apsaratea.in" },
-              { name: "HNI Corp", domain: "hnicorp.com" },
-              { name: "Stanphord", domain: "amazon.in" },
-              { name: "SleepSmith", domain: "amazon.in" },
-              { name: "Mint and Oak", domain: "mintandoak.in" },
-              { name: "Moha", domain: "moha.co.in" },
-              { name: "Kimirica", domain: "kimirica.shop" },
-              { name: "VIVID", domain: "amazon.in" },
-              { name: "Vimal Agro", domain: "vimalagro.com" },
-              { name: "Medisynth", domain: "medisynth.com" },
-              { name: "Bassino Impex", domain: "bassinoimpex.com" },
-              { name: "Bitcorp", domain: "bitcorp.in" },
-              { name: "Casa Bleu", domain: "casableustore.com" },
-              { name: "Aroura Achar 1944", domain: "arouraachar1944.com" },
-              { name: "Shankara", domain: "shankara.in" },
-              { name: "GK Hair", domain: "gkhair.com" },
-              { name: "VI John", domain: "vijohnkart.com" },
-              { name: "Bayars Coffee", domain: "bayarscoffee.com" }
-            ].map((brand, i) => (
-              <div key={i} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
-                <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" />
-                <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
-              </div>
-            ))}
-            {/* Duplicate for infinite effect */}
-            {[
-              { name: "The Func Lab", domain: "thefunclab.com" },
-              { name: "Apsara Tea", domain: "apsaratea.in" },
-              { name: "HNI Corp", domain: "hnicorp.com" },
-              { name: "Stanphord", domain: "amazon.in" },
-              { name: "SleepSmith", domain: "amazon.in" },
-              { name: "Mint and Oak", domain: "mintandoak.in" },
-              { name: "Moha", domain: "moha.co.in" },
-              { name: "Kimirica", domain: "kimirica.shop" },
-              { name: "VIVID", domain: "amazon.in" },
-              { name: "Vimal Agro", domain: "vimalagro.com" },
-              { name: "Medisynth", domain: "medisynth.com" },
-              { name: "Bassino Impex", domain: "bassinoimpex.com" },
-              { name: "Bitcorp", domain: "bitcorp.in" },
-              { name: "Casa Bleu", domain: "casableustore.com" },
-              { name: "Aroura Achar 1944", domain: "arouraachar1944.com" },
-              { name: "Shankara", domain: "shankara.in" },
-              { name: "GK Hair", domain: "gkhair.com" },
-              { name: "VI John", domain: "vijohnkart.com" },
-              { name: "Bayars Coffee", domain: "bayarscoffee.com" }
-            ].map((brand, i) => (
-              <div key={i+20} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
-                <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" />
-                <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
-              </div>
-            ))}
-          </div>
-        </Reveal>
+        <div className="flex animate-marquee w-max gap-8 py-4">
+          {[
+            { name: "The Func Lab", domain: "thefunclab.com" },
+            { name: "Apsara Tea", domain: "apsaratea.in" },
+            { name: "HNI Corp", domain: "hnicorp.com" },
+            { name: "Stanphord", domain: "amazon.in" },
+            { name: "SleepSmith", domain: "amazon.in" },
+            { name: "Mint and Oak", domain: "mintandoak.in" },
+            { name: "Moha", domain: "moha.co.in" },
+            { name: "Kimirica", domain: "kimirica.shop" },
+            { name: "VIVID", domain: "amazon.in" },
+            { name: "Vimal Agro", domain: "vimalagro.com" },
+            { name: "Medisynth", domain: "medisynth.com" },
+            { name: "Bassino Impex", domain: "bassinoimpex.com" },
+            { name: "Bitcorp", domain: "bitcorp.in" },
+            { name: "Casa Bleu", domain: "casableustore.com" },
+            { name: "Aroura Achar 1944", domain: "arouraachar1944.com" },
+            { name: "Shankara", domain: "shankara.in" },
+            { name: "GK Hair", domain: "gkhair.com" },
+            { name: "VI John", domain: "vijohnkart.com" },
+            { name: "Bayars Coffee", domain: "bayarscoffee.com" }
+          ].map((brand, i) => (
+            <div key={i} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
+              <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" />
+              <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
+            </div>
+          ))}
+          {/* Duplicate for infinite effect */}
+          {[
+            { name: "The Func Lab", domain: "thefunclab.com" },
+            { name: "Apsara Tea", domain: "apsaratea.in" },
+            { name: "HNI Corp", domain: "hnicorp.com" },
+            { name: "Stanphord", domain: "amazon.in" },
+            { name: "SleepSmith", domain: "amazon.in" },
+            { name: "Mint and Oak", domain: "mintandoak.in" },
+            { name: "Moha", domain: "moha.co.in" },
+            { name: "Kimirica", domain: "kimirica.shop" },
+            { name: "VIVID", domain: "amazon.in" },
+            { name: "Vimal Agro", domain: "vimalagro.com" },
+            { name: "Medisynth", domain: "medisynth.com" },
+            { name: "Bassino Impex", domain: "bassinoimpex.com" },
+            { name: "Bitcorp", domain: "bitcorp.in" },
+            { name: "Casa Bleu", domain: "casableustore.com" },
+            { name: "Aroura Achar 1944", domain: "arouraachar1944.com" },
+            { name: "Shankara", domain: "shankara.in" },
+            { name: "GK Hair", domain: "gkhair.com" },
+            { name: "VI John", domain: "vijohnkart.com" },
+            { name: "Bayars Coffee", domain: "bayarscoffee.com" }
+          ].map((brand, i) => (
+            <div key={i+20} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
+              <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" />
+              <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Services Section - Pinnacle Light Style */}
