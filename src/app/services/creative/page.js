@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { Smartphone, Clapperboard, Palette, Box, PenTool, Sparkles } from 'lucide-react';
 
 export default function MarketingCreative() {
   return (
@@ -22,25 +23,16 @@ export default function MarketingCreative() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">Grab Attention.</span>
               </h1>
               <p className="text-slate-600 text-xl font-medium leading-relaxed max-w-lg">
-                We craft high-converting ad creatives, videos, and graphics designed specifically to beat the algorithm and capture attention instantly.
+                We craft high-converting ad creatives, UGC videos, and 3D graphics designed specifically to beat the algorithm, capture attention instantly, and drive massive sales.
               </p>
               
               <div className="flex flex-wrap gap-4 pt-4">
-                <Link className="inline-flex items-center justify-center text-white font-bold text-lg px-10 py-5 rounded-full bg-purple-600 hover:bg-purple-700 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(168,85,247,0.3)] transition-all" href="/contact">
-                  Upgrade Your Creatives
-                </Link>
-                <div className="flex items-center gap-3 px-6 py-4 bg-white rounded-full border border-slate-200 shadow-sm">
-                   <div className="flex -space-x-3">
-                     {[1,2,3,4].map(i => (
-                        <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center text-xs overflow-hidden">
-                           <img src={`https://i.pravatar.cc/100?img=${i+20}`} alt="client" />
-                        </div>
-                     ))}
-                   </div>
-                   <div className="text-sm font-bold text-slate-700 leading-tight">
-                     Trusted by <br/><span className="text-purple-600">Top Brands</span>
-                   </div>
-                </div>
+                <a className="inline-flex items-center justify-center text-white font-bold text-lg px-10 py-5 rounded-full bg-purple-600 hover:bg-purple-700 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(168,85,247,0.3)] transition-all" href="#calendly">
+                  Get Free Brand Audit
+                </a>
+                <a className="inline-flex items-center justify-center text-slate-700 font-bold text-lg px-10 py-5 rounded-full bg-white border border-slate-200 hover:bg-slate-50 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.05)] transition-all" href="#formats">
+                  Explore Formats
+                </a>
               </div>
             </div>
             
@@ -72,7 +64,7 @@ export default function MarketingCreative() {
       </section>
 
       {/* 2. OUR STRATEGY */}
-      <section className="py-24 bg-white relative">
+      <section className="py-24 bg-white relative border-t border-slate-100">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
             <span className="text-purple-600 font-bold tracking-widest uppercase text-sm">Our Strategy</span>
@@ -117,6 +109,44 @@ export default function MarketingCreative() {
                  <p className="text-slate-600 font-medium leading-relaxed">{strategy.desc}</p>
                </div>
              ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CREATIVE FORMATS SECTION */}
+      <section id="formats" className="py-24 bg-[#f8fafc] relative border-t border-slate-200">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span className="text-purple-600 font-bold tracking-widest uppercase text-sm">Creative Capabilities</span>
+            <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Built For Performance</h2>
+            <p className="text-slate-600 text-lg font-medium">From viral TikToks to high-end 3D product renders, we build assets that sell.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { icon: Smartphone, title: 'UGC Video Ads', desc: 'Authentic User-Generated Content that looks like a native post but converts like a high-end commercial.', gradient: 'from-purple-500 to-fuchsia-600', shadow: 'shadow-purple-500/30' },
+              { icon: Clapperboard, title: 'High-End Production', desc: 'Cinematic brand videos, commercials, and product shoots that establish massive brand authority.', gradient: 'from-pink-500 to-rose-600', shadow: 'shadow-pink-500/30' },
+              { icon: Palette, title: 'Static Graphics & Carousels', desc: 'Direct-response graphic design tailored perfectly for Facebook, Instagram, and LinkedIn feeds.', gradient: 'from-blue-500 to-indigo-600', shadow: 'shadow-blue-500/30' },
+              { icon: Box, title: '3D Animation & Motion', desc: 'Scroll-stopping 3D product renders and motion graphics that explain complex products easily.', gradient: 'from-emerald-400 to-teal-500', shadow: 'shadow-teal-500/30' },
+              { icon: PenTool, title: 'Direct Response Copywriting', desc: 'Persuasive ad copy and landing page scripts that psychologically compel the user to buy.', gradient: 'from-amber-400 to-orange-500', shadow: 'shadow-orange-500/30' },
+              { icon: Sparkles, title: 'Brand Identity & Guidelines', desc: 'Full-scale brand overhauls including logo design, color theory, and tone of voice development.', gradient: 'from-indigo-500 to-purple-600', shadow: 'shadow-indigo-500/30' }
+            ].map((v, i) => (
+              <div key={i} className="group relative bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col overflow-hidden">
+                <div className={`absolute inset-0 bg-gradient-to-br ${v.gradient} translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out z-0`}></div>
+                
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${v.gradient} group-hover:bg-none group-hover:bg-white/20 flex items-center justify-center text-white mb-6 shadow-lg ${v.shadow} group-hover:shadow-none transform group-hover:scale-110 group-hover:-rotate-3 transition-all duration-500`}>
+                    <v.icon size={28} strokeWidth={2.5} />
+                  </div>
+                  <h3 className="text-2xl font-black text-[#0f172a] group-hover:text-white mb-3 transition-colors duration-500">{v.title}</h3>
+                  <p className="text-slate-600 group-hover:text-white/90 leading-relaxed text-sm font-medium transition-colors duration-500 flex-grow">{v.desc}</p>
+                  
+                  <div className="mt-6 flex items-center text-sm font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 text-white transition-all duration-500 delay-100">
+                    Explore Strategy <span className="ml-2 group-hover:translate-x-2 transition-transform duration-300">→</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -178,12 +208,88 @@ export default function MarketingCreative() {
         </div>
       </section>
 
+      {/* FAQS SECTION */}
+      <section className="py-24 bg-[#f8fafc] border-b border-slate-200">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <div className="text-center mb-16 space-y-4">
+            <span className="text-purple-600 font-bold tracking-widest uppercase text-sm">FAQ</span>
+            <h2 className="text-3xl md:text-5xl font-black text-[#0f172a]">Frequently Asked Questions</h2>
+            <p className="text-slate-600 text-lg font-medium">Everything you need to know about our Creative Studio.</p>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              { q: "What is UGC and why is it important?", a: "UGC (User-Generated Content) involves real people reviewing or using your product. It builds massive trust and currently has the highest conversion rates on Meta and TikTok." },
+              { q: "Do you supply the creators for UGC?", a: "Yes, we have a massive roster of vetted creators across different demographics. We handle the scripting, shipping, filming, and editing." },
+              { q: "How long does a creative batch take?", a: "Static graphics and motion design usually take 3-5 days. Full video productions or UGC campaigns take 10-14 days depending on product shipping times." },
+              { q: "Do you offer just creatives, or media buying too?", a: "We offer both. You can hire us just as your creative studio, or pair it with our Performance Marketing team for an end-to-end growth solution." },
+              { q: "Can you design my brand from scratch?", a: "Yes, our Brand Identity package includes logo design, typography, color palettes, and comprehensive brand guidelines." },
+              { q: "What happens if a creative doesn't perform?", a: "That's why we build in volume. We test multiple angles simultaneously. If one fails, we kill it and iterate on the winners." }
+            ].map((faq, i) => (
+              <details key={i} className="group bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer open:bg-slate-50 transition-colors">
+                <summary className="px-6 py-5 font-bold text-[#0f172a] text-lg select-none flex justify-between items-center list-none">
+                  <span>{i+1}. {faq.q}</span>
+                  <span className="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-2xl">+</span>
+                </summary>
+                <div className="px-6 pb-5 text-slate-600 leading-relaxed border-t border-slate-100 pt-4 mt-2">
+                  {faq.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CALENDLY EMBED SECTION */}
+      <section id="calendly" className="py-24 bg-white relative">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Get a Free Creative Audit</h2>
+            <p className="text-slate-600 text-lg font-medium">Let our Creative Directors analyze your current ads and brand assets to find conversion leaks.</p>
+          </div>
+          
+          <div className="flex flex-col md:flex-row gap-12 bg-slate-50 rounded-[2.5rem] p-8 md:p-12 border border-slate-200 shadow-xl">
+            <div className="md:w-1/2 space-y-8">
+              <h3 className="text-3xl font-bold text-[#0f172a]">What We Will Discover:</h3>
+              <div className="space-y-6">
+                {[
+                  { num: "01", title: "Hook Rate Analysis", desc: "Why users are scrolling past your videos in the first 3 seconds and how to fix it." },
+                  { num: "02", title: "Visual Consistency", desc: "A review of your brand identity to ensure you look like a premium, trustworthy market leader." },
+                  { num: "03", title: "Competitor Benchmarking", desc: "We'll show you exactly what creatives your top 3 competitors are scaling right now." }
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-4 items-start">
+                    <span className="text-purple-500 font-black text-xl">{item.num}</span>
+                    <div>
+                      <h4 className="text-lg font-bold text-[#0f172a] mb-1">{item.title}</h4>
+                      <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="md:w-1/2 bg-white rounded-3xl p-8 border border-slate-200 shadow-md text-center flex flex-col justify-center">
+              <h4 className="text-2xl font-bold text-[#0f172a] mb-2">Schedule Session</h4>
+              <p className="text-slate-500 mb-8">Select a slot on our live team calendar</p>
+              <div className="space-y-4">
+                <a href="https://wa.me/919424995426" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-purple-600 text-white hover:bg-purple-700 transition-colors shadow-md">
+                  <span className="material-symbols-outlined">chat</span> WhatsApp Direct booking
+                </a>
+                <a href="mailto:connect@marketops.in" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 transition-colors">
+                  <span className="material-symbols-outlined">mail</span> Email: connect@marketops.in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 4. CTA */}
-      <section className="py-32 bg-[#f8fafc] text-center">
+      <section className="py-32 bg-[#f8fafc] text-center border-t border-slate-200">
          <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-4xl md:text-6xl font-black text-[#0f172a] mb-8">Ready to dominate your market?</h2>
             <p className="text-slate-600 text-xl font-medium mb-10 max-w-2xl mx-auto">
-              Join the elite group of brands that are crushing their goals with MarketOps.
+              Join the elite group of brands that are crushing their digital goals with MarketOps.
             </p>
             <Link className="inline-flex items-center justify-center text-white font-bold text-xl px-12 py-6 rounded-full bg-purple-600 hover:bg-purple-700 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(168,85,247,0.4)] transition-all" href="/contact">
               Let's Build Your Empire

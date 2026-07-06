@@ -65,275 +65,356 @@ export default function ScaleBrandPage() {
   return (
     <div className="bg-[#f8fafc] min-h-screen relative text-[#0f172a] font-inter">
       
-      {/* Intro text */}
-      <div className="pt-40 pb-20 text-center px-6 relative z-10 bg-gradient-to-b from-[#3b82f6] to-[#e0f2fe] overflow-hidden rounded-b-[3rem] shadow-sm">
+      {/* Intro text - Ultimate Glassmorphism Hero */}
+      <div className="pt-40 pb-32 text-center px-6 relative z-20 bg-[#f8fafc] overflow-hidden rounded-b-[4rem] shadow-[0_20px_80px_rgba(0,0,0,0.03)] border-b border-slate-200">
+        
+        {/* Animated Background Orbs */}
         <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-           <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[100%] bg-white/30 blur-[120px] rounded-full"></div>
-           <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[100%] bg-blue-400/20 blur-[120px] rounded-full"></div>
-           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.2)_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+           <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[120%] bg-blue-400/30 blur-[140px] rounded-full mix-blend-multiply animate-[pulse_8s_ease-in-out_infinite]"></div>
+           <div className="absolute top-[20%] right-[-10%] w-[50%] h-[100%] bg-cyan-300/30 blur-[120px] rounded-full mix-blend-multiply animate-[pulse_10s_ease-in-out_infinite_delay-2000]"></div>
+           <div className="absolute bottom-[-30%] left-[20%] w-[70%] h-[80%] bg-purple-300/20 blur-[150px] rounded-full mix-blend-multiply animate-[pulse_12s_ease-in-out_infinite_delay-4000]"></div>
+           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.4)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.4)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_20%,transparent_100%)]"></div>
         </div>
 
-        <div className="relative z-10">
-          <span className="inline-block bg-blue-600 text-white text-xs px-5 py-2 rounded-full font-bold uppercase tracking-widest mb-6 shadow-lg shadow-blue-500/30">
-            The MarketOps Blueprint
-          </span>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#0f172a] pb-6">
-            How We Scale <br className="hidden md:block"/>
-            <span className="text-blue-700">Your Brand to Millions</span>
-          </h1>
-          <p className="text-slate-700 text-xl md:text-2xl font-semibold max-w-2xl mx-auto leading-relaxed">
-            We don't just run ads. We build highly scalable, data-driven growth engines that turn clicks into loyal customers and revenue.
-          </p>
+        {/* Floating Glass Centerpiece */}
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <div className="relative p-1 rounded-3xl bg-gradient-to-b from-white/80 to-white/20 shadow-xl group hover:shadow-2xl hover:-translate-y-1 transition-all duration-700">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 rounded-3xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-700"></div>
+            
+            <div className="relative bg-white/40 backdrop-blur-3xl rounded-[1.4rem] border border-white/60 p-10 md:p-16 overflow-hidden">
+              <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/60 to-transparent pointer-events-none"></div>
+              
+              <div className="relative z-10">
+                <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md border border-blue-100 text-blue-600 text-xs px-5 py-2 rounded-full font-bold uppercase tracking-widest mb-8 shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                  The MarketOps Blueprint
+                </div>
+                
+                <h1 className="text-5xl md:text-[5.5rem] font-black tracking-tight text-slate-900 pb-8 leading-[1.1] drop-shadow-sm">
+                  How We Scale <br className="hidden md:block"/>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 animate-[gradient_8s_ease_infinite] bg-[length:200%_auto]">
+                    Your Brand to Millions
+                  </span>
+                </h1>
+                
+                <p className="text-slate-600 text-xl md:text-2xl font-medium max-w-2xl mx-auto leading-relaxed">
+                  We don&apos;t just run ads. We build highly scalable, data-driven growth engines that turn clicks into loyal customers and revenue.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Animation Container - Shorter scroll length (250vh instead of 400vh) */}
-      <div ref={containerRef} className="relative w-full h-[250vh] bg-[#f8fafc] z-20">
-        <div className="sticky top-0 w-full h-screen overflow-hidden flex items-center justify-center bg-[#f8fafc] pt-10">
+      {/* Immersive Fullscreen Animation Container */}
+      <div ref={containerRef} className="relative w-full h-[250vh] bg-[#f8fafc] z-10 -mt-10">
+        <div className="sticky top-0 w-full h-screen overflow-hidden flex flex-col items-center justify-center bg-white rounded-b-[3rem] shadow-[0_20px_60px_rgba(0,0,0,0.03)] border-b border-slate-100">
           
           {!loaded && (
-            <div className="absolute inset-0 flex items-center justify-center flex-col gap-4 z-20 bg-[#f8fafc]">
+            <div className="absolute inset-0 flex items-center justify-center flex-col gap-4 z-20 bg-white">
               <div className="w-10 h-10 border-4 border-slate-200 border-t-blue-600 rounded-full animate-spin"></div>
               <p className="text-blue-600 font-bold tracking-widest uppercase text-xs">Loading Experience...</p>
             </div>
           )}
 
-          {/* Using img tag fixes pixelation from devicePixelRatio issues with canvas */}
-          <div className="relative w-full max-w-5xl mx-auto px-4 h-[60vh] md:h-[70vh] flex items-center justify-center rounded-[2.5rem] overflow-hidden shadow-[0_20px_80px_rgba(59,130,246,0.15)] border border-slate-200 bg-white">
-            {loaded && images.length > 0 ? (
-              <img 
-                src={images[frameIndex - 1]} 
-                alt="Scroll Animation Frame" 
-                className="w-full h-full object-cover transition-opacity duration-300 rounded-[2.5rem]"
-              />
-            ) : null}
-            
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent pointer-events-none"></div>
-            
-            <div className="absolute bottom-8 left-8 md:bottom-12 md:left-12 z-10 pointer-events-none max-w-lg">
-              <h2 className="text-3xl md:text-5xl font-black text-white tracking-tight drop-shadow-lg">
-                Precision Targeting.
-              </h2>
-              <p className="text-lg md:text-xl font-medium text-slate-100 mt-2 drop-shadow-md">
-                Every frame, every pixel, optimized for maximum conversion and ROI.
-              </p>
-            </div>
+          {/* Fullscreen Edge-to-Edge Coin Animation */}
+          {loaded && images.length > 0 ? (
+            <img 
+              src={images[frameIndex - 1]} 
+              alt="Scroll Animation Frame" 
+              className="absolute inset-0 w-full h-full object-contain scale-[1.1] md:scale-100 transition-opacity duration-75"
+            />
+          ) : null}
+          
+          {/* Fade to white at bottom to ensure text readability */}
+          <div className="absolute bottom-0 left-0 w-full h-2/5 bg-gradient-to-t from-white via-white/90 to-transparent pointer-events-none"></div>
+          
+          <div className="absolute bottom-12 md:bottom-16 left-0 right-0 text-center z-10 pointer-events-none px-6 flex flex-col items-center">
+            <span className="bg-slate-100 text-slate-600 text-xs px-4 py-1.5 rounded-full font-bold uppercase tracking-widest mb-4 border border-slate-200">
+              The Engine
+            </span>
+            <h2 className="text-4xl md:text-7xl font-black text-slate-900 tracking-tight mb-4 drop-shadow-sm">
+              Precision Targeting.
+            </h2>
+            <p className="text-lg md:text-2xl font-medium text-slate-500 max-w-2xl mx-auto">
+              Every frame, every pixel, optimized for maximum conversion and ROI.
+            </p>
           </div>
-
         </div>
       </div>
       
-      {/* Marketing / Strategy Sections */}
-      <div className="relative z-10 bg-[#f8fafc]">
+      {/* The Strategy Engine - Bento Box Layout */}
+      <div className="relative z-10 bg-[#f8fafc] py-32 overflow-hidden">
         
-        {/* Phase 1 */}
-        <section className="max-w-[1200px] mx-auto px-6 py-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6">
-              <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">Phase 01</span>
-              <h3 className="text-4xl md:text-5xl font-bold text-[#0f172a]">Deep-Dive Brand Audit</h3>
-              <p className="text-slate-600 text-lg leading-relaxed font-medium">
-                Before spending a single dollar on ads, we dissect your brand's current positioning, past campaigns, customer persona, and competitors. We find the leaks in your funnel and fix them.
-              </p>
-              <ul className="space-y-4 pt-4">
-                {['Audience Persona Mapping', 'Competitor Ad Library Analysis', 'Landing Page Conversion Rate Optimization'].map((item, i) => (
-                  <li key={i} className="flex items-start gap-4 text-slate-700 font-semibold">
-                    <span className="material-symbols-outlined text-blue-600 bg-blue-100 rounded-full w-6 h-6 flex items-center justify-center text-[14px]">check</span>
-                    <span className="pt-0.5">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-white rounded-[2.5rem] p-10 md:p-12 border border-slate-200 shadow-sm hover:shadow-[0_20px_60px_rgba(0,0,0,0.05)] transition-all relative overflow-hidden group">
-               <div className="absolute top-0 right-0 w-64 h-64 bg-blue-50/80 rounded-full -translate-y-1/4 translate-x-1/4 group-hover:scale-[1.4] transition-transform duration-700 pointer-events-none"></div>
-               <div className="space-y-8 relative z-10">
-                 <div className="h-14 w-14 rounded-2xl bg-blue-100 flex items-center justify-center text-blue-600">
-                    <span className="material-symbols-outlined text-3xl">troubleshoot</span>
-                 </div>
-                 <h4 className="text-2xl font-bold text-[#0f172a]">Data is our compass.</h4>
-                 <p className="text-slate-600 font-medium leading-relaxed">We don't guess. Our proprietary audit frameworks reveal exactly where your budget is being wasted and where the untapped potential lies.</p>
-               </div>
-            </div>
-          </div>
-        </section>
+        {/* Glowing Vertical Spine (Desktop only) */}
+        <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-transparent via-blue-400/30 to-transparent hidden lg:block -translate-x-1/2 pointer-events-none"></div>
 
-        {/* Phase 2 */}
-        <section className="max-w-[1200px] mx-auto px-6 py-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="bg-white rounded-[2.5rem] p-10 md:p-12 border border-slate-200 shadow-sm hover:shadow-[0_20px_60px_rgba(0,0,0,0.05)] transition-all relative overflow-hidden group order-2 md:order-1">
-               <div className="absolute bottom-0 left-0 w-64 h-64 bg-cyan-50/80 rounded-full translate-y-1/4 -translate-x-1/4 group-hover:scale-[1.4] transition-transform duration-700 pointer-events-none"></div>
-               <div className="space-y-8 relative z-10">
-                 <div className="h-14 w-14 rounded-2xl bg-cyan-100 flex items-center justify-center text-cyan-600">
-                    <span className="material-symbols-outlined text-3xl">campaign</span>
-                 </div>
-                 <h4 className="text-2xl font-bold text-[#0f172a]">Scroll-stopping creatives.</h4>
-                 <p className="text-slate-600 font-medium leading-relaxed">In today's attention economy, your creative is your targeting. We produce high-converting assets that hook viewers in the first 3 seconds.</p>
-               </div>
-            </div>
-            <div className="space-y-6 order-1 md:order-2">
-              <span className="text-cyan-600 font-bold tracking-widest uppercase text-sm">Phase 02</span>
-              <h3 className="text-4xl md:text-5xl font-bold text-[#0f172a]">Performance Creative Engine</h3>
-              <p className="text-slate-600 text-lg leading-relaxed font-medium">
-                We conceptualize, script, and design ad creatives specifically built for performance. From UGC style videos to high-end motion graphics, we test multiple angles to find the winning formula.
-              </p>
-              <ul className="space-y-4 pt-4">
-                {['Direct-Response Copywriting', 'UGC & Video Production', 'A/B Testing Frameworks'].map((item, i) => (
-                  <li key={i} className="flex items-start gap-4 text-slate-700 font-semibold">
-                    <span className="material-symbols-outlined text-cyan-600 bg-cyan-100 rounded-full w-6 h-6 flex items-center justify-center text-[14px]">check</span>
-                    <span className="pt-0.5">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
+        <div className="max-w-[1200px] mx-auto px-6 space-y-32 relative">
+          
+          {/* Phase 01 */}
+          <section className="relative group">
+             {/* Center Node on Spine */}
+             <div className="absolute left-1/2 top-1/2 w-4 h-4 bg-blue-500 rounded-full shadow-[0_0_20px_rgba(59,130,246,0.8)] hidden lg:block -translate-x-1/2 -translate-y-1/2 group-hover:scale-150 transition-transform duration-500 z-20 border-2 border-white"></div>
+             
+             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+                
+                {/* Text Content */}
+                <div className="space-y-8 relative z-10 lg:pr-12">
+                  <div className="inline-flex items-center gap-3">
+                    <span className="text-blue-600 font-black tracking-widest uppercase text-sm">Phase 01</span>
+                    <div className="h-px w-12 bg-blue-600/30"></div>
+                  </div>
+                  <h3 className="text-5xl md:text-6xl font-black text-[#0f172a] leading-tight">Deep-Dive <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Brand Audit</span></h3>
+                  <p className="text-slate-600 text-xl leading-relaxed font-medium">
+                    Before spending a single dollar on ads, we dissect your brand&apos;s current positioning, past campaigns, and competitors. We find the leaks in your funnel and fix them.
+                  </p>
+                </div>
 
-        {/* Phase 3 */}
-        <section className="max-w-[1200px] mx-auto px-6 py-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-            <div className="space-y-6">
-              <span className="text-emerald-600 font-bold tracking-widest uppercase text-sm">Phase 03</span>
-              <h3 className="text-4xl md:text-5xl font-bold text-[#0f172a]">Aggressive Scaling</h3>
-              <p className="text-slate-600 text-lg leading-relaxed font-medium">
-                Once we find winning creatives and audiences, we turn up the heat. We deploy advanced media buying strategies on Meta and Google Ads to scale your daily spend while maintaining target ROAS.
-              </p>
-              <ul className="space-y-4 pt-4">
-                {['Omnichannel Retargeting', 'Lookalike & Broad Audience Expansion', 'Automated Rules & Bid Strategies'].map((item, i) => (
-                  <li key={i} className="flex items-start gap-4 text-slate-700 font-semibold">
-                    <span className="material-symbols-outlined text-emerald-600 bg-emerald-100 rounded-full w-6 h-6 flex items-center justify-center text-[14px]">check</span>
-                    <span className="pt-0.5">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-white rounded-[2.5rem] p-10 md:p-12 border border-slate-200 shadow-sm hover:shadow-[0_20px_60px_rgba(0,0,0,0.05)] transition-all relative overflow-hidden group">
-               <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-50/80 rounded-full -translate-y-1/4 translate-x-1/4 group-hover:scale-[1.4] transition-transform duration-700 pointer-events-none"></div>
-               <div className="space-y-8 relative z-10">
-                 <div className="h-14 w-14 rounded-2xl bg-emerald-100 flex items-center justify-center text-emerald-600">
-                    <span className="material-symbols-outlined text-3xl">rocket_launch</span>
-                 </div>
-                 <h4 className="text-2xl font-bold text-[#0f172a]">Scaling to the Moon.</h4>
-                 <p className="text-slate-600 font-medium leading-relaxed">Our media buyers are trained to handle multi-million dollar budgets. We know exactly when to scale horizontally, vertically, and diagonally.</p>
-               </div>
-            </div>
-          </div>
-        </section>
+                {/* Bento Box Grid */}
+                <div className="grid grid-cols-2 gap-4 relative">
+                   {/* Background Glow */}
+                   <div className="absolute inset-0 bg-blue-400/20 blur-[100px] rounded-full mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
+                   
+                   {/* Massive 01 Box */}
+                   <div className="col-span-2 md:col-span-1 bg-white p-8 rounded-[2rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] group-hover:shadow-[0_20px_60px_rgb(59,130,246,0.1)] transition-all duration-500 flex flex-col justify-between overflow-hidden relative group/box hover:-translate-y-2">
+                     <span className="material-symbols-outlined text-4xl text-blue-500 mb-8 relative z-10 group-hover/box:rotate-12 transition-transform duration-500">troubleshoot</span>
+                     <div className="relative z-10">
+                       <h4 className="text-lg font-bold text-slate-900">Data is our compass</h4>
+                       <p className="text-sm text-slate-500 mt-2">Proprietary frameworks to reveal wasted budget.</p>
+                     </div>
+                     {/* Giant Background Number */}
+                     <div className="absolute -bottom-10 -right-6 text-9xl font-black text-transparent [-webkit-text-stroke:2px_#f1f5f9] group-hover/box:[-webkit-text-stroke:2px_rgba(59,130,246,0.1)] transition-colors duration-500 pointer-events-none">01</div>
+                   </div>
+
+                   {/* Features List Box */}
+                   <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
+                     {['Audience Persona', 'Competitor Library', 'CRO Fixes'].map((item, i) => (
+                       <div key={i} className="bg-white/60 backdrop-blur-md p-6 rounded-[2rem] border border-slate-100 shadow-sm flex items-center gap-4 group-hover:bg-white transition-colors duration-500 hover:-translate-y-1 hover:shadow-md cursor-default">
+                         <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600">
+                           <span className="material-symbols-outlined text-sm font-bold">check</span>
+                         </div>
+                         <span className="font-bold text-slate-800">{item}</span>
+                       </div>
+                     ))}
+                   </div>
+                </div>
+             </div>
+          </section>
+
+          {/* Phase 02 */}
+          <section className="relative group">
+             {/* Center Node on Spine */}
+             <div className="absolute left-1/2 top-1/2 w-4 h-4 bg-cyan-500 rounded-full shadow-[0_0_20px_rgba(6,182,212,0.8)] hidden lg:block -translate-x-1/2 -translate-y-1/2 group-hover:scale-150 transition-transform duration-500 z-20 border-2 border-white"></div>
+             
+             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+                
+                {/* Bento Box Grid (Left side on desktop) */}
+                <div className="grid grid-cols-2 gap-4 relative order-2 lg:order-1">
+                   <div className="absolute inset-0 bg-cyan-400/20 blur-[100px] rounded-full mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
+                   
+                   <div className="col-span-2 flex flex-col md:flex-row gap-4">
+                     <div className="flex-1 bg-white p-8 rounded-[2rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] group-hover:shadow-[0_20px_60px_rgb(6,182,212,0.1)] transition-all duration-500 flex flex-col justify-between hover:-translate-y-2 relative overflow-hidden group/box">
+                       <span className="material-symbols-outlined text-4xl text-cyan-500 mb-8 relative z-10 group-hover/box:scale-110 transition-transform duration-500">campaign</span>
+                       <div className="relative z-10">
+                         <h4 className="text-lg font-bold text-slate-900">Scroll-stopping creatives</h4>
+                         <p className="text-sm text-slate-500 mt-2">Your creative is your targeting. We hook viewers instantly.</p>
+                       </div>
+                       <div className="absolute -top-10 -right-6 text-9xl font-black text-transparent [-webkit-text-stroke:2px_#f1f5f9] group-hover/box:[-webkit-text-stroke:2px_rgba(6,182,212,0.1)] transition-colors duration-500 pointer-events-none">02</div>
+                     </div>
+                   </div>
+
+                   <div className="col-span-2 grid grid-cols-2 gap-4">
+                     {['UGC Video', 'A/B Testing'].map((item, i) => (
+                       <div key={i} className="bg-gradient-to-br from-white to-slate-50 p-6 rounded-[2rem] border border-slate-100 shadow-sm flex flex-col items-center justify-center gap-3 group-hover:border-cyan-100 transition-colors duration-500 hover:-translate-y-1 text-center">
+                         <span className="material-symbols-outlined text-cyan-500 bg-cyan-50 p-2 rounded-xl">{i === 0 ? 'movie' : 'science'}</span>
+                         <span className="font-bold text-slate-800 text-sm">{item}</span>
+                       </div>
+                     ))}
+                   </div>
+                </div>
+
+                {/* Text Content */}
+                <div className="space-y-8 relative z-10 lg:pl-12 order-1 lg:order-2">
+                  <div className="inline-flex items-center gap-3">
+                    <span className="text-cyan-600 font-black tracking-widest uppercase text-sm">Phase 02</span>
+                    <div className="h-px w-12 bg-cyan-600/30"></div>
+                  </div>
+                  <h3 className="text-5xl md:text-6xl font-black text-[#0f172a] leading-tight">Creative <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-teal-400">Engineering</span></h3>
+                  <p className="text-slate-600 text-xl leading-relaxed font-medium">
+                    We conceptualize, script, and design ad creatives specifically built for performance. From UGC style videos to high-end motion graphics, we test continuously.
+                  </p>
+                </div>
+
+             </div>
+          </section>
+
+          {/* Phase 03 */}
+          <section className="relative group">
+             {/* Center Node on Spine */}
+             <div className="absolute left-1/2 top-1/2 w-4 h-4 bg-purple-500 rounded-full shadow-[0_0_20px_rgba(168,85,247,0.8)] hidden lg:block -translate-x-1/2 -translate-y-1/2 group-hover:scale-150 transition-transform duration-500 z-20 border-2 border-white"></div>
+             
+             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+                
+                {/* Text Content */}
+                <div className="space-y-8 relative z-10 lg:pr-12">
+                  <div className="inline-flex items-center gap-3">
+                    <span className="text-purple-600 font-black tracking-widest uppercase text-sm">Phase 03</span>
+                    <div className="h-px w-12 bg-purple-600/30"></div>
+                  </div>
+                  <h3 className="text-5xl md:text-6xl font-black text-[#0f172a] leading-tight">Ruthless <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-fuchsia-500">Scaling</span></h3>
+                  <p className="text-slate-600 text-xl leading-relaxed font-medium">
+                    Once we find winning creatives and audiences, we turn up the heat. We deploy advanced media buying strategies to scale your daily spend while maintaining target ROAS.
+                  </p>
+                </div>
+
+                {/* Bento Box Grid */}
+                <div className="grid grid-cols-2 gap-4 relative">
+                   <div className="absolute inset-0 bg-purple-400/20 blur-[100px] rounded-full mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
+                   
+                   <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
+                     {['Omnichannel', 'Lookalikes', 'Automated Bids'].map((item, i) => (
+                       <div key={i} className="bg-white/80 backdrop-blur-md p-6 rounded-[1.5rem] border border-slate-100 shadow-sm flex items-center gap-4 group-hover:bg-white transition-colors duration-500 hover:-translate-x-2">
+                         <div className="w-2 h-2 rounded-full bg-purple-500"></div>
+                         <span className="font-bold text-slate-800">{item}</span>
+                       </div>
+                     ))}
+                   </div>
+
+                   <div className="col-span-2 md:col-span-1 bg-gradient-to-br from-purple-600 to-fuchsia-600 p-8 rounded-[2rem] shadow-xl transition-all duration-500 flex flex-col justify-between hover:-translate-y-2 relative overflow-hidden group/box">
+                     <span className="material-symbols-outlined text-5xl text-white mb-8 relative z-10 group-hover/box:-translate-y-2 transition-transform duration-500">rocket_launch</span>
+                     <div className="relative z-10">
+                       <h4 className="text-xl font-black text-white">Scaling to the Moon</h4>
+                       <p className="text-sm text-purple-100 mt-2 font-medium">Multi-million dollar budgets managed with precision.</p>
+                     </div>
+                     {/* Decorative light beam */}
+                     <div className="absolute top-0 right-0 w-32 h-64 bg-white/10 rotate-45 blur-xl group-hover/box:translate-x-10 transition-transform duration-1000"></div>
+                     <div className="absolute -bottom-6 -right-4 text-9xl font-black text-transparent [-webkit-text-stroke:2px_rgba(255,255,255,0.1)] group-hover/box:[-webkit-text-stroke:2px_rgba(255,255,255,0.3)] transition-colors duration-500 pointer-events-none">03</div>
+                   </div>
+                </div>
+             </div>
+          </section>
+
+        </div>
+      </div>
 
         {/* --- BRAND SHOWCASE --- */}
         
-        {/* Infinite Logo Marquee */}
-        <section className="py-20 bg-white border-y border-slate-100 overflow-hidden relative">
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10"></div>
+        {/* Infinite Logo Marquee - Holographic Track */}
+        <section className="py-24 bg-[#f8fafc] overflow-hidden relative border-y border-slate-200/50 perspective-1000">
+          <div className="absolute left-0 top-0 bottom-0 w-48 lg:w-96 bg-gradient-to-r from-[#f8fafc] via-[#f8fafc]/80 to-transparent z-20 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-48 lg:w-96 bg-gradient-to-l from-[#f8fafc] via-[#f8fafc]/80 to-transparent z-20 pointer-events-none"></div>
           
-          <div className="text-center mb-10 relative z-20">
-             <h3 className="text-sm font-bold tracking-widest text-slate-400 uppercase">Trusted by 20+ Global Brands</h3>
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.08)_0%,transparent_70%)] pointer-events-none"></div>
+          
+          <div className="text-center mb-16 relative z-30">
+             <div className="inline-flex items-center gap-4">
+                <div className="h-px w-12 bg-slate-300"></div>
+                <h3 className="text-xs font-black tracking-[0.2em] text-slate-400 uppercase">Trusted by Global Visionaries</h3>
+                <div className="h-px w-12 bg-slate-300"></div>
+             </div>
           </div>
 
-          <div className="flex animate-marquee w-max gap-8 py-4">
-            {[
-              { name: "The Func Lab", domain: "thefunclab.com" },
-              { name: "Apsara Tea", domain: "apsaratea.in" },
-              { name: "HNI Corp", domain: "hnicorp.com" },
-              { name: "Stanphord", domain: "amazon.in" },
-              { name: "SleepSmith", domain: "amazon.in" },
-              { name: "Mint and Oak", domain: "mintandoak.in" },
-              { name: "Moha", domain: "moha.co.in" },
-              { name: "Kimirica", domain: "kimirica.shop" },
-              { name: "VIVID", domain: "amazon.in" },
-              { name: "Vimal Agro", domain: "vimalagro.com" },
-              { name: "Medisynth", domain: "medisynth.com" },
-              { name: "Bassino Impex", domain: "bassinoimpex.com" },
-              { name: "Bitcorp", domain: "bitcorp.in" },
-              { name: "Casa Bleu", domain: "casableustore.com" },
-              { name: "Aroura Achar 1944", domain: "arouraachar1944.com" },
-              { name: "Shankara", domain: "shankara.in" },
-              { name: "GK Hair", domain: "gkhair.com" },
-              { name: "VI John", domain: "vijohnkart.com" },
-              { name: "Bayars Coffee", domain: "bayarscoffee.com" }
-            ].map((brand, i) => (
-              <div key={i} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
-                <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" onError={(e) => e.target.style.display='none'} />
-                <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
-              </div>
-            ))}
-            {/* Duplicate for infinite effect */}
-            {[
-              { name: "The Func Lab", domain: "thefunclab.com" },
-              { name: "Apsara Tea", domain: "apsaratea.in" },
-              { name: "HNI Corp", domain: "hnicorp.com" },
-              { name: "Stanphord", domain: "amazon.in" },
-              { name: "SleepSmith", domain: "amazon.in" },
-              { name: "Mint and Oak", domain: "mintandoak.in" },
-              { name: "Moha", domain: "moha.co.in" },
-              { name: "Kimirica", domain: "kimirica.shop" },
-              { name: "VIVID", domain: "amazon.in" },
-              { name: "Vimal Agro", domain: "vimalagro.com" },
-              { name: "Medisynth", domain: "medisynth.com" },
-              { name: "Bassino Impex", domain: "bassinoimpex.com" },
-              { name: "Bitcorp", domain: "bitcorp.in" },
-              { name: "Casa Bleu", domain: "casableustore.com" },
-              { name: "Aroura Achar 1944", domain: "arouraachar1944.com" },
-              { name: "Shankara", domain: "shankara.in" },
-              { name: "GK Hair", domain: "gkhair.com" },
-              { name: "VI John", domain: "vijohnkart.com" },
-              { name: "Bayars Coffee", domain: "bayarscoffee.com" }
-            ].map((brand, i) => (
-              <div key={i+20} className="flex items-center gap-3 px-8 py-4 bg-slate-50 border border-slate-100 rounded-2xl shadow-sm">
-                <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-8 w-8 object-contain rounded-full" onError={(e) => e.target.style.display='none'} />
-                <span className="text-xl font-black text-slate-800 tracking-tight">{brand.name}</span>
-              </div>
-            ))}
+          {/* Scrolling Track */}
+          <div className="relative transform-gpu rotate-y-[-2deg] rotate-x-[5deg] scale-105 z-10">
+            <div className="flex animate-marquee w-max gap-8 py-4">
+              {[
+                { name: "The Func Lab", domain: "thefunclab.com" },
+                { name: "Apsara Tea", domain: "apsaratea.in" },
+                { name: "HNI Corp", domain: "hnicorp.com" },
+                { name: "Stanphord", domain: "amazon.in" },
+                { name: "SleepSmith", domain: "amazon.in" },
+                { name: "Mint and Oak", domain: "mintandoak.in" },
+                { name: "Moha", domain: "moha.co.in" },
+                { name: "Kimirica", domain: "kimirica.shop" },
+                { name: "VIVID", domain: "amazon.in" },
+                { name: "Vimal Agro", domain: "vimalagro.com" }
+              ].map((brand, i) => (
+                <div key={i} className="flex items-center gap-4 px-10 py-5 bg-white/60 backdrop-blur-xl border border-white rounded-[2rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(59,130,246,0.1)] transition-all duration-500 group cursor-pointer">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-inner p-2 group-hover:scale-110 transition-transform duration-500">
+                    <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="w-full h-full object-contain rounded-full" onError={(e) => e.target.style.display='none'} />
+                  </div>
+                  <span className="text-2xl font-black text-slate-800 tracking-tight group-hover:text-blue-600 transition-colors duration-500">{brand.name}</span>
+                </div>
+              ))}
+              {/* Duplicate for infinite effect */}
+              {[
+                { name: "The Func Lab", domain: "thefunclab.com" },
+                { name: "Apsara Tea", domain: "apsaratea.in" },
+                { name: "HNI Corp", domain: "hnicorp.com" },
+                { name: "Stanphord", domain: "amazon.in" },
+                { name: "SleepSmith", domain: "amazon.in" },
+                { name: "Mint and Oak", domain: "mintandoak.in" },
+                { name: "Moha", domain: "moha.co.in" },
+                { name: "Kimirica", domain: "kimirica.shop" },
+                { name: "VIVID", domain: "amazon.in" },
+                { name: "Vimal Agro", domain: "vimalagro.com" }
+              ].map((brand, i) => (
+                <div key={i+20} className="flex items-center gap-4 px-10 py-5 bg-white/60 backdrop-blur-xl border border-white rounded-[2rem] shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(59,130,246,0.1)] transition-all duration-500 group cursor-pointer">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-inner p-2 group-hover:scale-110 transition-transform duration-500">
+                    <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="w-full h-full object-contain rounded-full" onError={(e) => e.target.style.display='none'} />
+                  </div>
+                  <span className="text-2xl font-black text-slate-800 tracking-tight group-hover:text-blue-600 transition-colors duration-500">{brand.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
         {/* Top Brands Results Driven Showcase */}
-        <section className="max-w-[1200px] mx-auto px-6 py-24">
-           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-             <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">Case Studies</span>
-             <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Brands We've Scaled</h2>
-             <p className="text-slate-600 text-lg font-medium">Real results for industry-leading brands.</p>
+        <section className="max-w-[1200px] mx-auto px-6 py-32">
+           <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
+             <div className="inline-flex items-center gap-2 bg-slate-100 text-slate-600 text-xs px-5 py-2 rounded-full font-bold uppercase tracking-widest shadow-sm">
+                Case Studies
+             </div>
+             <h2 className="text-5xl md:text-7xl font-black text-[#0f172a] tracking-tight">Brands We&apos;ve <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Scaled</span></h2>
+             <p className="text-slate-500 text-xl font-medium">Real results for industry-leading visionaries.</p>
            </div>
            
-           <div className="grid md:grid-cols-2 gap-8">
+           <div className="grid lg:grid-cols-2 gap-10">
              {[
-               { name: "Kimirica", domain: "kimirica.shop", url: "https://www.kimirica.shop/", result: "Scaled E-commerce Sales by 3x", icon: "shopping_bag", colorGlow: "from-blue-600 to-indigo-600", textGradient: "from-blue-400 to-indigo-300" },
-               { name: "GK Hair", domain: "gkhair.com", url: "https://www.gkhair.com/", result: "Reduced CAC by 40%", icon: "content_cut", colorGlow: "from-emerald-500 to-teal-500", textGradient: "from-emerald-400 to-teal-200" },
-               { name: "VI John", domain: "vijohnkart.com", url: "https://vijohnkart.com/", result: "Generated 50k+ Leads", icon: "group_add", colorGlow: "from-purple-600 to-fuchsia-600", textGradient: "from-purple-400 to-fuchsia-300" },
-               { name: "Shankara", domain: "shankara.in", url: "https://www.shankara.in/", result: "10x Organic Traffic Growth", icon: "trending_up", colorGlow: "from-amber-500 to-orange-600", textGradient: "from-amber-300 to-orange-400" }
+               { name: "Kimirica", domain: "kimirica.shop", url: "https://www.kimirica.shop/", result: "Scaled E-commerce Sales by 3x", icon: "shopping_bag", colorGlow: "from-blue-600 via-indigo-500 to-cyan-500", textGradient: "from-blue-400 to-indigo-300" },
+               { name: "GK Hair", domain: "gkhair.com", url: "https://www.gkhair.com/", result: "Reduced CAC by 40%", icon: "content_cut", colorGlow: "from-emerald-500 via-teal-400 to-emerald-600", textGradient: "from-emerald-400 to-teal-200" },
+               { name: "VI John", domain: "vijohnkart.com", url: "https://vijohnkart.com/", result: "Generated 50k+ Leads", icon: "group_add", colorGlow: "from-purple-600 via-fuchsia-500 to-pink-500", textGradient: "from-purple-400 to-fuchsia-300" },
+               { name: "Shankara", domain: "shankara.in", url: "https://www.shankara.in/", result: "10x Organic Traffic", icon: "trending_up", colorGlow: "from-amber-500 via-orange-500 to-red-500", textGradient: "from-amber-300 to-orange-400" }
              ].map((brand, i) => (
-               <a key={i} href={brand.url} target="_blank" rel="noopener noreferrer" className="relative group p-[2px] rounded-[2.5rem] bg-gradient-to-br from-slate-800 to-slate-950 shadow-2xl overflow-hidden block hover:-translate-y-2 transition-transform duration-500">
-                  {/* Glowing Background Orb */}
-                  <div className={`absolute -inset-20 bg-gradient-to-r ${brand.colorGlow} blur-[80px] opacity-20 group-hover:opacity-40 transition-opacity duration-700 pointer-events-none`}></div>
+               <a key={i} href={brand.url} target="_blank" rel="noopener noreferrer" className="relative group p-[3px] rounded-[3rem] bg-slate-800 hover:bg-slate-700 transition-colors duration-500 block perspective-1000">
+                  
+                  {/* Spinning Conic Gradient Border (Simulated with rotating background) */}
+                  <div className={`absolute inset-0 bg-gradient-to-r ${brand.colorGlow} rounded-[3rem] opacity-50 group-hover:opacity-100 group-hover:animate-spin-slow blur-md transition-all duration-700`}></div>
+                  <div className={`absolute inset-0 bg-gradient-to-r ${brand.colorGlow} rounded-[3rem] opacity-50 group-hover:opacity-100`}></div>
                   
                   {/* Inner Glass Card */}
-                  <div className="relative h-full bg-slate-900/60 backdrop-blur-xl rounded-[2.4rem] p-8 md:p-10 border border-white/5 flex flex-col justify-between overflow-hidden">
+                  <div className="relative h-full bg-slate-900/90 backdrop-blur-3xl rounded-[2.8rem] p-10 md:p-12 flex flex-col justify-between overflow-hidden transform-gpu group-hover:rotate-x-2 group-hover:-rotate-y-2 transition-transform duration-500 ease-out z-10">
                      
-                     <div className="flex justify-between items-start mb-16 relative z-10">
-                        <div className="flex items-center gap-4">
-                           <div className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center p-2 border border-white/10 shadow-[0_0_15px_rgba(255,255,255,0.05)] group-hover:shadow-[0_0_25px_rgba(255,255,255,0.15)] transition-shadow duration-300">
+                     {/* Glossy overlay */}
+                     <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/5 to-transparent pointer-events-none"></div>
+
+                     <div className="flex justify-between items-start mb-20 relative z-10">
+                        <div className="flex items-center gap-5">
+                           <div className="w-20 h-20 bg-white/5 backdrop-blur-xl rounded-2xl flex items-center justify-center p-3 border border-white/10 shadow-[0_0_30px_rgba(0,0,0,0.5)] group-hover:scale-110 transition-transform duration-500">
                              <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="w-full h-full object-contain rounded-xl drop-shadow-md" onError={(e) => { e.target.style.display='none'; e.target.nextSibling.style.display='block'; }} />
-                             <span style={{display: 'none'}} className="material-symbols-outlined text-3xl text-white">{brand.icon}</span>
+                             <span style={{display: 'none'}} className="material-symbols-outlined text-4xl text-white">{brand.icon}</span>
                            </div>
                            <div>
-                             <h3 className="text-2xl font-black text-white drop-shadow-md">{brand.name}</h3>
-                             <span className="text-sm font-medium text-slate-400">Official Partner</span>
+                             <h3 className="text-3xl font-black text-white tracking-tight">{brand.name}</h3>
+                             <span className="text-sm font-bold text-slate-500 uppercase tracking-widest mt-1 block">Official Partner</span>
                            </div>
                         </div>
-                        <div className="px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center gap-1 text-xs font-bold uppercase tracking-widest backdrop-blur-md">
-                           <span className="material-symbols-outlined text-[14px]">verified</span>
+                        <div className="px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center gap-2 text-xs font-black uppercase tracking-widest backdrop-blur-md shadow-[0_0_20px_rgba(16,185,129,0.2)]">
+                           <span className="material-symbols-outlined text-[16px]">verified</span>
                         </div>
                      </div>
                      
-                     <div className="relative z-10">
-                        <p className="text-slate-400 font-medium mb-3 text-sm uppercase tracking-wider">The Result</p>
-                        <h4 className={`text-4xl md:text-5xl font-black bg-gradient-to-r ${brand.textGradient} bg-clip-text text-transparent leading-tight drop-shadow-lg`}>
+                     <div className="relative z-10 transform-gpu group-hover:translate-z-10 group-hover:-translate-y-2 transition-transform duration-500">
+                        <p className="text-slate-400 font-bold mb-4 text-xs uppercase tracking-[0.2em]">The Result</p>
+                        <h4 className={`text-4xl md:text-6xl font-black bg-gradient-to-r ${brand.textGradient} bg-clip-text text-transparent leading-tight drop-shadow-2xl`}>
                            {brand.result}
                         </h4>
                      </div>
 
-                     <div className="absolute bottom-8 right-8 w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-300 text-white translate-x-4 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 z-10">
-                        <span className="material-symbols-outlined">arrow_outward</span>
+                     {/* Action Button */}
+                     <div className="absolute bottom-10 right-10 w-14 h-14 rounded-full bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-white group-hover:text-black transition-all duration-500 text-white translate-x-8 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 z-10 shadow-[0_0_30px_rgba(255,255,255,0.2)]">
+                        <span className="material-symbols-outlined text-2xl">arrow_outward</span>
                      </div>
                   </div>
                </a>
@@ -394,23 +475,44 @@ export default function ScaleBrandPage() {
         
         {/* --- END BRAND SHOWCASE --- */}
 
-        {/* CTA Section */}
-        <section className="max-w-[1000px] mx-auto px-6 py-32 text-center pb-40">
-          <div className="bg-blue-600 rounded-[3rem] p-12 md:p-20 relative overflow-hidden shadow-[0_20px_60px_rgba(37,99,235,0.2)]">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 blur-[100px] rounded-full pointer-events-none"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-400/20 blur-[100px] rounded-full pointer-events-none"></div>
+        {/* CTA Section - The Energy Core */}
+        <section className="max-w-[1100px] mx-auto px-6 py-32 pb-40">
+          <div className="relative rounded-[4rem] p-12 md:p-24 overflow-hidden shadow-[0_40px_100px_rgba(37,99,235,0.3)] group bg-slate-900 border border-slate-800">
             
-            <div className="relative z-10 space-y-8">
-              <h2 className="text-4xl md:text-6xl font-black text-white">Ready to Scale?</h2>
-              <p className="text-blue-100 text-xl font-medium max-w-2xl mx-auto leading-relaxed">Stop leaving money on the table. Partner with MarketOps and watch your revenue graph go up and to the right.</p>
-              <a href="/contact" className="inline-block bg-white text-blue-700 font-bold px-10 py-5 rounded-xl text-lg hover:-translate-y-1 hover:shadow-xl transition-all">
-                Get Your Custom Strategy
+            {/* Deep Core Gradient */}
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(59,130,246,0.3)_0%,rgba(15,23,42,1)_70%)] z-0"></div>
+            
+            {/* Animated Grid */}
+            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,#000_20%,transparent_100%)] group-hover:scale-105 transition-transform duration-1000"></div>
+
+            {/* Pulsing Energy Orbs */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-500/30 rounded-full blur-[80px] animate-ping opacity-50 z-0"></div>
+            <div className="absolute top-0 right-0 w-96 h-96 bg-cyan-500/20 blur-[100px] rounded-full pointer-events-none group-hover:translate-x-10 transition-transform duration-1000"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-500/20 blur-[100px] rounded-full pointer-events-none group-hover:-translate-x-10 transition-transform duration-1000"></div>
+            
+            <div className="relative z-10 flex flex-col items-center text-center space-y-10">
+              <div className="inline-flex items-center justify-center p-4 bg-white/5 backdrop-blur-md rounded-full border border-white/10 shadow-lg group-hover:scale-110 transition-transform duration-500 mb-4">
+                 <span className="material-symbols-outlined text-4xl text-blue-400">rocket_launch</span>
+              </div>
+              
+              <h2 className="text-5xl md:text-7xl font-black text-white tracking-tight drop-shadow-xl leading-tight">
+                Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Scale?</span>
+              </h2>
+              
+              <p className="text-slate-300 text-xl md:text-2xl font-medium max-w-2xl mx-auto leading-relaxed drop-shadow-md">
+                Stop leaving money on the table. Partner with MarketOps and watch your revenue graph go up and to the right.
+              </p>
+              
+              <a href="/contact" className="relative overflow-hidden inline-flex items-center justify-center gap-3 bg-white text-blue-700 font-black px-12 py-6 rounded-2xl text-xl hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(255,255,255,0.2)] transition-all duration-300 group/btn mt-8">
+                {/* Light Sweep Animation */}
+                <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-blue-100/50 to-transparent group-hover/btn:animate-[shimmer_1.5s_infinite]"></div>
+                <span className="relative z-10">Get Your Custom Strategy</span>
+                <span className="material-symbols-outlined relative z-10 group-hover/btn:translate-x-2 transition-transform duration-300">arrow_forward</span>
               </a>
             </div>
           </div>
         </section>
 
       </div>
-    </div>
   );
 }

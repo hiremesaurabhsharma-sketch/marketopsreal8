@@ -1,7 +1,11 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
 import Link from 'next/link';
+import { Users, Search, Music, Briefcase, Ghost, Pin, TrendingDown, Bot, TriangleAlert } from 'lucide-react';
 
 export default function PerformanceMarketing() {
+  const [activeEditorial, setActiveEditorial] = useState(null);
+
   return (
     <div className="bg-[#f8fafc] min-h-screen font-inter text-[#0f172a] overflow-hidden">
       
@@ -22,25 +26,16 @@ export default function PerformanceMarketing() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#03c1fc] to-[#005ea5]">Better Conversions.</span>
               </h1>
               <p className="text-slate-600 text-xl font-medium leading-relaxed max-w-lg">
-                We leverage data-driven media buying on Google and Meta to scale your brand predictably and profitably.
+                Stop guessing. We leverage aggressive data-driven media buying across Google, Meta, TikTok, and LinkedIn to scale your brand predictably and profitably.
               </p>
               
               <div className="flex flex-wrap gap-4 pt-4">
-                <Link className="inline-flex items-center justify-center text-white font-bold text-lg px-10 py-5 rounded-full bg-cyan-600 hover:bg-cyan-700 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(6,182,212,0.3)] transition-all" href="/contact">
-                  Scale Your Campaigns
-                </Link>
-                <div className="flex items-center gap-3 px-6 py-4 bg-white rounded-full border border-slate-200 shadow-sm">
-                   <div className="flex -space-x-3">
-                     {[1,2,3,4].map(i => (
-                        <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center text-xs overflow-hidden">
-                           <img src={`https://i.pravatar.cc/100?img=${i+40}`} alt="client" />
-                        </div>
-                     ))}
-                   </div>
-                   <div className="text-sm font-bold text-slate-700 leading-tight">
-                     Managing <br/><span className="text-cyan-600">$5M+ Ad Spend</span>
-                   </div>
-                </div>
+                <a className="inline-flex items-center justify-center text-white font-bold text-lg px-10 py-5 rounded-full bg-cyan-600 hover:bg-cyan-700 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(6,182,212,0.3)] transition-all" href="#calendly">
+                  Get Free Account Audit
+                </a>
+                <a className="inline-flex items-center justify-center text-slate-700 font-bold text-lg px-10 py-5 rounded-full bg-white border border-slate-200 hover:bg-slate-50 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.05)] transition-all" href="#challenges">
+                  View Ad Challenges
+                </a>
               </div>
             </div>
             
@@ -53,8 +48,8 @@ export default function PerformanceMarketing() {
                 </div>
                 
                 <div className="absolute -bottom-10 -left-10 z-20 bg-blue-600 text-white p-6 rounded-3xl shadow-xl transform rotate-[5deg]">
-                  <p className="text-sm font-bold opacity-80 uppercase tracking-widest">Lead Quality</p>
-                  <p className="text-3xl font-black">Superb ⭐</p>
+                  <p className="text-sm font-bold opacity-80 uppercase tracking-widest">ROAS</p>
+                  <p className="text-3xl font-black">400%+ ⭐</p>
                 </div>
 
                 <div className="space-y-6 opacity-90 relative z-10 overflow-hidden rounded-2xl">
@@ -71,8 +66,43 @@ export default function PerformanceMarketing() {
         </div>
       </section>
 
+      {/* CHALLENGES SECTION */}
+      <section id="challenges" className="py-24 bg-white border-t border-slate-100 relative">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span className="text-cyan-600 font-bold tracking-widest uppercase text-sm">Common Ad Challenges</span>
+            <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Why Brands Struggle with Paid Media Today</h2>
+            <p className="text-slate-600 text-lg font-medium">Burning cash on ads without a system is a one-way ticket to failure. We fix these critical errors.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: TrendingDown, title: 'Creative Fatigue', desc: 'Ad creatives burn out quickly. Stale visuals and copy result in plummeting click-through rates and soaring CPMs.', gradient: 'from-red-500 to-rose-600', shadow: 'shadow-red-500/30' },
+              { icon: Bot, title: 'Poor Pixel Tracking', desc: 'IOS updates killed standard tracking. Without server-side API setups, Facebook and Google cannot optimize for your best customers.', gradient: 'from-orange-400 to-amber-500', shadow: 'shadow-orange-500/30' },
+              { icon: TriangleAlert, title: 'Scale Bottlenecks', desc: 'Campaigns do great at $100/day but completely break down when scaled to $1,000/day. We build frameworks meant for aggressive scaling.', gradient: 'from-amber-400 to-yellow-500', shadow: 'shadow-amber-500/30' }
+            ].map((v, i) => (
+              <div key={i} className="group relative bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col overflow-hidden">
+                <div className={`absolute inset-0 bg-gradient-to-br ${v.gradient} translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out z-0`}></div>
+                
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${v.gradient} group-hover:bg-none group-hover:bg-white/20 flex items-center justify-center text-white mb-6 shadow-lg ${v.shadow} group-hover:shadow-none transform group-hover:scale-110 group-hover:-rotate-3 transition-all duration-500`}>
+                    <v.icon size={28} strokeWidth={2.5} />
+                  </div>
+                  <h3 className="text-2xl font-black text-[#0f172a] group-hover:text-white mb-3 transition-colors duration-500">{v.title}</h3>
+                  <p className="text-slate-600 group-hover:text-white/90 leading-relaxed text-sm font-medium transition-colors duration-500 flex-grow">{v.desc}</p>
+                  
+                  <div className="mt-6 flex items-center text-sm font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 text-white transition-all duration-500 delay-100">
+                    See Solution <span className="ml-2 group-hover:translate-x-2 transition-transform duration-300">→</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 2. OUR STRATEGY */}
-      <section className="py-24 bg-white relative">
+      <section className="py-24 bg-[#f8fafc] relative border-t border-slate-200">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
             <span className="text-cyan-600 font-bold tracking-widest uppercase text-sm">Our Strategy</span>
@@ -80,43 +110,100 @@ export default function PerformanceMarketing() {
             <p className="text-slate-600 text-lg font-medium">We treat your ad spend like our own money. Our methodology is ruthless, data-driven, and highly profitable.</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 relative">
-             <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-cyan-100 via-cyan-400 to-cyan-100 -translate-y-1/2 z-0"></div>
-
+          <div className="grid md:grid-cols-5 gap-4 relative">
              {[
-               {
-                 step: '01',
-                 title: 'Hyper-Targeting',
-                 desc: 'Finding your ideal customers using advanced audience segmentation, lookalikes, and intent data targeting.',
-                 icon: 'my_location',
-                 color: 'blue'
-               },
-               {
-                 step: '02',
-                 title: 'Algorithm Mastery',
-                 desc: 'Feeding the right data signals to Meta and Google to let their machine learning do the heavy lifting efficiently.',
-                 icon: 'memory',
-                 color: 'cyan'
-               },
-               {
-                 step: '03',
-                 title: 'Ruthless Scaling',
-                 desc: 'Cutting losing campaigns quickly and aggressively funding the winning ones to maximize your overall ROI.',
-                 icon: 'rocket_launch',
-                 color: 'emerald'
-               }
+               { step: '01', title: 'Audit & Tracking', desc: 'Implementing CAPI and server-side tracking to capture 100% of data.', icon: 'track_changes', gradient: 'from-orange-400 to-amber-500', iconBg: 'bg-orange-100', iconColor: 'text-orange-500' },
+               { step: '02', title: 'Creative Engineering', desc: 'Producing scroll-stopping hooks and direct-response creatives.', icon: 'design_services', gradient: 'from-pink-500 to-rose-500', iconBg: 'bg-pink-100', iconColor: 'text-pink-500' },
+               { step: '03', title: 'Hyper-Targeting', desc: 'Advanced audience segmentation and lookalikes modeling.', icon: 'my_location', gradient: 'from-blue-500 to-indigo-600', iconBg: 'bg-blue-100', iconColor: 'text-blue-500' },
+               { step: '04', title: 'Algorithm Mastery', desc: 'Feeding signals to Meta/Google machine learning for efficiency.', icon: 'memory', gradient: 'from-cyan-400 to-blue-500', iconBg: 'bg-cyan-100', iconColor: 'text-cyan-500' },
+               { step: '05', title: 'Ruthless Scaling', desc: 'Cutting losers and aggressively funding winners to maximize ROI.', icon: 'rocket_launch', gradient: 'from-emerald-400 to-teal-500', iconBg: 'bg-emerald-100', iconColor: 'text-emerald-500' }
              ].map((strategy, i) => (
-               <div key={i} className="relative z-10 bg-white p-10 rounded-[2.5rem] border border-slate-200 shadow-xl shadow-slate-200/50 hover:-translate-y-4 transition-transform duration-500 text-center space-y-6">
-                 <div className={`mx-auto w-20 h-20 bg-${strategy.color}-100 rounded-full flex items-center justify-center border-4 border-white shadow-md relative`}>
-                    <span className={`material-symbols-outlined text-3xl text-${strategy.color}-600`}>{strategy.icon}</span>
-                    <div className={`absolute -top-3 -right-3 bg-${strategy.color}-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-white`}>
-                      {strategy.step}
-                    </div>
+               <div key={i} className="group h-full relative z-10 bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.12)] hover:-translate-y-3 transition-all duration-700 ease-out text-left overflow-hidden flex flex-col items-start">
+                 {/* Elegant Slide-up Gradient */}
+                 <div className={`absolute inset-0 bg-gradient-to-br ${strategy.gradient} translate-y-[101%] group-hover:translate-y-0 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] z-0`}></div>
+                 
+                 {/* Creative Glassmorphism Bloom */}
+                 <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-white/10 backdrop-blur-2xl rounded-full scale-0 group-hover:scale-100 transition-transform duration-700 ease-out z-0"></div>
+                 
+                 <div className="relative z-10 flex flex-col items-start h-full space-y-4 w-full">
+                   
+                   {/* Top Row: Bare Icon & Outline Number */}
+                   <div className="flex justify-between items-start w-full mb-2">
+                      <span className={`material-symbols-outlined text-[3.5rem] ${strategy.iconColor} group-hover:text-white transition-all duration-700 group-hover:scale-110 group-hover:-rotate-6 transform`}>
+                        {strategy.icon}
+                      </span>
+                      
+                      <div className="text-5xl font-black text-transparent [-webkit-text-stroke:1px_#cbd5e1] group-hover:[-webkit-text-stroke:1px_rgba(255,255,255,0.4)] transition-all duration-700">
+                        {strategy.step}
+                      </div>
+                   </div>
+                   
+                   {/* Animated Expanding Divider */}
+                   <div className="w-full h-px bg-slate-100 group-hover:bg-white/20 transition-colors duration-700 relative overflow-hidden">
+                     <div className="absolute top-0 left-0 h-full w-0 bg-white group-hover:w-full transition-all duration-1000 ease-out"></div>
+                   </div>
+                   
+                   <h3 className="text-xl font-black text-[#0f172a] group-hover:text-white transition-colors duration-700 z-10 pt-2">{strategy.title}</h3>
+                   <p className="text-slate-500 font-medium text-sm leading-relaxed group-hover:text-white/90 transition-colors duration-700 z-10 flex-grow">{strategy.desc}</p>
                  </div>
-                 <h3 className="text-2xl font-bold text-[#0f172a]">{strategy.title}</h3>
-                 <p className="text-slate-600 font-medium leading-relaxed">{strategy.desc}</p>
                </div>
              ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CHANNELS SECTION */}
+      <section className="py-24 bg-white relative border-t border-slate-100">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span className="text-cyan-600 font-bold tracking-widest uppercase text-sm">Ad Networks</span>
+            <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Omnichannel Dominance</h2>
+            <p className="text-slate-600 text-lg font-medium">We deploy capital across the most profitable networks for your specific niche.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { 
+                icon: Users, title: 'Meta Ads (FB & IG)', desc: 'Unmatched demographic targeting and visual selling. We build complex funnel structures for e-commerce and lead gen.', gradient: 'from-blue-500 to-indigo-600', shadow: 'shadow-blue-500/30',
+                editorial: 'Meta (Facebook & Instagram) is unparalleled for visual selling and demographic targeting. We don\'t just \'boost posts.\' We engineer highly structured ad accounts utilizing Advantage+ Shopping, custom audiences, and dynamic retargeting. By rapidly testing creative variations—from UGC to polished graphics—we find the winning angles that force the algorithm to deliver low-cost conversions at scale. Whether it\'s lead gen or e-commerce, we turn Meta into a predictable revenue machine.'
+              },
+              { 
+                icon: Search, title: 'Google Ads', desc: 'Capture high-intent search traffic. We dominate Search, Shopping, Performance Max, and YouTube ad placements.', gradient: 'from-red-500 via-yellow-500 to-green-500', shadow: 'shadow-red-500/30',
+                editorial: 'Google Ads is where high-intent buyers go when they are ready to purchase. We dominate the search engine results page (SERP) by targeting exact-match keywords that your competitors miss. Our strategy extends beyond simple search; we build highly profitable Performance Max (PMax) campaigns, optimize Google Shopping feeds, and utilize YouTube ads for top-of-funnel awareness. We capture demand that already exists and convert it ruthlessly.'
+              },
+              { 
+                icon: Music, title: 'TikTok Ads', desc: 'Explosive viral growth and low CPMs. We create raw, UGC-style creatives that native audiences love to engage with.', gradient: 'from-zinc-900 to-zinc-700', shadow: 'shadow-zinc-900/30',
+                editorial: 'TikTok is no longer just for dancing; it\'s a massive conversion engine. The secret to TikTok ads is that they shouldn\'t look like ads. We specialize in producing raw, lo-fi, User-Generated Content (UGC) that feels native to the platform. By leveraging fast-paced editing, trending audio, and strong psychological hooks in the first 3 seconds, we capture Gen Z and Millennial attention, resulting in explosive viral growth and incredibly low CPMs.'
+              },
+              { 
+                icon: Briefcase, title: 'LinkedIn Ads', desc: 'The holy grail for B2B. Target decision-makers by job title, company size, and industry for premium lead generation.', gradient: 'from-sky-600 to-blue-700', shadow: 'shadow-sky-600/30',
+                editorial: 'For B2B companies, LinkedIn is the holy grail of lead generation. We bypass the gatekeepers and put your offer directly in front of the decision-makers. We utilize advanced firmographic targeting to zero in on specific job titles, company sizes, and industries. Through a mix of Sponsored Content, InMail campaigns, and Lead Gen Forms, we fill your pipeline with high-ticket, qualified prospects who are ready to talk business.'
+              },
+              { 
+                icon: Ghost, title: 'Snapchat Ads', desc: 'Capture Gen Z and Millennial attention with immersive AR lenses and short-form video ads.', gradient: 'from-yellow-400 to-amber-500', shadow: 'shadow-yellow-400/30',
+                editorial: 'Snapchat is a heavily underutilized platform with a highly engaged, younger demographic. We capitalize on this lack of competition to acquire customers at a fraction of the cost of Meta or Google. We create immersive AR lenses, fast-paced Story ads, and Collection ads that drive impulse purchases. If your brand targets Gen Z or young Millennials, Snapchat is a goldmine waiting to be tapped.'
+              },
+              { 
+                icon: Pin, title: 'Pinterest Ads', desc: 'High visual discovery intent, perfect for lifestyle, home decor, and fashion e-commerce brands.', gradient: 'from-red-600 to-rose-700', shadow: 'shadow-red-600/30',
+                editorial: 'Pinterest is a visual discovery engine where users actively plan their future purchases. Unlike other platforms where ads are disruptive, Pinterest ads are additive to the user experience. We build highly aesthetic, inspirational pins that capture users in the consideration phase. For fashion, home decor, lifestyle, and beauty e-commerce brands, Pinterest offers a highly profitable avenue with exceptional long-term ROI.'
+              }
+            ].map((v, i) => (
+              <div key={i} onClick={() => setActiveEditorial(v)} className="group cursor-pointer relative bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col overflow-hidden text-left">
+                <div className={`absolute inset-0 bg-gradient-to-br ${v.gradient} translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out z-0`}></div>
+                
+                <div className="relative z-10 flex flex-col h-full">
+                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${v.gradient} group-hover:bg-none group-hover:bg-white/20 flex items-center justify-center text-white mb-6 shadow-lg ${v.shadow} group-hover:shadow-none transform group-hover:scale-110 group-hover:-rotate-3 transition-all duration-500`}>
+                    <v.icon size={28} strokeWidth={2.5} />
+                  </div>
+                  <h3 className="text-2xl font-black text-[#0f172a] group-hover:text-white mb-3 transition-colors duration-500">{v.title}</h3>
+                  <p className="text-slate-600 group-hover:text-white/90 leading-relaxed text-sm font-medium transition-colors duration-500 flex-grow">{v.desc}</p>
+                  
+                  <div className="mt-6 flex items-center text-sm font-bold opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 text-white transition-all duration-500 delay-100">
+                    Read Editorial <span className="ml-2 group-hover:translate-x-2 transition-transform duration-300">→</span>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -178,8 +265,85 @@ export default function PerformanceMarketing() {
         </div>
       </section>
 
+      {/* FAQS SECTION */}
+      <section className="py-24 bg-[#f8fafc] border-b border-slate-200">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <div className="text-center mb-16 space-y-4">
+            <span className="text-cyan-600 font-bold tracking-widest uppercase text-sm">FAQ</span>
+            <h2 className="text-3xl md:text-5xl font-black text-[#0f172a]">Frequently Asked Questions</h2>
+            <p className="text-slate-600 text-lg font-medium">Everything you need to know about our Performance Marketing solutions.</p>
+          </div>
+
+          <div className="space-y-4">
+            {[
+              { q: "What is a good starting budget for ads?", a: "We recommend a minimum of $3,000 to $5,000 per month in ad spend to effectively test creatives, audiences, and generate statistically significant data." },
+              { q: "Do you create the ad creatives for us?", a: "Yes, our in-house creative team designs high-converting image and video assets tailored specifically for direct-response marketing." },
+              { q: "How do you track conversions accurately?", a: "We implement advanced server-side tracking (like Facebook Conversions API and Google Enhanced Conversions) to bypass iOS restrictions and track accurately." },
+              { q: "When can we expect to see results?", a: "While we often see quick wins in the first week, a full campaign maturation and stabilization typically takes 30 to 60 days of aggressive testing." },
+              { q: "Do you run B2B or B2C campaigns?", a: "Both. We use Google and LinkedIn for high-ticket B2B lead generation, and Meta/TikTok for B2C e-commerce scaling." },
+              { q: "How is your performance marketing different?", a: "We don't focus on vanity metrics like 'likes' or 'impressions'. We focus purely on CPA, ROAS, and net profit margins." },
+              { q: "What happens if an ad stops working?", a: "Ad fatigue is normal. We proactively launch new creative variations and angles every single week to ensure performance never drops." }
+            ].map((faq, i) => (
+              <details key={i} className="group bg-white rounded-2xl border border-slate-200 overflow-hidden cursor-pointer open:bg-slate-50 transition-colors">
+                <summary className="px-6 py-5 font-bold text-[#0f172a] text-lg select-none flex justify-between items-center list-none">
+                  <span>{i+1}. {faq.q}</span>
+                  <span className="text-slate-400 group-open:rotate-45 transition-transform duration-300 text-2xl">+</span>
+                </summary>
+                <div className="px-6 pb-5 text-slate-600 leading-relaxed border-t border-slate-100 pt-4 mt-2">
+                  {faq.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CALENDLY EMBED SECTION */}
+      <section id="calendly" className="py-24 bg-white relative">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Get a Free Ad Account Audit</h2>
+            <p className="text-slate-600 text-lg font-medium">Let our senior media buyers peek into your accounts and show you exactly where you are bleeding money.</p>
+          </div>
+          
+          <div className="flex flex-col md:flex-row gap-12 bg-slate-50 rounded-[2.5rem] p-8 md:p-12 border border-slate-200 shadow-xl">
+            <div className="md:w-1/2 space-y-8">
+              <h3 className="text-3xl font-bold text-[#0f172a]">What We Will Discover:</h3>
+              <div className="space-y-6">
+                {[
+                  { num: "01", title: "Wasted Spend Analysis", desc: "Identify the campaigns and keywords draining your budget without driving conversions." },
+                  { num: "02", title: "Tracking Infrastructure", desc: "Check if your pixel and server-side tracking are actually passing the right data back to the platforms." },
+                  { num: "03", title: "Scaling Roadmap", desc: "A concrete, step-by-step mathematical plan on how to drop your CPA and scale your budget." }
+                ].map((item, i) => (
+                  <div key={i} className="flex gap-4 items-start">
+                    <span className="text-cyan-500 font-black text-xl">{item.num}</span>
+                    <div>
+                      <h4 className="text-lg font-bold text-[#0f172a] mb-1">{item.title}</h4>
+                      <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="md:w-1/2 bg-white rounded-3xl p-8 border border-slate-200 shadow-md text-center flex flex-col justify-center">
+              <h4 className="text-2xl font-bold text-[#0f172a] mb-2">Schedule Session</h4>
+              <p className="text-slate-500 mb-8">Select a slot on our live team calendar</p>
+              <div className="space-y-4">
+                <a href="https://wa.me/919424995426" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-cyan-600 text-white hover:bg-cyan-700 transition-colors shadow-md">
+                  <span className="material-symbols-outlined">chat</span> WhatsApp Direct booking
+                </a>
+                <a href="mailto:connect@marketops.in" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 transition-colors">
+                  <span className="material-symbols-outlined">mail</span> Email: connect@marketops.in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 4. CTA */}
-      <section className="py-32 bg-[#f8fafc] text-center">
+      <section className="py-32 bg-[#f8fafc] text-center border-t border-slate-200">
          <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-4xl md:text-6xl font-black text-[#0f172a] mb-8">Ready to dominate your market?</h2>
             <p className="text-slate-600 text-xl font-medium mb-10 max-w-2xl mx-auto">
@@ -190,6 +354,45 @@ export default function PerformanceMarketing() {
             </Link>
          </div>
       </section>
+
+      {/* EDITORIAL MODAL */}
+      {activeEditorial && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-6 lg:p-8">
+          <div className="absolute inset-0 bg-[#0f172a]/60 backdrop-blur-sm transition-opacity" onClick={() => setActiveEditorial(null)}></div>
+          <div className="relative w-full max-w-2xl bg-white rounded-[2rem] shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-in fade-in zoom-in duration-300">
+            {/* Header/Gradient */}
+            <div className={`h-32 w-full bg-gradient-to-br ${activeEditorial.gradient} relative shrink-0`}>
+               <button onClick={() => setActiveEditorial(null)} className="absolute top-6 right-6 w-10 h-10 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-colors backdrop-blur-sm z-10">
+                 <span className="material-symbols-outlined font-bold">close</span>
+               </button>
+               {/* Icon */}
+               <div className="absolute -bottom-10 left-8 w-20 h-20 bg-white rounded-2xl shadow-xl flex items-center justify-center p-1">
+                 <div className={`w-full h-full rounded-xl bg-gradient-to-br ${activeEditorial.gradient} flex items-center justify-center text-white`}>
+                   <activeEditorial.icon size={36} strokeWidth={2.5} />
+                 </div>
+               </div>
+            </div>
+            
+            {/* Content */}
+            <div className="pt-16 pb-10 px-8 md:px-12 overflow-y-auto">
+              <span className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-2 block">MarketOps Editorial</span>
+              <h3 className="text-3xl md:text-4xl font-black text-[#0f172a] mb-6 leading-tight">{activeEditorial.title}</h3>
+              <p className="text-lg text-slate-600 leading-relaxed font-medium">
+                {activeEditorial.editorial}
+              </p>
+              
+              <div className="mt-10 pt-8 border-t border-slate-100 flex items-center justify-between">
+                <button onClick={() => setActiveEditorial(null)} className="text-slate-500 font-bold hover:text-slate-800 transition-colors">
+                  Close Reading
+                </button>
+                <button onClick={() => { setActiveEditorial(null); window.location.href = '#calendly'; }} className={`px-6 py-3 rounded-full text-white font-bold bg-gradient-to-r ${activeEditorial.gradient} shadow-md hover:shadow-lg transition-all hover:-translate-y-1`}>
+                  Discuss Strategy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
     </div>
   );
