@@ -6,7 +6,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full px-3 md:px-5 z-50 transition-transform duration-500 translate-y-0 mt-4">
       <div className="bg-gradient-to-r from-[#172242] to-[#0c142c] text-white container mx-auto flex items-center justify-between px-4 md:px-6 py-2.5 md:py-3 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.3)] border border-white/10">
         <div>
-          <Link href="/" className="text-xl md:text-2xl font-black italic tracking-tighter">
+          <Link href="/" className="text-xl md:text-2xl font-black tracking-tighter">
             MarketOps
           </Link>
         </div>

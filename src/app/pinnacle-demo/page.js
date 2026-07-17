@@ -7,7 +7,7 @@ export default function PinnacleDemo() {
       <header className="fixed top-0 left-0 w-full px-5 z-50 transition-transform duration-500 translate-y-0 mt-4">
         <div className="bg-gradient-to-r from-blue-900/50 to-blue-600/50 text-white container mx-auto flex items-center justify-between backdrop-blur-lg px-6 py-3 rounded-full shadow-lg border border-white/10">
           <div>
-            <a href="/" className="text-2xl font-bold italic tracking-tighter">
+            <a href="/" className="text-2xl font-bold tracking-tighter">
               MarketOps
             </a>
           </div>

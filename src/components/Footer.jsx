@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-16">
           <div className="md:col-span-1">
-            <Link href="/" className="text-3xl font-bold italic tracking-tighter mb-6 block bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+            <Link href="/" className="text-3xl font-bold tracking-tighter mb-6 block bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
               MarketOps
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
