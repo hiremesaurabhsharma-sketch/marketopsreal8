@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Users, Search, Music, Briefcase, Ghost, Pin, TrendingDown, Bot, TriangleAlert } from 'lucide-react';
+import { Users, Search, Music, Briefcase, TrendingDown, Bot, TriangleAlert } from 'lucide-react';
 
 export default function PerformanceMarketing() {
   const [activeEditorial, setActiveEditorial] = useState(null);
@@ -161,7 +161,7 @@ export default function PerformanceMarketing() {
             <p className="text-slate-600 text-lg font-medium">We deploy capital across the most profitable networks for your specific niche.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {[
               { 
                 icon: Users, title: 'Meta Ads (FB & IG)', desc: 'Unmatched demographic targeting and visual selling. We build complex funnel structures for e-commerce and lead gen.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30',
@@ -178,14 +178,6 @@ export default function PerformanceMarketing() {
               { 
                 icon: Briefcase, title: 'LinkedIn Ads', desc: 'The holy grail for B2B. Target decision-makers by job title, company size, and industry for premium lead generation.', gradient: 'from-blue-600 to-blue-700', shadow: 'shadow-blue-600/30',
                 editorial: 'For B2B companies, LinkedIn is the holy grail of lead generation. We bypass the gatekeepers and put your offer directly in front of the decision-makers. We utilize advanced firmographic targeting to zero in on specific job titles, company sizes, and industries. Through a mix of Sponsored Content, InMail campaigns, and Lead Gen Forms, we fill your pipeline with high-ticket, qualified prospects who are ready to talk business.'
-              },
-              { 
-                icon: Ghost, title: 'Snapchat Ads', desc: 'Capture Gen Z and Millennial attention with immersive AR lenses and short-form video ads.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-400/30',
-                editorial: 'Snapchat is a heavily underutilized platform with a highly engaged, younger demographic. We capitalize on this lack of competition to acquire customers at a fraction of the cost of Meta or Google. We create immersive AR lenses, fast-paced Story ads, and Collection ads that drive impulse purchases. If your brand targets Gen Z or young Millennials, Snapchat is a goldmine waiting to be tapped.'
-              },
-              { 
-                icon: Pin, title: 'Pinterest Ads', desc: 'High visual discovery intent, perfect for lifestyle, home decor, and fashion e-commerce brands.', gradient: 'from-blue-600 to-blue-700', shadow: 'shadow-blue-600/30',
-                editorial: 'Pinterest is a visual discovery engine where users actively plan their future purchases. Unlike other platforms where ads are disruptive, Pinterest ads are additive to the user experience. We build highly aesthetic, inspirational pins that capture users in the consideration phase. For fashion, home decor, lifestyle, and beauty e-commerce brands, Pinterest offers a highly profitable avenue with exceptional long-term ROI.'
               }
             ].map((v, i) => (
               <div key={i} onClick={() => setActiveEditorial(v)} className="group cursor-pointer relative bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col overflow-hidden text-left">
