@@ -156,8 +156,10 @@ export default function AdminCasesPage() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    if (password) {
+    if (password === 'MarketOps2026') {
       setIsAuthenticated(true);
+    } else {
+      alert("Wrong Password! Please try again.");
     }
   };
 
