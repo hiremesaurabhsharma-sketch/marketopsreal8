@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Users, Search, Music, Briefcase, TrendingDown, Bot, TriangleAlert } from 'lucide-react';
+import { TrendingDown, Bot, TriangleAlert } from 'lucide-react';
+import { FaMeta, FaGoogle, FaTiktok, FaLinkedin } from 'react-icons/fa6';
 
 export default function PerformanceMarketing() {
   const [activeEditorial, setActiveEditorial] = useState(null);
@@ -164,19 +165,19 @@ export default function PerformanceMarketing() {
           <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {[
               { 
-                icon: Users, title: 'Meta Ads (FB & IG)', desc: 'Unmatched demographic targeting and visual selling. We build complex funnel structures for e-commerce and lead gen.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30',
+                icon: FaMeta, title: 'Meta Ads', desc: 'Unmatched demographic targeting and visual selling. We build complex funnel structures for e-commerce and lead gen.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30',
                 editorial: 'Meta (Facebook & Instagram) is unparalleled for visual selling and demographic targeting. We don\'t just \'boost posts.\' We engineer highly structured ad accounts utilizing Advantage+ Shopping, custom audiences, and dynamic retargeting. By rapidly testing creative variations—from UGC to polished graphics—we find the winning angles that force the algorithm to deliver low-cost conversions at scale. Whether it\'s lead gen or e-commerce, we turn Meta into a predictable revenue machine.'
               },
               { 
-                icon: Search, title: 'Google Ads', desc: 'Capture high-intent search traffic. We dominate Search, Shopping, Performance Max, and YouTube ad placements.', gradient: 'from-blue-500 via-blue-500 to-blue-500', shadow: 'shadow-blue-500/30',
+                icon: FaGoogle, title: 'Google Ads', desc: 'Capture high-intent search traffic. We dominate Search, Shopping, Performance Max, and YouTube ad placements.', gradient: 'from-blue-500 via-blue-500 to-blue-500', shadow: 'shadow-blue-500/30',
                 editorial: 'Google Ads is where high-intent buyers go when they are ready to purchase. We dominate the search engine results page (SERP) by targeting exact-match keywords that your competitors miss. Our strategy extends beyond simple search; we build highly profitable Performance Max (PMax) campaigns, optimize Google Shopping feeds, and utilize YouTube ads for top-of-funnel awareness. We capture demand that already exists and convert it ruthlessly.'
               },
               { 
-                icon: Music, title: 'TikTok Ads', desc: 'Explosive viral growth and low CPMs. We create raw, UGC-style creatives that native audiences love to engage with.', gradient: 'from-zinc-900 to-zinc-700', shadow: 'shadow-zinc-900/30',
+                icon: FaTiktok, title: 'TikTok Ads', desc: 'Explosive viral growth and low CPMs. We create raw, UGC-style creatives that native audiences love to engage with.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30',
                 editorial: 'TikTok is no longer just for dancing; it\'s a massive conversion engine. The secret to TikTok ads is that they shouldn\'t look like ads. We specialize in producing raw, lo-fi, User-Generated Content (UGC) that feels native to the platform. By leveraging fast-paced editing, trending audio, and strong psychological hooks in the first 3 seconds, we capture Gen Z and Millennial attention, resulting in explosive viral growth and incredibly low CPMs.'
               },
               { 
-                icon: Briefcase, title: 'LinkedIn Ads', desc: 'The holy grail for B2B. Target decision-makers by job title, company size, and industry for premium lead generation.', gradient: 'from-blue-600 to-blue-700', shadow: 'shadow-blue-600/30',
+                icon: FaLinkedin, title: 'LinkedIn Ads', desc: 'The holy grail for B2B. Target decision-makers by job title, company size, and industry for premium lead generation.', gradient: 'from-blue-600 to-blue-700', shadow: 'shadow-blue-600/30',
                 editorial: 'For B2B companies, LinkedIn is the holy grail of lead generation. We bypass the gatekeepers and put your offer directly in front of the decision-makers. We utilize advanced firmographic targeting to zero in on specific job titles, company sizes, and industries. Through a mix of Sponsored Content, InMail campaigns, and Lead Gen Forms, we fill your pipeline with high-ticket, qualified prospects who are ready to talk business.'
               }
             ].map((v, i) => (
