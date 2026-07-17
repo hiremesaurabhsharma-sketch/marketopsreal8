@@ -1,8 +1,11 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { Smartphone, Clapperboard, Palette, Box, PenTool, Sparkles } from 'lucide-react';
 
 export default function MarketingCreative() {
+  const [activeEditorial, setActiveEditorial] = useState(null);
+
   return (
     <div className="bg-[#f8fafc] min-h-screen font-inter text-[#0f172a] overflow-hidden">
       
@@ -124,14 +127,32 @@ export default function MarketingCreative() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: Smartphone, title: 'UGC Video Ads', desc: 'Authentic User-Generated Content that looks like a native post but converts like a high-end commercial.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' },
-              { icon: Clapperboard, title: 'High-End Production', desc: 'Cinematic brand videos, commercials, and product shoots that establish massive brand authority.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' },
-              { icon: Palette, title: 'Static Graphics & Carousels', desc: 'Direct-response graphic design tailored perfectly for Facebook, Instagram, and LinkedIn feeds.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' },
-              { icon: Box, title: '3D Animation & Motion', desc: 'Scroll-stopping 3D product renders and motion graphics that explain complex products easily.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' },
-              { icon: PenTool, title: 'Direct Response Copywriting', desc: 'Persuasive ad copy and landing page scripts that psychologically compel the user to buy.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' },
-              { icon: Sparkles, title: 'Brand Identity & Guidelines', desc: 'Full-scale brand overhauls including logo design, color theory, and tone of voice development.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' }
+              { 
+                icon: Smartphone, title: 'UGC Video Ads', desc: 'Authentic User-Generated Content that looks like a native post but converts like a high-end commercial.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30',
+                editorial: 'Consumers are blind to traditional ads. Our User-Generated Content (UGC) videos are designed to look native to TikTok, Reels, and Shorts. We script, source creators, and edit these videos to include powerful psychological hooks in the first 3 seconds, ensuring the viewer stops scrolling. This approach drastically lowers your CPA and builds immediate trust.'
+              },
+              { 
+                icon: Clapperboard, title: 'High-End Production', desc: 'Cinematic brand videos, commercials, and product shoots that establish massive brand authority.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30',
+                editorial: 'When you need to position your brand as the premium choice in the market, our high-end production team steps in. We produce cinematic commercials, studio product shoots, and lifestyle videos that scream quality. These assets are perfect for top-of-funnel brand awareness campaigns and landing page hero videos.'
+              },
+              { 
+                icon: Palette, title: 'Static Graphics & Carousels', desc: 'Direct-response graphic design tailored perfectly for Facebook, Instagram, and LinkedIn feeds.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30',
+                editorial: 'While video is king, static graphics and carousels still drive massive volume, especially for retargeting and B2B campaigns. We design scroll-stopping statics with bold typography, contrasting colors, and clear calls-to-action (CTAs) that force the user to click. Our carousels tell a sequential story that educates and converts.'
+              },
+              { 
+                icon: Box, title: '3D Animation & Motion', desc: 'Scroll-stopping 3D product renders and motion graphics that explain complex products easily.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30',
+                editorial: 'For products that are complex, highly technical, or just need that extra "wow" factor, our 3D motion graphics team creates stunning visual representations. We can explode your product to show its inner workings or create surreal, eye-catching animations that stand out in a crowded feed, instantly elevating your perceived value.'
+              },
+              { 
+                icon: PenTool, title: 'Direct Response Copywriting', desc: 'Persuasive ad copy and landing page scripts that psychologically compel the user to buy.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30',
+                editorial: 'Great design is useless without great copy. Our direct response copywriters don\'t write to sound clever; they write to sell. We use proven frameworks like AIDA and PAS to craft primary texts, headlines, and video scripts that agitate the customer\'s pain points and present your product as the only logical solution.'
+              },
+              { 
+                icon: Sparkles, title: 'Brand Identity & Guidelines', desc: 'Full-scale brand overhauls including logo design, color theory, and tone of voice development.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30',
+                editorial: 'A confused mind doesn\'t buy. If your branding is inconsistent, you lose trust instantly. We build comprehensive brand identities from the ground up—including bespoke logos, tailored color palettes, typography systems, and strict brand guidelines—ensuring you look like an enterprise-level company across every touchpoint.'
+              }
             ].map((v, i) => (
-              <div key={i} className="group relative bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col overflow-hidden">
+              <div key={i} onClick={() => setActiveEditorial(v)} className="group cursor-pointer relative bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col overflow-hidden">
                 <div className={`absolute inset-0 bg-gradient-to-br ${v.gradient} translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out z-0`}></div>
                 
                 <div className="relative z-10 flex flex-col h-full">
@@ -296,6 +317,45 @@ export default function MarketingCreative() {
             </Link>
          </div>
       </section>
+
+      {/* EDITORIAL MODAL */}
+      {activeEditorial && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 md:p-6 lg:p-8">
+          <div className="absolute inset-0 bg-[#0f172a]/80 backdrop-blur-md transition-opacity" onClick={() => setActiveEditorial(null)}></div>
+          <div className="relative w-full max-w-2xl bg-white rounded-[2.5rem] shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-in fade-in zoom-in duration-300 border border-slate-100">
+            {/* Header/Gradient */}
+            <div className={`h-40 w-full bg-gradient-to-br ${activeEditorial.gradient} relative shrink-0`}>
+               <button onClick={() => setActiveEditorial(null)} className="absolute top-6 right-6 w-12 h-12 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-colors backdrop-blur-sm z-10">
+                 <span className="material-symbols-outlined font-bold text-xl">close</span>
+               </button>
+               {/* Icon */}
+               <div className="absolute -bottom-12 left-10 w-24 h-24 bg-white rounded-3xl shadow-xl flex items-center justify-center p-1.5">
+                 <div className={`w-full h-full rounded-2xl bg-gradient-to-br ${activeEditorial.gradient} flex items-center justify-center text-white`}>
+                   <activeEditorial.icon size={44} strokeWidth={2.5} />
+                 </div>
+               </div>
+            </div>
+            
+            {/* Content */}
+            <div className="pt-20 pb-12 px-10 md:px-14 overflow-y-auto">
+              <span className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-3 block">Creative Execution</span>
+              <h3 className="text-3xl md:text-5xl font-black text-[#0f172a] mb-8 leading-tight">{activeEditorial.title}</h3>
+              <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium">
+                {activeEditorial.editorial}
+              </p>
+              
+              <div className="mt-12 pt-10 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-6">
+                <button onClick={() => setActiveEditorial(null)} className="text-slate-500 font-bold hover:text-slate-800 transition-colors w-full sm:w-auto">
+                  Close Reading
+                </button>
+                <button onClick={() => { setActiveEditorial(null); window.location.href = '#calendly'; }} className={`px-10 py-4 rounded-full text-white font-bold bg-gradient-to-r ${activeEditorial.gradient} shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 w-full sm:w-auto text-lg`}>
+                  Discuss Strategy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
     </div>
   );
