@@ -1,12 +1,23 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, Suspense } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 import { CASES_DATA } from "@/data/cases";
 
-export default function CasesPage() {
+function CasesContent() {
+  const searchParams = useSearchParams();
+  const urlCategory = searchParams.get("category");
+  
   const [currentCategory, setCurrentCategory] = useState("all");
+
+  useEffect(() => {
+    if (urlCategory) {
+      setCurrentCategory(urlCategory);
+    }
+  }, [urlCategory]);
+
   const [searchQuery, setSearchQuery] = useState("");
   const [sortOrder, setSortOrder] = useState("relevance");
   const [selectedCase, setSelectedCase] = useState(null);
@@ -403,5 +414,13 @@ export default function CasesPage() {
 
       </main>
     </div>
+  );
+}
+
+export default function CasesPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#f8fafc] flex items-center justify-center">Loading case studies...</div>}>
+      <CasesContent />
+    </Suspense>
   );
 }

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Smartphone, Clapperboard, Palette, Box, PenTool, Sparkles } from 'lucide-react';
+import RelatedCasesBanner from '@/components/RelatedCasesBanner';
 
 export default function MarketingCreative() {
   const [activeEditorial, setActiveEditorial] = useState(null);
@@ -260,6 +261,8 @@ export default function MarketingCreative() {
           </div>
         </div>
       </section>
+
+      <RelatedCasesBanner category="creative" title="See Our Creative Work in Action" />
 
       {/* CALENDLY EMBED SECTION */}
       <section id="calendly" className="py-24 bg-white relative">

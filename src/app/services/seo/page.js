@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { TrendingDown, CircleDollarSign, Zap, ShieldAlert, FileEdit, Globe, MapPin, Settings, ShoppingBag, TrendingUp } from 'lucide-react';
+import { TrendingDown, CircleDollarSign, Zap, ShieldAlert, FileEdit, Globe, MapPin, Settings, ShoppingBag, TrendingUp, Search, Database } from 'lucide-react';
+import RelatedCasesBanner from '@/components/RelatedCasesBanner';
 
 export default function SEOOptimization() {
   return (
@@ -252,6 +253,8 @@ export default function SEOOptimization() {
           </div>
         </div>
       </section>
+
+      <RelatedCasesBanner category="seo" title="See How We Scale Organic Traffic" />
 
       {/* CALENDLY EMBED SECTION */}
       <section id="calendly" className="py-24 bg-white relative">

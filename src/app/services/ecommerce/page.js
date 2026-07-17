@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { ShoppingBag, TrendingUp, Target, CheckCircle } from 'lucide-react';
 import { FaAmazon } from 'react-icons/fa';
+import RelatedCasesBanner from '@/components/RelatedCasesBanner';
 
 export default function EcommerceSolutions() {
   const [activeEditorial, setActiveEditorial] = useState(null);
@@ -273,6 +274,8 @@ export default function EcommerceSolutions() {
           </div>
         </div>
       </section>
+
+      <RelatedCasesBanner category="ecommerce" title="See How We Scale eCommerce Brands" />
 
       {/* CALENDLY EMBED SECTION */}
       <section id="calendly" className="py-32 bg-white relative border-t border-slate-200">

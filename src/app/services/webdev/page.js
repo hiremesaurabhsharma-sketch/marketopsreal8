@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { ShoppingBag, LayoutDashboard, Zap, Palette, Smartphone, Link2 } from 'lucide-react';
+import RelatedCasesBanner from '@/components/RelatedCasesBanner';
 
 export default function WebsiteDevelopment() {
   return (
@@ -240,6 +241,8 @@ export default function WebsiteDevelopment() {
           </div>
         </div>
       </section>
+
+      <RelatedCasesBanner category="webdev" title="See How We Scale Web Projects" />
 
       {/* CALENDLY EMBED SECTION */}
       <section id="calendly" className="py-24 bg-white relative">

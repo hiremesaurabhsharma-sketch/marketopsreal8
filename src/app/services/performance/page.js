@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { TrendingDown, Bot, TriangleAlert } from 'lucide-react';
 import { FaMeta, FaGoogle, FaTiktok, FaLinkedin } from 'react-icons/fa6';
+import RelatedCasesBanner from '@/components/RelatedCasesBanner';
 
 export default function PerformanceMarketing() {
   const [activeEditorial, setActiveEditorial] = useState(null);
@@ -290,6 +291,8 @@ export default function PerformanceMarketing() {
           </div>
         </div>
       </section>
+
+      <RelatedCasesBanner category="performance" title="See How We Scale Performance Ads" />
 
       {/* CALENDLY EMBED SECTION */}
       <section id="calendly" className="py-24 bg-white relative">

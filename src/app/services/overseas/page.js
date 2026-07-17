@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { Globe, Building2, Languages, CreditCard, Ship, Handshake } from 'lucide-react';
+import { Globe, Building2, Languages, CreditCard, Ship, Handshake, Globe2, Map } from 'lucide-react';
+import RelatedCasesBanner from '@/components/RelatedCasesBanner';
 
 export default function OverseasBusiness() {
   return (
@@ -239,6 +240,8 @@ export default function OverseasBusiness() {
           </div>
         </div>
       </section>
+
+      <RelatedCasesBanner category="overseas" title="See Our Overseas Expansion Results" />
 
       {/* CALENDLY EMBED SECTION */}
       <section id="calendly" className="py-24 bg-white relative">
