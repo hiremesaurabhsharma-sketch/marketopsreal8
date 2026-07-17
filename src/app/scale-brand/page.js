@@ -401,6 +401,7 @@ export default function ScaleBrandPage() {
           </div>
         </section>
 
-      </div>
+      </main>
+    </>
   );
 }
