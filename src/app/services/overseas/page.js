@@ -8,26 +8,26 @@ export default function OverseasBusiness() {
       
       {/* 1. HERO SECTION (Engaging & Captivating) */}
       <section className="relative pt-40 pb-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(99,102,241,0.15),transparent_50%)] pointer-events-none"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(59,130,246,0.15),transparent_50%)] pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(6,182,212,0.15),transparent_50%)] pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(6,182,212,0.15),transparent_50%)] pointer-events-none"></div>
         
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             
             <div className="lg:w-1/2 space-y-8">
-              <span className="inline-block bg-indigo-100 text-indigo-700 text-xs px-5 py-2 rounded-full font-bold uppercase tracking-widest shadow-sm border border-indigo-200">
+              <span className="inline-block bg-blue-100 text-blue-700 text-xs px-5 py-2 rounded-full font-bold uppercase tracking-widest shadow-sm border border-blue-200">
                 Overseas Business Dev
               </span>
               <h1 className="text-5xl md:text-7xl font-black tracking-tight text-[#0f172a] leading-[1.1]">
                 Expand Beyond Borders <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-blue-500">Globally.</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-500">Globally.</span>
               </h1>
               <p className="text-slate-600 text-xl font-medium leading-relaxed max-w-lg">
                 We help ambitious brands launch into international markets with localized marketing, compliance guidance, and bulletproof global growth strategies.
               </p>
               
               <div className="flex flex-wrap gap-4 pt-4">
-                <a className="inline-flex items-center justify-center text-white font-bold text-lg px-10 py-5 rounded-full bg-indigo-600 hover:bg-indigo-700 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(99,102,241,0.3)] transition-all" href="#calendly">
+                <a className="inline-flex items-center justify-center text-white font-bold text-lg px-10 py-5 rounded-full bg-blue-600 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(6,182,212,0.3)] transition-all" href="#calendly">
                   Consult a Global Expert
                 </a>
                 <a className="inline-flex items-center justify-center text-slate-700 font-bold text-lg px-10 py-5 rounded-full bg-white border border-slate-200 hover:bg-slate-50 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.05)] transition-all" href="#services">
@@ -39,7 +39,7 @@ export default function OverseasBusiness() {
             <div className="lg:w-1/2 w-full relative">
               {/* Floating Global Graphic */}
               <div className="relative rounded-[2.5rem] bg-white p-8 shadow-[0_30px_100px_rgba(0,0,0,0.08)] border border-slate-100 transform rotate-[-2deg] hover:rotate-0 transition-transform duration-700">
-                <div className="absolute -top-6 -right-6 z-20 bg-gradient-to-r from-indigo-500 to-blue-500 text-white p-6 rounded-3xl shadow-xl animate-bounce" style={{animationDuration: '3s'}}>
+                <div className="absolute -top-6 -right-6 z-20 bg-gradient-to-r from-blue-500 to-blue-500 text-white p-6 rounded-3xl shadow-xl animate-bounce" style={{animationDuration: '3s'}}>
                   <p className="text-sm font-bold opacity-80 uppercase tracking-widest">Global Reach</p>
                   <p className="text-4xl font-black">+450% 🌍</p>
                 </div>
@@ -67,13 +67,13 @@ export default function OverseasBusiness() {
       <section className="py-24 bg-white relative border-t border-slate-100">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-            <span className="text-indigo-600 font-bold tracking-widest uppercase text-sm">Our Strategy</span>
+            <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">Our Strategy</span>
             <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">The Global Expansion Playbook</h2>
             <p className="text-slate-600 text-lg font-medium">Entering a new country requires more than just translating your ads. We build localized engines of growth.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 relative">
-             <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-indigo-100 via-indigo-400 to-indigo-100 -translate-y-1/2 z-0"></div>
+             <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-blue-100 via-blue-400 to-blue-100 -translate-y-1/2 z-0"></div>
 
              {[
                {
@@ -117,19 +117,19 @@ export default function OverseasBusiness() {
       <section id="services" className="py-24 bg-[#f8fafc] relative border-t border-slate-200">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-indigo-600 font-bold tracking-widest uppercase text-sm">Expansion Services</span>
+            <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">Expansion Services</span>
             <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Global Business Solutions</h2>
             <p className="text-slate-600 text-lg font-medium">Everything you need to successfully enter and dominate a foreign market.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: Globe, title: 'Market Entry Strategy', desc: 'Comprehensive research on local competitors, consumer purchasing power, and cultural buying habits.', gradient: 'from-blue-500 to-indigo-600', shadow: 'shadow-blue-500/30' },
+              { icon: Globe, title: 'Market Entry Strategy', desc: 'Comprehensive research on local competitors, consumer purchasing power, and cultural buying habits.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' },
               { icon: Building2, title: 'Company Formation', desc: 'Guidance on legal entities, tax implications, and remote company registration in the target country.', gradient: 'from-slate-700 to-slate-900', shadow: 'shadow-slate-700/30' },
-              { icon: Languages, title: 'Cultural Localization', desc: 'Translating and transcreating your website, ads, and packaging so it resonates with native speakers.', gradient: 'from-purple-500 to-pink-600', shadow: 'shadow-pink-500/30' },
-              { icon: CreditCard, title: 'Payment Gateways', desc: 'Setting up local merchant accounts and localized checkout experiences to reduce cart abandonment.', gradient: 'from-emerald-400 to-teal-500', shadow: 'shadow-teal-500/30' },
-              { icon: Ship, title: 'Logistics & 3PL', desc: 'Connecting you with vetted international fulfillment centers to ensure fast, cheap delivery.', gradient: 'from-sky-400 to-blue-500', shadow: 'shadow-blue-500/30' },
-              { icon: Handshake, title: 'Local Partnerships', desc: 'Brokering deals with local influencers, affiliates, and retail distributors to fast-track your growth.', gradient: 'from-amber-400 to-orange-500', shadow: 'shadow-orange-500/30' }
+              { icon: Languages, title: 'Cultural Localization', desc: 'Translating and transcreating your website, ads, and packaging so it resonates with native speakers.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' },
+              { icon: CreditCard, title: 'Payment Gateways', desc: 'Setting up local merchant accounts and localized checkout experiences to reduce cart abandonment.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' },
+              { icon: Ship, title: 'Logistics & 3PL', desc: 'Connecting you with vetted international fulfillment centers to ensure fast, cheap delivery.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' },
+              { icon: Handshake, title: 'Local Partnerships', desc: 'Brokering deals with local influencers, affiliates, and retail distributors to fast-track your growth.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' }
             ].map((v, i) => (
               <div key={i} className="group relative bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col overflow-hidden">
                 <div className={`absolute inset-0 bg-gradient-to-br ${v.gradient} translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out z-0`}></div>
@@ -153,14 +153,14 @@ export default function OverseasBusiness() {
 
       {/* 3. WHAT YOU GET */}
       <section className="py-24 bg-[#0f172a] text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-indigo-600/20 blur-[150px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/20 blur-[150px] rounded-full pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-600/20 blur-[150px] rounded-full pointer-events-none"></div>
 
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
            <div className="flex flex-col md:flex-row gap-16 items-center">
              
              <div className="md:w-1/2 space-y-8">
-               <h2 className="text-4xl md:text-5xl font-black text-white">What You Get <br/><span className="text-indigo-400">When You Partner With Us</span></h2>
+               <h2 className="text-4xl md:text-5xl font-black text-white">What You Get <br/><span className="text-blue-400">When You Partner With Us</span></h2>
                <p className="text-slate-400 text-lg font-medium max-w-lg">
                  We are not just another agency. We are your global growth partners. Here is exactly what you achieve when you plug your business into the MarketOps ecosystem.
                </p>
@@ -173,8 +173,8 @@ export default function OverseasBusiness() {
                    { title: 'End-to-End Execution', desc: 'We handle everything from market research to media buying across borders.' }
                  ].map((benefit, i) => (
                    <div key={i} className="flex items-start gap-4">
-                      <div className="w-8 h-8 rounded-full bg-indigo-500/20 flex items-center justify-center shrink-0 mt-1">
-                        <span className="material-symbols-outlined text-indigo-400 text-[18px]">check</span>
+                      <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0 mt-1">
+                        <span className="material-symbols-outlined text-blue-400 text-[18px]">check</span>
                       </div>
                       <div>
                         <h4 className="text-xl font-bold text-white mb-1">{benefit.title}</h4>
@@ -191,15 +191,15 @@ export default function OverseasBusiness() {
                   <p className="text-slate-400 font-medium">New Geographies</p>
                 </div>
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors mt-8">
-                  <h5 className="text-5xl font-black text-indigo-400 mb-2">0</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">0</h5>
                   <p className="text-slate-400 font-medium">Compliance Headaches</p>
                 </div>
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors">
-                  <h5 className="text-5xl font-black text-cyan-400 mb-2">2x</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">2x</h5>
                   <p className="text-slate-400 font-medium">Customer Base Size</p>
                 </div>
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors mt-8">
-                  <h5 className="text-5xl font-black text-purple-400 mb-2">100%</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">100%</h5>
                   <p className="text-slate-400 font-medium">Localized Strategy</p>
                 </div>
              </div>
@@ -212,7 +212,7 @@ export default function OverseasBusiness() {
       <section className="py-24 bg-[#f8fafc] border-b border-slate-200">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-16 space-y-4">
-            <span className="text-indigo-600 font-bold tracking-widest uppercase text-sm">FAQ</span>
+            <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">FAQ</span>
             <h2 className="text-3xl md:text-5xl font-black text-[#0f172a]">Frequently Asked Questions</h2>
             <p className="text-slate-600 text-lg font-medium">Everything you need to know about taking your business global.</p>
           </div>
@@ -258,7 +258,7 @@ export default function OverseasBusiness() {
                   { num: "03", title: "Go-To-Market Roadmap", desc: "The step-by-step advertising and localization strategy to generate your first $100k in a new country." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start">
-                    <span className="text-indigo-500 font-black text-xl">{item.num}</span>
+                    <span className="text-blue-500 font-black text-xl">{item.num}</span>
                     <div>
                       <h4 className="text-lg font-bold text-[#0f172a] mb-1">{item.title}</h4>
                       <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
@@ -272,7 +272,7 @@ export default function OverseasBusiness() {
               <h4 className="text-2xl font-bold text-[#0f172a] mb-2">Schedule Session</h4>
               <p className="text-slate-500 mb-8">Select a slot on our live team calendar</p>
               <div className="space-y-4">
-                <a href="https://wa.me/919424995426" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-indigo-600 text-white hover:bg-indigo-700 transition-colors shadow-md">
+                <a href="https://wa.me/919424995426" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-md">
                   <span className="material-symbols-outlined">chat</span> WhatsApp Direct booking
                 </a>
                 <a href="mailto:connect@marketops.in" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 transition-colors">
@@ -291,7 +291,7 @@ export default function OverseasBusiness() {
             <p className="text-slate-600 text-xl font-medium mb-10 max-w-2xl mx-auto">
               Join the elite group of brands that are crushing their global goals with MarketOps.
             </p>
-            <Link className="inline-flex items-center justify-center text-white font-bold text-xl px-12 py-6 rounded-full bg-indigo-600 hover:bg-indigo-700 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(99,102,241,0.4)] transition-all" href="/contact">
+            <Link className="inline-flex items-center justify-center text-white font-bold text-xl px-12 py-6 rounded-full bg-blue-600 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(6,182,212,0.4)] transition-all" href="/contact">
               Let's Build Your Empire
             </Link>
          </div>

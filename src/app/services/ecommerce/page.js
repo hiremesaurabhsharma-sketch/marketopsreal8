@@ -11,7 +11,7 @@ export default function EcommerceSolutions() {
       
       {/* 1. HERO SECTION (Engaging & Captivating) */}
       <section className="relative pt-40 pb-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(59,130,246,0.15),transparent_50%)] pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(6,182,212,0.15),transparent_50%)] pointer-events-none"></div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(6,182,212,0.15),transparent_50%)] pointer-events-none"></div>
         
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
@@ -23,14 +23,14 @@ export default function EcommerceSolutions() {
               </span>
               <h1 className="text-4xl md:text-7xl font-black tracking-tight text-[#0f172a] leading-tight md:leading-[1.1]">
                 Stop Losing Sales. <br />
-                Start Scaling <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Revenue.</span>
+                Start Scaling <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">Revenue.</span>
               </h1>
               <p className="text-slate-600 text-base sm:text-lg md:text-xl font-medium leading-relaxed max-w-lg">
                 We don't just build stores; we engineer highly profitable e-commerce ecosystems designed to capture attention, maximize Average Order Value, and create lifelong customers.
               </p>
               
               <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-4 w-full">
-                <Link className="w-full sm:w-auto text-center inline-flex items-center justify-center text-white font-bold text-base md:text-lg px-8 md:px-10 py-4 md:py-5 rounded-full bg-blue-600 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(37,99,235,0.3)] transition-all" href="#calendly">
+                <Link className="w-full sm:w-auto text-center inline-flex items-center justify-center text-white font-bold text-base md:text-lg px-8 md:px-10 py-4 md:py-5 rounded-full bg-blue-600 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(6,182,212,0.3)] transition-all" href="#calendly">
                   Scale My Store Now
                 </Link>
                 <Link className="w-full sm:w-auto text-center inline-flex items-center justify-center text-slate-700 font-bold text-base md:text-lg px-8 md:px-10 py-4 md:py-5 rounded-full bg-white border border-slate-200 hover:bg-slate-50 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.05)] transition-all" href="#capabilities">
@@ -42,12 +42,12 @@ export default function EcommerceSolutions() {
             <div className="lg:w-1/2 w-full relative">
               {/* "Man Mohne Wala" Floating Dashboard Graphic */}
               <div className="relative rounded-[2.5rem] bg-white p-8 shadow-[0_30px_100px_rgba(0,0,0,0.08)] border border-slate-100 transform rotate-[-2deg] hover:rotate-0 transition-transform duration-700">
-                <div className="absolute -top-6 -right-6 z-20 bg-gradient-to-r from-[#00c6ff] to-[#0072ff] text-white p-6 rounded-3xl shadow-xl animate-bounce" style={{animationDuration: '3s'}}>
+                <div className="absolute -top-6 -right-6 z-20 bg-gradient-to-r from-blue-500 to-blue-700 text-white p-6 rounded-3xl shadow-xl animate-bounce" style={{animationDuration: '3s'}}>
                   <p className="text-sm font-bold opacity-80 uppercase tracking-widest">Monthly ROAS</p>
                   <p className="text-4xl font-black">4.8x 🚀</p>
                 </div>
                 
-                <div className="absolute -bottom-10 -left-10 z-20 bg-emerald-500 text-white p-6 rounded-3xl shadow-xl transform rotate-[5deg]">
+                <div className="absolute -bottom-10 -left-10 z-20 bg-blue-500 text-white p-6 rounded-3xl shadow-xl transform rotate-[5deg]">
                   <p className="text-sm font-bold opacity-80 uppercase tracking-widest">Conversion Rate</p>
                   <p className="text-3xl font-black">+142% 📈</p>
                 </div>
@@ -58,14 +58,14 @@ export default function EcommerceSolutions() {
                        <p className="text-slate-400 font-bold text-sm">Total Sales</p>
                        <p className="text-5xl font-black text-slate-800">$2.4M</p>
                      </div>
-                     <div className="bg-emerald-100 text-emerald-600 px-3 py-1 rounded-lg font-bold text-sm">
+                     <div className="bg-blue-100 text-blue-600 px-3 py-1 rounded-lg font-bold text-sm">
                        +34.5% vs last month
                      </div>
                   </div>
                   {/* Fake Graph */}
                   <div className="h-40 flex items-end justify-between gap-2 pt-4">
                     {[30, 45, 25, 60, 50, 80, 65, 90, 75, 100].map((h, i) => (
-                       <div key={i} className="w-full bg-gradient-to-t from-blue-100 to-blue-500 rounded-t-md hover:bg-cyan-400 transition-colors cursor-pointer" style={{height: `${h}%`}}></div>
+                       <div key={i} className="w-full bg-gradient-to-t from-blue-100 to-blue-500 rounded-t-md hover:bg-blue-400 transition-colors cursor-pointer" style={{height: `${h}%`}}></div>
                     ))}
                   </div>
                 </div>
@@ -142,19 +142,19 @@ export default function EcommerceSolutions() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { 
-                icon: ShoppingBag, title: 'Shopify Plus Development', desc: 'Custom theme architecture and headless builds that prioritize speed, UX, and conversion.', gradient: 'from-emerald-400 to-teal-500', shadow: 'shadow-teal-500/30',
+                icon: ShoppingBag, title: 'Shopify Plus Development', desc: 'Custom theme architecture and headless builds that prioritize speed, UX, and conversion.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30',
                 editorial: 'In the modern eCommerce battlefield, slow and clunky stores die quickly. Our Shopify Plus development isn\'t just about making things look pretty; it\'s about building a high-speed, frictionless buying engine. We implement custom architectures, headless builds, and advanced API integrations that handle massive traffic spikes without breaking a sweat. Every pixel is engineered to reduce bounce rates, increase average order value, and guide the user seamlessly to the checkout. We transform your store into a scalable digital asset.'
               },
               { 
-                icon: Target, title: 'Growth Marketing', desc: 'Omnichannel ad strategies across Meta, Google, and TikTok to acquire high-intent buyers profitably.', gradient: 'from-blue-500 to-indigo-600', shadow: 'shadow-blue-500/30',
+                icon: Target, title: 'Growth Marketing', desc: 'Omnichannel ad strategies across Meta, Google, and TikTok to acquire high-intent buyers profitably.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30',
                 editorial: 'Traffic is useless if it doesn\'t convert. Our Growth Marketing methodology revolves around acquiring highly qualified, intent-driven traffic at the lowest possible cost. We build omnichannel funnels across Meta, Google Ads, and TikTok, utilizing advanced server-side tracking (CAPI) and dynamic product ads. By aggressively testing creatives and leveraging machine learning algorithms, we continuously drive down your Customer Acquisition Cost (CAC) while scaling your daily revenue.'
               },
               { 
-                icon: TrendingUp, title: 'Conversion Rate Optimization', desc: 'A/B testing, heatmap analysis, and UI improvements to squeeze more revenue out of your existing traffic.', gradient: 'from-purple-500 to-fuchsia-600', shadow: 'shadow-purple-500/30',
+                icon: TrendingUp, title: 'Conversion Rate Optimization', desc: 'A/B testing, heatmap analysis, and UI improvements to squeeze more revenue out of your existing traffic.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30',
                 editorial: 'Why pay for more traffic when you can generate more revenue from the visitors you already have? Our Conversion Rate Optimization (CRO) experts dive deep into user psychology, deploying heatmaps, session recordings, and rigorous A/B testing. We identify exactly where users drop off—whether it\'s confusing navigation, a cluttered product page, or a lengthy checkout—and systematically eliminate that friction. A 1% increase in conversion rate can double your profit margins overnight.'
               },
               { 
-                icon: Mail, title: 'Email & SMS Automation', desc: 'Complex Klaviyo flows that recover abandoned carts, nurture leads, and maximize Customer Lifetime Value.', gradient: 'from-amber-400 to-orange-500', shadow: 'shadow-orange-500/30',
+                icon: Mail, title: 'Email & SMS Automation', desc: 'Complex Klaviyo flows that recover abandoned carts, nurture leads, and maximize Customer Lifetime Value.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30',
                 editorial: 'Your most profitable customers are the ones you already have. We build highly sophisticated retention engines using Klaviyo and SMS to maximize your Customer Lifetime Value (LTV). From multi-step abandoned cart recoveries that claw back lost revenue, to hyper-personalized post-purchase flows that build brand loyalty, we ensure you stay top-of-mind. We automate revenue generation so your brand makes money on autopilot, 24/7.'
               },
               { 
@@ -162,7 +162,7 @@ export default function EcommerceSolutions() {
                 editorial: 'Traditional monolithic eCommerce platforms often limit creativity and suffer from poor page load speeds. Headless Commerce solves this by decoupling your frontend storefront from the backend logic. We utilize modern frameworks like Next.js and React to build bespoke, lightning-fast interfaces while relying on robust backends like Shopify or BigCommerce for order management. The result? Unprecedented speed, limitless design freedom, and a significantly higher conversion rate.'
               },
               { 
-                icon: BarChart, title: 'Advanced Data Analytics', desc: 'Custom data pipelines and dashboards that track every single touchpoint and penny of your ad spend.', gradient: 'from-cyan-400 to-blue-500', shadow: 'shadow-blue-500/30',
+                icon: BarChart, title: 'Advanced Data Analytics', desc: 'Custom data pipelines and dashboards that track every single touchpoint and penny of your ad spend.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30',
                 editorial: 'You can\'t scale what you can\'t measure. In a post-iOS 14 world, standard pixel tracking is wildly inaccurate. We engineer custom data pipelines and server-side tracking solutions to give you a single source of truth. We build real-time dashboards utilizing Looker Studio and Triple Whale that display your true Marketing Efficiency Ratio (MER), Profit on Ad Spend (POAS), and blended CAC. With us, you make decisions based on hard data, not gut feelings.'
               }
             ].map((v, i) => (
@@ -189,7 +189,7 @@ export default function EcommerceSolutions() {
       {/* 3. WHAT YOU GET (Logo ko kya milega) */}
       <section className="py-24 bg-[#0f172a] text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/20 blur-[150px] rounded-full pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-cyan-600/20 blur-[150px] rounded-full pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-600/20 blur-[150px] rounded-full pointer-events-none"></div>
 
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
            <div className="flex flex-col md:flex-row gap-16 items-center">
@@ -222,7 +222,7 @@ export default function EcommerceSolutions() {
 
              <div className="md:w-1/2 w-full grid grid-cols-2 gap-6">
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors">
-                  <h5 className="text-5xl font-black text-emerald-400 mb-2">3x</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">3x</h5>
                   <p className="text-slate-400 font-medium">Average ROAS</p>
                 </div>
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors mt-8">
@@ -230,11 +230,11 @@ export default function EcommerceSolutions() {
                   <p className="text-slate-400 font-medium">Uptime Guarantee</p>
                 </div>
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors">
-                  <h5 className="text-5xl font-black text-cyan-400 mb-2">-40%</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">-40%</h5>
                   <p className="text-slate-400 font-medium">Cart Abandonment Drop</p>
                 </div>
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors mt-8">
-                  <h5 className="text-5xl font-black text-indigo-400 mb-2">24/7</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">24/7</h5>
                   <p className="text-slate-400 font-medium">Dedicated Support</p>
                 </div>
              </div>
@@ -326,7 +326,7 @@ export default function EcommerceSolutions() {
             <p className="text-slate-600 text-xl font-medium mb-10 max-w-2xl mx-auto">
               Join the elite group of eCommerce brands that are crushing their revenue goals with MarketOps.
             </p>
-            <Link className="inline-flex items-center justify-center text-white font-bold text-xl px-12 py-6 rounded-full bg-blue-600 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(37,99,235,0.4)] transition-all" href="/contact">
+            <Link className="inline-flex items-center justify-center text-white font-bold text-xl px-12 py-6 rounded-full bg-blue-600 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(6,182,212,0.4)] transition-all" href="/contact">
               Let's Build Your Empire
             </Link>
          </div>

@@ -8,26 +8,26 @@ export default function SEOOptimization() {
       
       {/* 1. HERO SECTION (Engaging & Captivating) */}
       <section className="relative pt-40 pb-32">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(245,158,11,0.15),transparent_50%)] pointer-events-none"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(249,115,22,0.15),transparent_50%)] pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(6,182,212,0.15),transparent_50%)] pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(6,182,212,0.15),transparent_50%)] pointer-events-none"></div>
         
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             
             <div className="lg:w-1/2 space-y-8">
-              <span className="inline-block bg-amber-100 text-amber-700 text-xs px-5 py-2 rounded-full font-bold uppercase tracking-widest shadow-sm border border-amber-200">
+              <span className="inline-block bg-blue-100 text-blue-700 text-xs px-5 py-2 rounded-full font-bold uppercase tracking-widest shadow-sm border border-blue-200">
                 SEO Optimization
               </span>
               <h1 className="text-5xl md:text-7xl font-black tracking-tight text-[#0f172a] leading-[1.1]">
                 Rank Higher. <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Dominate Search.</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-500">Dominate Search.</span>
               </h1>
               <p className="text-slate-600 text-xl font-medium leading-relaxed max-w-lg">
                 Stop paying for every single click. Build long-term authority, organic traffic channels, and reliable search ranks that drive sales while you sleep.
               </p>
               
               <div className="flex flex-wrap gap-4 pt-4">
-                <a className="inline-flex items-center justify-center text-white font-bold text-lg px-10 py-5 rounded-full bg-amber-500 hover:bg-amber-600 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(245,158,11,0.3)] transition-all" href="#calendly">
+                <a className="inline-flex items-center justify-center text-white font-bold text-lg px-10 py-5 rounded-full bg-blue-500 hover:bg-blue-600 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(6,182,212,0.3)] transition-all" href="#calendly">
                   Get Free SEO Audit
                 </a>
                 <a className="inline-flex items-center justify-center text-slate-700 font-bold text-lg px-10 py-5 rounded-full bg-white border border-slate-200 hover:bg-slate-50 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.05)] transition-all" href="#challenges">
@@ -39,12 +39,12 @@ export default function SEOOptimization() {
             <div className="lg:w-1/2 w-full relative">
               {/* Floating Dashboard Graphic */}
               <div className="relative rounded-[2.5rem] bg-white p-8 shadow-[0_30px_100px_rgba(0,0,0,0.08)] border border-slate-100 transform rotate-[-2deg] hover:rotate-0 transition-transform duration-700">
-                <div className="absolute -top-6 -right-6 z-20 bg-gradient-to-r from-amber-400 to-orange-500 text-white p-6 rounded-3xl shadow-xl animate-bounce" style={{animationDuration: '3s'}}>
+                <div className="absolute -top-6 -right-6 z-20 bg-gradient-to-r from-blue-400 to-blue-500 text-white p-6 rounded-3xl shadow-xl animate-bounce" style={{animationDuration: '3s'}}>
                   <p className="text-sm font-bold opacity-80 uppercase tracking-widest">Organic Traffic</p>
                   <p className="text-4xl font-black">+210% 📈</p>
                 </div>
                 
-                <div className="absolute -bottom-10 -left-10 z-20 bg-emerald-500 text-white p-6 rounded-3xl shadow-xl transform rotate-[5deg]">
+                <div className="absolute -bottom-10 -left-10 z-20 bg-blue-500 text-white p-6 rounded-3xl shadow-xl transform rotate-[5deg]">
                   <p className="text-sm font-bold opacity-80 uppercase tracking-widest">Page 1 Ranks</p>
                   <p className="text-3xl font-black">100+ 🏆</p>
                 </div>
@@ -67,7 +67,7 @@ export default function SEOOptimization() {
       <section id="challenges" className="py-24 bg-white border-t border-slate-100 relative">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-amber-600 font-bold tracking-widest uppercase text-sm">Common Challenges</span>
+            <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">Common Challenges</span>
             <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Common Challenges Before SEO in Today’s Digital Era</h2>
             <p className="text-slate-600 text-lg font-medium">Organic search landscape is highly competitive. Without smart SEO, your website gets buried under competitors.</p>
           </div>
@@ -96,7 +96,7 @@ export default function SEOOptimization() {
       <section className="py-24 bg-[#f8fafc] relative">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-            <span className="text-amber-600 font-bold tracking-widest uppercase text-sm">Our Strategy</span>
+            <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">Our Strategy</span>
             <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">The SEO Growth Blueprint</h2>
             <p className="text-slate-600 text-lg font-medium">We use data-driven, white-hat frameworks to permanently claim rankings on search engines.</p>
           </div>
@@ -126,19 +126,19 @@ export default function SEOOptimization() {
       <section className="py-24 bg-white relative border-t border-slate-100">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-amber-600 font-bold tracking-widest uppercase text-sm">SEO Verticals</span>
+            <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">SEO Verticals</span>
             <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Our Comprehensive SEO Services</h2>
             <p className="text-slate-600 text-lg font-medium">Dedicated search strategies engineered for every business model.</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: FileEdit, title: 'On-Page SEO', desc: 'Improves rankings, increases organic traffic, enhances user experience, and helps search engines understand and index your website content effectively.', gradient: 'from-amber-400 to-orange-500', shadow: 'shadow-orange-500/30' },
-              { icon: Globe, title: 'Off-Page SEO', desc: 'Builds website authority through backlinks, brand mentions, and external signals, improving rankings, trust, credibility, and organic traffic.', gradient: 'from-blue-500 to-indigo-600', shadow: 'shadow-blue-500/30' },
-              { icon: MapPin, title: 'Local SEO', desc: 'Helps your business appear in nearby searches, improves Google Maps visibility, attracts local customers, and increases calls, visits, and sales.', gradient: 'from-red-500 to-rose-600', shadow: 'shadow-red-500/30' },
+              { icon: FileEdit, title: 'On-Page SEO', desc: 'Improves rankings, increases organic traffic, enhances user experience, and helps search engines understand and index your website content effectively.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' },
+              { icon: Globe, title: 'Off-Page SEO', desc: 'Builds website authority through backlinks, brand mentions, and external signals, improving rankings, trust, credibility, and organic traffic.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' },
+              { icon: MapPin, title: 'Local SEO', desc: 'Helps your business appear in nearby searches, improves Google Maps visibility, attracts local customers, and increases calls, visits, and sales.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' },
               { icon: Settings, title: 'Technical SEO', desc: 'Improves website speed, crawlability, indexing, mobile performance, and security, helping search engines understand your site.', gradient: 'from-slate-700 to-slate-900', shadow: 'shadow-slate-700/30' },
-              { icon: ShoppingBag, title: 'E-Commerce SEO', desc: 'Improves product visibility, boosts organic traffic, enhances rankings, and increases online sales by optimizing product pages and categories.', gradient: 'from-emerald-400 to-teal-500', shadow: 'shadow-teal-500/30' },
-              { icon: TrendingUp, title: 'Landing Page Optimization', desc: 'Increases conversions, improves user experience, and reduces bounce rate for better leads and sales.', gradient: 'from-purple-500 to-fuchsia-600', shadow: 'shadow-purple-500/30' }
+              { icon: ShoppingBag, title: 'E-Commerce SEO', desc: 'Improves product visibility, boosts organic traffic, enhances rankings, and increases online sales by optimizing product pages and categories.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' },
+              { icon: TrendingUp, title: 'Landing Page Optimization', desc: 'Increases conversions, improves user experience, and reduces bounce rate for better leads and sales.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' }
             ].map((v, i) => (
               <div key={i} className="group relative bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col overflow-hidden">
                 <div className={`absolute inset-0 bg-gradient-to-br ${v.gradient} translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out z-0`}></div>
@@ -162,14 +162,14 @@ export default function SEOOptimization() {
 
       {/* 3. WHAT YOU GET */}
       <section className="py-24 bg-[#0f172a] text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-amber-600/20 blur-[150px] rounded-full pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-orange-600/20 blur-[150px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/20 blur-[150px] rounded-full pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-600/20 blur-[150px] rounded-full pointer-events-none"></div>
 
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
            <div className="flex flex-col md:flex-row gap-16 items-center">
              
              <div className="md:w-1/2 space-y-8">
-               <h2 className="text-4xl md:text-5xl font-black text-white">What You Get <br/><span className="text-amber-400">When You Partner With Us</span></h2>
+               <h2 className="text-4xl md:text-5xl font-black text-white">What You Get <br/><span className="text-blue-400">When You Partner With Us</span></h2>
                <p className="text-slate-400 text-lg font-medium max-w-lg">
                  We are not just another agency. We are your search partners. Here is exactly what you achieve when you plug your business into the MarketOps ecosystem.
                </p>
@@ -182,8 +182,8 @@ export default function SEOOptimization() {
                    { title: 'Long-Term Compound Growth', desc: 'Unlike ads that stop when you stop paying, SEO continues to yield results for years.' }
                  ].map((benefit, i) => (
                    <div key={i} className="flex items-start gap-4">
-                      <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center shrink-0 mt-1">
-                        <span className="material-symbols-outlined text-amber-400 text-[18px]">check</span>
+                      <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0 mt-1">
+                        <span className="material-symbols-outlined text-blue-400 text-[18px]">check</span>
                       </div>
                       <div>
                         <h4 className="text-xl font-bold text-white mb-1">{benefit.title}</h4>
@@ -196,19 +196,19 @@ export default function SEOOptimization() {
 
              <div className="md:w-1/2 w-full grid grid-cols-2 gap-6">
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors">
-                  <h5 className="text-5xl font-black text-orange-400 mb-2">#1</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">#1</h5>
                   <p className="text-slate-400 font-medium">Rankings Secured</p>
                 </div>
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors mt-8">
-                  <h5 className="text-5xl font-black text-amber-400 mb-2">5x</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">5x</h5>
                   <p className="text-slate-400 font-medium">Traffic Increase</p>
                 </div>
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors">
-                  <h5 className="text-5xl font-black text-yellow-400 mb-2">90+</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">90+</h5>
                   <p className="text-slate-400 font-medium">Domain Rating</p>
                 </div>
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors mt-8">
-                  <h5 className="text-5xl font-black text-emerald-400 mb-2">0$</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">0$</h5>
                   <p className="text-slate-400 font-medium">Cost Per Click</p>
                 </div>
              </div>
@@ -221,7 +221,7 @@ export default function SEOOptimization() {
       <section className="py-24 bg-[#f8fafc] border-b border-slate-200">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-16 space-y-4">
-            <span className="text-amber-600 font-bold tracking-widest uppercase text-sm">FAQ</span>
+            <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">FAQ</span>
             <h2 className="text-3xl md:text-5xl font-black text-[#0f172a]">Frequently Asked Questions</h2>
             <p className="text-slate-600 text-lg font-medium">Everything you need to know about our SEO and Rank Optimization solutions.</p>
           </div>
@@ -271,7 +271,7 @@ export default function SEOOptimization() {
                   { num: "03", title: "Authority Scaling Strategy", desc: "A solid off-page backlink roadmap to increase your domain authority score organically." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start">
-                    <span className="text-amber-500 font-black text-xl">{item.num}</span>
+                    <span className="text-blue-500 font-black text-xl">{item.num}</span>
                     <div>
                       <h4 className="text-lg font-bold text-[#0f172a] mb-1">{item.title}</h4>
                       <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
@@ -285,7 +285,7 @@ export default function SEOOptimization() {
               <h4 className="text-2xl font-bold text-[#0f172a] mb-2">Schedule Session</h4>
               <p className="text-slate-500 mb-8">Select a slot on our live team calendar</p>
               <div className="space-y-4">
-                <a href="https://wa.me/919424995426" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-amber-500 text-white hover:bg-amber-600 transition-colors shadow-md">
+                <a href="https://wa.me/919424995426" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-blue-500 text-white hover:bg-blue-600 transition-colors shadow-md">
                   <span className="material-symbols-outlined">chat</span> WhatsApp Direct booking
                 </a>
                 <a href="mailto:connect@marketops.in" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 transition-colors">
@@ -304,7 +304,7 @@ export default function SEOOptimization() {
             <p className="text-slate-600 text-xl font-medium mb-10 max-w-2xl mx-auto">
               Join the elite group of brands that are crushing their organic goals with MarketOps.
             </p>
-            <Link className="inline-flex items-center justify-center text-white font-bold text-xl px-12 py-6 rounded-full bg-amber-500 hover:bg-amber-600 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(245,158,11,0.4)] transition-all" href="/contact">
+            <Link className="inline-flex items-center justify-center text-white font-bold text-xl px-12 py-6 rounded-full bg-blue-500 hover:bg-blue-600 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(6,182,212,0.4)] transition-all" href="/contact">
               Let's Build Your Empire
             </Link>
          </div>

@@ -12,25 +12,25 @@ export default function PerformanceMarketing() {
       {/* 1. HERO SECTION (Engaging & Captivating) */}
       <section className="relative pt-40 pb-32">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(6,182,212,0.15),transparent_50%)] pointer-events-none"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(59,130,246,0.15),transparent_50%)] pointer-events-none"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(6,182,212,0.15),transparent_50%)] pointer-events-none"></div>
         
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
             
             <div className="lg:w-1/2 space-y-8">
-              <span className="inline-block bg-cyan-100 text-cyan-700 text-xs px-5 py-2 rounded-full font-bold uppercase tracking-widest shadow-sm border border-cyan-200">
+              <span className="inline-block bg-blue-100 text-blue-700 text-xs px-5 py-2 rounded-full font-bold uppercase tracking-widest shadow-sm border border-blue-200">
                 Performance Marketing
               </span>
               <h1 className="text-5xl md:text-7xl font-black tracking-tight text-[#0f172a] leading-[1.1]">
                 Smarter Ads. <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#03c1fc] to-[#005ea5]">Better Conversions.</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-700">Better Conversions.</span>
               </h1>
               <p className="text-slate-600 text-xl font-medium leading-relaxed max-w-lg">
                 Stop guessing. We leverage aggressive data-driven media buying across Google, Meta, TikTok, and LinkedIn to scale your brand predictably and profitably.
               </p>
               
               <div className="flex flex-wrap gap-4 pt-4">
-                <a className="inline-flex items-center justify-center text-white font-bold text-lg px-10 py-5 rounded-full bg-cyan-600 hover:bg-cyan-700 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(6,182,212,0.3)] transition-all" href="#calendly">
+                <a className="inline-flex items-center justify-center text-white font-bold text-lg px-10 py-5 rounded-full bg-blue-600 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(6,182,212,0.3)] transition-all" href="#calendly">
                   Get Free Account Audit
                 </a>
                 <a className="inline-flex items-center justify-center text-slate-700 font-bold text-lg px-10 py-5 rounded-full bg-white border border-slate-200 hover:bg-slate-50 hover:-translate-y-1 hover:shadow-[0_10px_20px_rgba(0,0,0,0.05)] transition-all" href="#challenges">
@@ -42,7 +42,7 @@ export default function PerformanceMarketing() {
             <div className="lg:w-1/2 w-full relative">
               {/* Floating Dashboard Graphic */}
               <div className="relative rounded-[2.5rem] bg-white p-8 shadow-[0_30px_100px_rgba(0,0,0,0.08)] border border-slate-100 transform rotate-[-2deg] hover:rotate-0 transition-transform duration-700">
-                <div className="absolute -top-6 -right-6 z-20 bg-gradient-to-r from-cyan-500 to-blue-500 text-white p-6 rounded-3xl shadow-xl animate-bounce" style={{animationDuration: '3s'}}>
+                <div className="absolute -top-6 -right-6 z-20 bg-gradient-to-r from-blue-500 to-blue-500 text-white p-6 rounded-3xl shadow-xl animate-bounce" style={{animationDuration: '3s'}}>
                   <p className="text-sm font-bold opacity-80 uppercase tracking-widest">CPA Reduction</p>
                   <p className="text-4xl font-black">-35% 📉</p>
                 </div>
@@ -70,16 +70,16 @@ export default function PerformanceMarketing() {
       <section id="challenges" className="py-24 bg-white border-t border-slate-100 relative">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-cyan-600 font-bold tracking-widest uppercase text-sm">Common Ad Challenges</span>
+            <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">Common Ad Challenges</span>
             <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Why Brands Struggle with Paid Media Today</h2>
             <p className="text-slate-600 text-lg font-medium">Burning cash on ads without a system is a one-way ticket to failure. We fix these critical errors.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: TrendingDown, title: 'Creative Fatigue', desc: 'Ad creatives burn out quickly. Stale visuals and copy result in plummeting click-through rates and soaring CPMs.', gradient: 'from-red-500 to-rose-600', shadow: 'shadow-red-500/30' },
-              { icon: Bot, title: 'Poor Pixel Tracking', desc: 'IOS updates killed standard tracking. Without server-side API setups, Facebook and Google cannot optimize for your best customers.', gradient: 'from-orange-400 to-amber-500', shadow: 'shadow-orange-500/30' },
-              { icon: TriangleAlert, title: 'Scale Bottlenecks', desc: 'Campaigns do great at $100/day but completely break down when scaled to $1,000/day. We build frameworks meant for aggressive scaling.', gradient: 'from-amber-400 to-yellow-500', shadow: 'shadow-amber-500/30' }
+              { icon: TrendingDown, title: 'Creative Fatigue', desc: 'Ad creatives burn out quickly. Stale visuals and copy result in plummeting click-through rates and soaring CPMs.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' },
+              { icon: Bot, title: 'Poor Pixel Tracking', desc: 'IOS updates killed standard tracking. Without server-side API setups, Facebook and Google cannot optimize for your best customers.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' },
+              { icon: TriangleAlert, title: 'Scale Bottlenecks', desc: 'Campaigns do great at $100/day but completely break down when scaled to $1,000/day. We build frameworks meant for aggressive scaling.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' }
             ].map((v, i) => (
               <div key={i} className="group relative bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col overflow-hidden">
                 <div className={`absolute inset-0 bg-gradient-to-br ${v.gradient} translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-in-out z-0`}></div>
@@ -105,18 +105,18 @@ export default function PerformanceMarketing() {
       <section className="py-24 bg-[#f8fafc] relative border-t border-slate-200">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
-            <span className="text-cyan-600 font-bold tracking-widest uppercase text-sm">Our Strategy</span>
+            <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">Our Strategy</span>
             <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Media Buying Methodology</h2>
             <p className="text-slate-600 text-lg font-medium">We treat your ad spend like our own money. Our methodology is ruthless, data-driven, and highly profitable.</p>
           </div>
 
           <div className="grid md:grid-cols-5 gap-4 relative">
              {[
-               { step: '01', title: 'Audit & Tracking', desc: 'Implementing CAPI and server-side tracking to capture 100% of data.', icon: 'track_changes', gradient: 'from-orange-400 to-amber-500', iconBg: 'bg-orange-100', iconColor: 'text-orange-500' },
-               { step: '02', title: 'Creative Engineering', desc: 'Producing scroll-stopping hooks and direct-response creatives.', icon: 'design_services', gradient: 'from-pink-500 to-rose-500', iconBg: 'bg-pink-100', iconColor: 'text-pink-500' },
-               { step: '03', title: 'Hyper-Targeting', desc: 'Advanced audience segmentation and lookalikes modeling.', icon: 'my_location', gradient: 'from-blue-500 to-indigo-600', iconBg: 'bg-blue-100', iconColor: 'text-blue-500' },
-               { step: '04', title: 'Algorithm Mastery', desc: 'Feeding signals to Meta/Google machine learning for efficiency.', icon: 'memory', gradient: 'from-cyan-400 to-blue-500', iconBg: 'bg-cyan-100', iconColor: 'text-cyan-500' },
-               { step: '05', title: 'Ruthless Scaling', desc: 'Cutting losers and aggressively funding winners to maximize ROI.', icon: 'rocket_launch', gradient: 'from-emerald-400 to-teal-500', iconBg: 'bg-emerald-100', iconColor: 'text-emerald-500' }
+               { step: '01', title: 'Audit & Tracking', desc: 'Implementing CAPI and server-side tracking to capture 100% of data.', icon: 'track_changes', gradient: 'from-blue-400 to-blue-500', iconBg: 'bg-blue-100', iconColor: 'text-blue-500' },
+               { step: '02', title: 'Creative Engineering', desc: 'Producing scroll-stopping hooks and direct-response creatives.', icon: 'design_services', gradient: 'from-blue-500 to-blue-500', iconBg: 'bg-blue-100', iconColor: 'text-blue-500' },
+               { step: '03', title: 'Hyper-Targeting', desc: 'Advanced audience segmentation and lookalikes modeling.', icon: 'my_location', gradient: 'from-blue-500 to-blue-600', iconBg: 'bg-blue-100', iconColor: 'text-blue-500' },
+               { step: '04', title: 'Algorithm Mastery', desc: 'Feeding signals to Meta/Google machine learning for efficiency.', icon: 'memory', gradient: 'from-blue-400 to-blue-500', iconBg: 'bg-blue-100', iconColor: 'text-blue-500' },
+               { step: '05', title: 'Ruthless Scaling', desc: 'Cutting losers and aggressively funding winners to maximize ROI.', icon: 'rocket_launch', gradient: 'from-blue-400 to-blue-500', iconBg: 'bg-blue-100', iconColor: 'text-blue-500' }
              ].map((strategy, i) => (
                <div key={i} className="group h-full relative z-10 bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_30px_60px_rgba(0,0,0,0.12)] hover:-translate-y-3 transition-all duration-700 ease-out text-left overflow-hidden flex flex-col items-start">
                  {/* Elegant Slide-up Gradient */}
@@ -156,7 +156,7 @@ export default function PerformanceMarketing() {
       <section className="py-24 bg-white relative border-t border-slate-100">
         <div className="container mx-auto px-6 max-w-7xl">
           <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-            <span className="text-cyan-600 font-bold tracking-widest uppercase text-sm">Ad Networks</span>
+            <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">Ad Networks</span>
             <h2 className="text-4xl md:text-5xl font-black text-[#0f172a]">Omnichannel Dominance</h2>
             <p className="text-slate-600 text-lg font-medium">We deploy capital across the most profitable networks for your specific niche.</p>
           </div>
@@ -164,11 +164,11 @@ export default function PerformanceMarketing() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { 
-                icon: Users, title: 'Meta Ads (FB & IG)', desc: 'Unmatched demographic targeting and visual selling. We build complex funnel structures for e-commerce and lead gen.', gradient: 'from-blue-500 to-indigo-600', shadow: 'shadow-blue-500/30',
+                icon: Users, title: 'Meta Ads (FB & IG)', desc: 'Unmatched demographic targeting and visual selling. We build complex funnel structures for e-commerce and lead gen.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30',
                 editorial: 'Meta (Facebook & Instagram) is unparalleled for visual selling and demographic targeting. We don\'t just \'boost posts.\' We engineer highly structured ad accounts utilizing Advantage+ Shopping, custom audiences, and dynamic retargeting. By rapidly testing creative variations—from UGC to polished graphics—we find the winning angles that force the algorithm to deliver low-cost conversions at scale. Whether it\'s lead gen or e-commerce, we turn Meta into a predictable revenue machine.'
               },
               { 
-                icon: Search, title: 'Google Ads', desc: 'Capture high-intent search traffic. We dominate Search, Shopping, Performance Max, and YouTube ad placements.', gradient: 'from-red-500 via-yellow-500 to-green-500', shadow: 'shadow-red-500/30',
+                icon: Search, title: 'Google Ads', desc: 'Capture high-intent search traffic. We dominate Search, Shopping, Performance Max, and YouTube ad placements.', gradient: 'from-blue-500 via-blue-500 to-blue-500', shadow: 'shadow-blue-500/30',
                 editorial: 'Google Ads is where high-intent buyers go when they are ready to purchase. We dominate the search engine results page (SERP) by targeting exact-match keywords that your competitors miss. Our strategy extends beyond simple search; we build highly profitable Performance Max (PMax) campaigns, optimize Google Shopping feeds, and utilize YouTube ads for top-of-funnel awareness. We capture demand that already exists and convert it ruthlessly.'
               },
               { 
@@ -176,15 +176,15 @@ export default function PerformanceMarketing() {
                 editorial: 'TikTok is no longer just for dancing; it\'s a massive conversion engine. The secret to TikTok ads is that they shouldn\'t look like ads. We specialize in producing raw, lo-fi, User-Generated Content (UGC) that feels native to the platform. By leveraging fast-paced editing, trending audio, and strong psychological hooks in the first 3 seconds, we capture Gen Z and Millennial attention, resulting in explosive viral growth and incredibly low CPMs.'
               },
               { 
-                icon: Briefcase, title: 'LinkedIn Ads', desc: 'The holy grail for B2B. Target decision-makers by job title, company size, and industry for premium lead generation.', gradient: 'from-sky-600 to-blue-700', shadow: 'shadow-sky-600/30',
+                icon: Briefcase, title: 'LinkedIn Ads', desc: 'The holy grail for B2B. Target decision-makers by job title, company size, and industry for premium lead generation.', gradient: 'from-blue-600 to-blue-700', shadow: 'shadow-blue-600/30',
                 editorial: 'For B2B companies, LinkedIn is the holy grail of lead generation. We bypass the gatekeepers and put your offer directly in front of the decision-makers. We utilize advanced firmographic targeting to zero in on specific job titles, company sizes, and industries. Through a mix of Sponsored Content, InMail campaigns, and Lead Gen Forms, we fill your pipeline with high-ticket, qualified prospects who are ready to talk business.'
               },
               { 
-                icon: Ghost, title: 'Snapchat Ads', desc: 'Capture Gen Z and Millennial attention with immersive AR lenses and short-form video ads.', gradient: 'from-yellow-400 to-amber-500', shadow: 'shadow-yellow-400/30',
+                icon: Ghost, title: 'Snapchat Ads', desc: 'Capture Gen Z and Millennial attention with immersive AR lenses and short-form video ads.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-400/30',
                 editorial: 'Snapchat is a heavily underutilized platform with a highly engaged, younger demographic. We capitalize on this lack of competition to acquire customers at a fraction of the cost of Meta or Google. We create immersive AR lenses, fast-paced Story ads, and Collection ads that drive impulse purchases. If your brand targets Gen Z or young Millennials, Snapchat is a goldmine waiting to be tapped.'
               },
               { 
-                icon: Pin, title: 'Pinterest Ads', desc: 'High visual discovery intent, perfect for lifestyle, home decor, and fashion e-commerce brands.', gradient: 'from-red-600 to-rose-700', shadow: 'shadow-red-600/30',
+                icon: Pin, title: 'Pinterest Ads', desc: 'High visual discovery intent, perfect for lifestyle, home decor, and fashion e-commerce brands.', gradient: 'from-blue-600 to-blue-700', shadow: 'shadow-blue-600/30',
                 editorial: 'Pinterest is a visual discovery engine where users actively plan their future purchases. Unlike other platforms where ads are disruptive, Pinterest ads are additive to the user experience. We build highly aesthetic, inspirational pins that capture users in the consideration phase. For fashion, home decor, lifestyle, and beauty e-commerce brands, Pinterest offers a highly profitable avenue with exceptional long-term ROI.'
               }
             ].map((v, i) => (
@@ -210,14 +210,14 @@ export default function PerformanceMarketing() {
 
       {/* 3. WHAT YOU GET */}
       <section className="py-24 bg-[#0f172a] text-white relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-cyan-600/20 blur-[150px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-600/20 blur-[150px] rounded-full pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-600/20 blur-[150px] rounded-full pointer-events-none"></div>
 
         <div className="container mx-auto px-6 max-w-7xl relative z-10">
            <div className="flex flex-col md:flex-row gap-16 items-center">
              
              <div className="md:w-1/2 space-y-8">
-               <h2 className="text-4xl md:text-5xl font-black text-white">What You Get <br/><span className="text-cyan-400">When You Partner With Us</span></h2>
+               <h2 className="text-4xl md:text-5xl font-black text-white">What You Get <br/><span className="text-blue-400">When You Partner With Us</span></h2>
                <p className="text-slate-400 text-lg font-medium max-w-lg">
                  We are not just another agency. We are your performance partners. Here is exactly what you achieve when you plug your business into the MarketOps ecosystem.
                </p>
@@ -230,8 +230,8 @@ export default function PerformanceMarketing() {
                    { title: 'Full Transparency', desc: 'No vanity metrics. You get custom reporting dashboards showing exact ROI on every dollar spent.' }
                  ].map((benefit, i) => (
                    <div key={i} className="flex items-start gap-4">
-                      <div className="w-8 h-8 rounded-full bg-cyan-500/20 flex items-center justify-center shrink-0 mt-1">
-                        <span className="material-symbols-outlined text-cyan-400 text-[18px]">check</span>
+                      <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0 mt-1">
+                        <span className="material-symbols-outlined text-blue-400 text-[18px]">check</span>
                       </div>
                       <div>
                         <h4 className="text-xl font-bold text-white mb-1">{benefit.title}</h4>
@@ -244,7 +244,7 @@ export default function PerformanceMarketing() {
 
              <div className="md:w-1/2 w-full grid grid-cols-2 gap-6">
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors">
-                  <h5 className="text-5xl font-black text-emerald-400 mb-2">4x</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">4x</h5>
                   <p className="text-slate-400 font-medium">Return on Ad Spend</p>
                 </div>
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors mt-8">
@@ -252,11 +252,11 @@ export default function PerformanceMarketing() {
                   <p className="text-slate-400 font-medium">Drop in CAC</p>
                 </div>
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors">
-                  <h5 className="text-5xl font-black text-cyan-400 mb-2">10k+</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">10k+</h5>
                   <p className="text-slate-400 font-medium">Leads Generated</p>
                 </div>
                 <div className="bg-slate-800/50 backdrop-blur-xl p-8 rounded-[2rem] border border-slate-700/50 text-center hover:bg-slate-800 transition-colors mt-8">
-                  <h5 className="text-5xl font-black text-indigo-400 mb-2">100%</h5>
+                  <h5 className="text-5xl font-black text-blue-400 mb-2">100%</h5>
                   <p className="text-slate-400 font-medium">Data Transparency</p>
                 </div>
              </div>
@@ -269,7 +269,7 @@ export default function PerformanceMarketing() {
       <section className="py-24 bg-[#f8fafc] border-b border-slate-200">
         <div className="container mx-auto px-6 max-w-4xl">
           <div className="text-center mb-16 space-y-4">
-            <span className="text-cyan-600 font-bold tracking-widest uppercase text-sm">FAQ</span>
+            <span className="text-blue-600 font-bold tracking-widest uppercase text-sm">FAQ</span>
             <h2 className="text-3xl md:text-5xl font-black text-[#0f172a]">Frequently Asked Questions</h2>
             <p className="text-slate-600 text-lg font-medium">Everything you need to know about our Performance Marketing solutions.</p>
           </div>
@@ -316,7 +316,7 @@ export default function PerformanceMarketing() {
                   { num: "03", title: "Scaling Roadmap", desc: "A concrete, step-by-step mathematical plan on how to drop your CPA and scale your budget." }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-4 items-start">
-                    <span className="text-cyan-500 font-black text-xl">{item.num}</span>
+                    <span className="text-blue-500 font-black text-xl">{item.num}</span>
                     <div>
                       <h4 className="text-lg font-bold text-[#0f172a] mb-1">{item.title}</h4>
                       <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
@@ -330,7 +330,7 @@ export default function PerformanceMarketing() {
               <h4 className="text-2xl font-bold text-[#0f172a] mb-2">Schedule Session</h4>
               <p className="text-slate-500 mb-8">Select a slot on our live team calendar</p>
               <div className="space-y-4">
-                <a href="https://wa.me/919424995426" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-cyan-600 text-white hover:bg-cyan-700 transition-colors shadow-md">
+                <a href="https://wa.me/919424995426" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-md">
                   <span className="material-symbols-outlined">chat</span> WhatsApp Direct booking
                 </a>
                 <a href="mailto:connect@marketops.in" className="flex items-center justify-center gap-2 w-full py-4 rounded-xl font-bold bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 transition-colors">
@@ -349,7 +349,7 @@ export default function PerformanceMarketing() {
             <p className="text-slate-600 text-xl font-medium mb-10 max-w-2xl mx-auto">
               Join the elite group of brands that are crushing their revenue goals with MarketOps.
             </p>
-            <Link className="inline-flex items-center justify-center text-white font-bold text-xl px-12 py-6 rounded-full bg-cyan-600 hover:bg-cyan-700 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(6,182,212,0.4)] transition-all" href="/contact">
+            <Link className="inline-flex items-center justify-center text-white font-bold text-xl px-12 py-6 rounded-full bg-blue-600 hover:bg-blue-700 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(6,182,212,0.4)] transition-all" href="/contact">
               Let's Build Your Empire
             </Link>
          </div>
