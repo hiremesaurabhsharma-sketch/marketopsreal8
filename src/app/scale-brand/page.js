@@ -191,6 +191,55 @@ export default function ScaleBrandPage() {
          </div>
       </div>
 
+      {/* --- WALL OF FAME (BRANDS) --- */}
+      <div className="relative z-10 bg-white py-20 pb-32">
+         <div className="max-w-[1200px] mx-auto px-6 text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">The Wall of <span className="text-blue-600">Fame</span></h2>
+            <p className="text-slate-500 font-medium max-w-xl mx-auto">We are proud to have partnered with these incredible brands to drive scalable growth.</p>
+         </div>
+
+         <div className="max-w-[1200px] mx-auto px-6">
+            <div className="flex flex-wrap justify-center gap-4">
+               {[
+                  { name: "The Func Lab", url: "https://thefunclab.com/", domain: "thefunclab.com", color: "from-blue-500 to-indigo-500" },
+                  { name: "Apsara Tea", url: "https://apsaratea.in/", domain: "apsaratea.in", color: "from-blue-400 to-sky-500" },
+                  { name: "HNI Corp", url: "https://www.hnicorp.com/", domain: "hnicorp.com", color: "from-slate-400 to-slate-600" },
+                  { name: "Stanphord", url: "https://www.amazon.in/stores/Stanphord/page/6E641905-7EC0-460D-BC6F-360181AE0C91", domain: "amazon.in", color: "from-blue-500 to-cyan-500" },
+                  { name: "SleepSmith", url: "https://www.amazon.in/stores/SleepSmith/page/47015169-675E-4F54-8E2E-255566AFF4C5", domain: "amazon.in", color: "from-indigo-400 to-blue-500" },
+                  { name: "Mint and Oak", url: "https://www.mintandoak.in/", domain: "mintandoak.in", color: "from-teal-400 to-blue-500" },
+                  { name: "Moha", url: "https://www.moha.co.in/", domain: "moha.co.in", color: "from-blue-400 to-indigo-400" },
+                  { name: "Kimirica", url: "https://www.kimirica.shop/", domain: "kimirica.shop", color: "from-indigo-500 to-blue-600" },
+                  { name: "VIVID", url: "https://www.amazon.in/stores/VIVID/page/6123B38E-AB8B-48D0-9ED6-AB7E0CE3FF8C", domain: "amazon.in", color: "from-blue-400 to-cyan-500" },
+                  { name: "Vimal Agro", url: "https://www.vimalagro.com/", domain: "vimalagro.com", color: "from-sky-500 to-blue-500" },
+                  { name: "Medisynth", url: "https://medisynth.com/", domain: "medisynth.com", color: "from-sky-400 to-blue-500" },
+                  { name: "Bassino Impex", url: "https://bassinoimpex.com/", domain: "bassinoimpex.com", color: "from-blue-500 to-sky-600" },
+                  { name: "Bitcorp", url: "https://bitcorp.in/", domain: "bitcorp.in", color: "from-indigo-500 to-blue-500" },
+                  { name: "Casa Bleu", url: "https://www.casableustore.com/", domain: "casableustore.com", color: "from-blue-600 to-indigo-600" },
+                  { name: "Aroura Achar 1944", url: "https://www.arouraachar1944.com/", domain: "arouraachar1944.com", color: "from-blue-500 to-cyan-600" },
+                  { name: "Shankara", url: "https://www.shankara.in/", domain: "shankara.in", color: "from-sky-500 to-indigo-500" },
+                  { name: "GK Hair", url: "https://www.gkhair.com/", domain: "gkhair.com", color: "from-slate-600 to-slate-800" },
+                  { name: "VI John", url: "https://vijohnkart.com/", domain: "vijohnkart.com", color: "from-teal-500 to-blue-600" },
+                  { name: "Bayars Coffee", url: "https://bayarscoffee.com/", domain: "bayarscoffee.com", color: "from-indigo-600 to-blue-800" },
+               ].map((brand, i) => (
+                  <a 
+                    key={i} 
+                    href={brand.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="relative group overflow-hidden px-8 py-5 rounded-2xl border border-slate-100 bg-white shadow-sm hover:shadow-[0_10px_30px_rgba(59,130,246,0.15)] hover:-translate-y-1 transition-all duration-300 flex-shrink-0"
+                  >
+                     <div className={`absolute inset-0 bg-gradient-to-r ${brand.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`}></div>
+                     <div className="relative z-10 flex items-center gap-3">
+                       <img src={`https://www.google.com/s2/favicons?domain=${brand.domain}&sz=128`} alt={brand.name} className="h-6 w-6 object-contain rounded-full bg-white/50 backdrop-blur-sm group-hover:bg-white transition-colors duration-300" onError={(e) => e.target.style.display='none'} />
+                       <span className="text-lg font-black text-slate-700 group-hover:text-white transition-colors duration-300">{brand.name}</span>
+                       <span className="material-symbols-outlined text-[16px] text-slate-400 group-hover:text-white transition-colors duration-300 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0">open_in_new</span>
+                     </div>
+                  </a>
+               ))}
+            </div>
+         </div>
+      </div>
+
       {/* --- PURE BLUE/WHITE CTA --- */}
       <div className="relative z-10 py-32 px-6">
          <div className="max-w-[1100px] mx-auto bg-gradient-to-br from-blue-600 via-blue-500 to-cyan-500 rounded-[3rem] p-12 md:p-24 text-center text-white relative overflow-hidden shadow-[0_30px_60px_rgba(37,99,235,0.3)] group border border-white/20">
