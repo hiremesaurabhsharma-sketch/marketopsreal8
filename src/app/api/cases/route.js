@@ -6,10 +6,13 @@ import { Redis } from '@upstash/redis';
 const dataFilePath = path.join(process.cwd(), 'src', 'data', 'cases.json');
 
 // Initialize Redis if environment variables are present (Vercel Production)
-const redis = (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) 
+const redisUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL;
+const redisToken = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN;
+
+const redis = (redisUrl && redisToken) 
   ? new Redis({
-      url: process.env.KV_REST_API_URL,
-      token: process.env.KV_REST_API_TOKEN,
+      url: redisUrl,
+      token: redisToken,
     }) 
   : null;
 
