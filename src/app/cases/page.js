@@ -218,7 +218,7 @@ function CasesContent() {
                     <h3 className={`font-bold text-2xl text-[#0f172a] line-clamp-3 leading-snug group-hover:${styles.color} transition-colors`}>
                       {item.title}
                     </h3>
-                    <p className="text-slate-600 text-sm leading-relaxed line-clamp-3 font-medium">
+                    <p className="text-slate-600 text-sm leading-relaxed line-clamp-3 font-medium whitespace-pre-wrap">
                       {item.overview}
                     </p>
                   </div>
@@ -318,7 +318,7 @@ function CasesContent() {
                       <h4 className="font-bold text-sm text-slate-900 uppercase tracking-widest border-b border-slate-100 pb-3">
                         Executive Summary
                       </h4>
-                      <p className="text-slate-600 text-sm leading-relaxed font-medium">
+                      <p className="text-slate-600 text-sm leading-relaxed font-medium whitespace-pre-wrap">
                         {selectedCase.overview}
                       </p>
                     </div>
@@ -327,7 +327,7 @@ function CasesContent() {
                       <h4 className="font-bold text-sm text-red-600 uppercase tracking-widest border-b border-slate-100 pb-3">
                         Roadblocks &amp; Pain Points
                       </h4>
-                      <p className="text-slate-600 text-sm leading-relaxed font-medium">
+                      <p className="text-slate-600 text-sm leading-relaxed font-medium whitespace-pre-wrap">
                         {selectedCase.challenge}
                       </p>
                     </div>
@@ -342,7 +342,7 @@ function CasesContent() {
                             <span className="font-black text-xs text-emerald-700 bg-emerald-100 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 shadow-sm">
                               0{index + 1}
                             </span>
-                            <p className="text-slate-600 text-sm leading-relaxed font-medium pt-1">
+                            <p className="text-slate-600 text-sm leading-relaxed font-medium pt-1 whitespace-pre-wrap">
                               {sol}
                             </p>
                           </li>
