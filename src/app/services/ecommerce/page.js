@@ -92,58 +92,140 @@ export default function EcommerceSolutions() {
       {/* NEW: MARKETPLACE DOMINATION (Amazon, Flipkart, Meesho) */}
       <section id="marketplaces" className="py-32 bg-white relative">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="text-center max-w-4xl mx-auto mb-20 space-y-4">
+          <div className="text-center max-w-4xl mx-auto mb-24 space-y-4">
             <span className="text-indigo-600 font-bold tracking-widest uppercase text-sm">Marketplace Domination</span>
             <h2 className="text-4xl md:text-6xl font-black text-[#0f172a]">Rule the Giants.</h2>
-            <p className="text-slate-600 text-lg md:text-xl font-medium">Deep-level execution on Amazon, Flipkart, and Meesho. From cataloging to high-ROAS ads, we manage your marketplace presence end-to-end.</p>
+            <p className="text-slate-600 text-lg md:text-xl font-medium">Deep-level execution on Amazon, Flipkart, and Meesho. From complex cataloging to high-ROAS ads, we manage your marketplace presence end-to-end to capture maximum market share.</p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            {/* Amazon Card */}
-            <div className="bg-white rounded-[3rem] p-10 border border-slate-200 shadow-xl hover:shadow-2xl transition-shadow relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-orange-100 rounded-bl-[100px] -z-10 transition-transform group-hover:scale-125"></div>
-              <div className="w-16 h-16 bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-orange-500/30">
-                <FaAmazon size={32} />
+          <div className="space-y-32">
+            
+            {/* Amazon Full Width Section */}
+            <div className="flex flex-col lg:flex-row gap-16 items-center">
+              <div className="lg:w-1/2 relative">
+                <div className="absolute inset-0 bg-orange-100 rounded-[3rem] transform rotate-[-3deg]"></div>
+                <div className="bg-white border border-slate-100 rounded-[3rem] p-10 shadow-2xl relative z-10">
+                  <div className="flex items-center gap-4 mb-8">
+                    <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-500 rounded-3xl flex items-center justify-center text-white shadow-xl shadow-orange-500/30">
+                      <FaAmazon size={40} />
+                    </div>
+                    <div>
+                      <h3 className="text-3xl font-black text-slate-800">Amazon Excellence</h3>
+                      <p className="text-orange-600 font-bold tracking-wide">The Retail Giant</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                      <h4 className="font-bold text-slate-800 mb-2 flex items-center gap-2"><CheckCircle size={18} className="text-orange-500"/> Deep Keyword SEO</h4>
+                      <p className="text-slate-600 text-sm">We utilize advanced tools like Helium10 and JungleScout to architect titles, bullet points, and backend search terms that algorithmically secure Page 1 rankings.</p>
+                    </div>
+                    <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                      <h4 className="font-bold text-slate-800 mb-2 flex items-center gap-2"><CheckCircle size={18} className="text-orange-500"/> AMS & Advertising</h4>
+                      <p className="text-slate-600 text-sm">Surgical execution of Sponsored Products, Sponsored Brands, and Display Ads. We aggressively defend your brand territory while stealing market share with low ACoS.</p>
+                    </div>
+                    <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                      <h4 className="font-bold text-slate-800 mb-2 flex items-center gap-2"><CheckCircle size={18} className="text-orange-500"/> Premium A+ Content</h4>
+                      <p className="text-slate-600 text-sm">We don't just list products; we build experiences. Our EBC (Enhanced Brand Content) designs use consumer psychology to maximize conversion rates.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-3xl font-black text-slate-800 mb-4">Amazon Excellence</h3>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3 text-slate-600 font-medium"><CheckCircle className="text-orange-500 shrink-0" size={20} /> Deep Keyword Research & Listing SEO</li>
-                <li className="flex items-start gap-3 text-slate-600 font-medium"><CheckCircle className="text-orange-500 shrink-0" size={20} /> Premium A+ Content & Brand Store Design</li>
-                <li className="flex items-start gap-3 text-slate-600 font-medium"><CheckCircle className="text-orange-500 shrink-0" size={20} /> AMS (Sponsored Products & Brands)</li>
-                <li className="flex items-start gap-3 text-slate-600 font-medium"><CheckCircle className="text-orange-500 shrink-0" size={20} /> Account Health & Inventory Forecasting</li>
-              </ul>
+              <div className="lg:w-1/2 space-y-6">
+                <h3 className="text-4xl font-black text-slate-800 leading-tight">Scale on the world's largest marketplace.</h3>
+                <p className="text-lg text-slate-600 leading-relaxed font-medium">Amazon is a brutal battleground. Organic ranking is difficult, and advertising is expensive. Our certified Amazon experts act as your dedicated growth team, handling everything from listing reinstatement and FBA forecasting to highly complex AMS ad structures. We turn Amazon into your most profitable sales channel.</p>
+                <ul className="grid grid-cols-2 gap-4 pt-4">
+                  <li className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle className="text-orange-500" size={20}/> Lightning Deals Setup</li>
+                  <li className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle className="text-orange-500" size={20}/> Vine Program Reviews</li>
+                  <li className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle className="text-orange-500" size={20}/> Account Health Defense</li>
+                  <li className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle className="text-orange-500" size={20}/> Inventory Forecasting</li>
+                </ul>
+              </div>
             </div>
 
-            {/* Flipkart Card */}
-            <div className="bg-white rounded-[3rem] p-10 border border-slate-200 shadow-xl hover:shadow-2xl transition-shadow relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-100 rounded-bl-[100px] -z-10 transition-transform group-hover:scale-125"></div>
-              <div className="w-16 h-16 bg-gradient-to-br from-[#2874F0] to-[#FFE11B] rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-blue-500/30 p-3">
-                {/* Custom Flipkart-like styling */}
-                <span className="font-black text-3xl italic tracking-tighter drop-shadow-md">f</span>
+            {/* Flipkart Full Width Section */}
+            <div className="flex flex-col lg:flex-row-reverse gap-16 items-center">
+              <div className="lg:w-1/2 relative">
+                <div className="absolute inset-0 bg-blue-100 rounded-[3rem] transform rotate-[3deg]"></div>
+                <div className="bg-white border border-slate-100 rounded-[3rem] p-10 shadow-2xl relative z-10">
+                  <div className="flex items-center gap-4 mb-8">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#2874F0] to-[#FFE11B] rounded-3xl flex items-center justify-center text-white shadow-xl shadow-blue-500/30 p-2">
+                      <span className="font-black text-4xl italic tracking-tighter drop-shadow-md">f</span>
+                    </div>
+                    <div>
+                      <h3 className="text-3xl font-black text-slate-800">Flipkart Scaling</h3>
+                      <p className="text-[#2874F0] font-bold tracking-wide">The Desi Juggernaut</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                      <h4 className="font-bold text-slate-800 mb-2 flex items-center gap-2"><CheckCircle size={18} className="text-[#2874F0]"/> Smart Cataloging</h4>
+                      <p className="text-slate-600 text-sm">Flipkart's algorithm responds uniquely to specific cataloging parameters. We map attributes perfectly to ensure maximum visibility in organic browsing.</p>
+                    </div>
+                    <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                      <h4 className="font-bold text-slate-800 mb-2 flex items-center gap-2"><CheckCircle size={18} className="text-[#2874F0]"/> PLA & PCA Ads</h4>
+                      <p className="text-slate-600 text-sm">Deep execution of Product Listing Ads and Product Contextual Ads. We bid smartly to win the Buy Box and keep ROI highly profitable.</p>
+                    </div>
+                    <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                      <h4 className="font-bold text-slate-800 mb-2 flex items-center gap-2"><CheckCircle size={18} className="text-[#2874F0]"/> BBD & Mega Sales</h4>
+                      <p className="text-slate-600 text-sm">Big Billion Days require months of preparation. We handle the pricing strategies, stock buffering, and aggressive promo opt-ins for massive volume spikes.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-3xl font-black text-slate-800 mb-4">Flipkart Scaling</h3>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3 text-slate-600 font-medium"><CheckCircle className="text-[#2874F0] shrink-0" size={20} /> Search Visibility & Catalog Optimization</li>
-                <li className="flex items-start gap-3 text-slate-600 font-medium"><CheckCircle className="text-[#2874F0] shrink-0" size={20} /> Flipkart Ads (PLA & PCA) Management</li>
-                <li className="flex items-start gap-3 text-slate-600 font-medium"><CheckCircle className="text-[#2874F0] shrink-0" size={20} /> Promotions & Big Billion Days Strategy</li>
-                <li className="flex items-start gap-3 text-slate-600 font-medium"><CheckCircle className="text-[#2874F0] shrink-0" size={20} /> Seller Tier Upgrade Management</li>
-              </ul>
+              <div className="lg:w-1/2 space-y-6">
+                <h3 className="text-4xl font-black text-slate-800 leading-tight">Dominate the Indian e-commerce landscape.</h3>
+                <p className="text-lg text-slate-600 leading-relaxed font-medium">To win on Flipkart, you need more than just good products; you need an intricate understanding of tier-upgrades, promotional opt-ins, and algorithmic visibility. We actively manage your Flipkart seller account to push you from Bronze/Silver tiers into Gold/Diamond, unlocking lower fees and exponentially higher organic traffic.</p>
+                <ul className="grid grid-cols-2 gap-4 pt-4">
+                  <li className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle className="text-[#2874F0]" size={20}/> Seller Tier Upgrades</li>
+                  <li className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle className="text-[#2874F0]" size={20}/> FBF (Flipkart Fulfillment)</li>
+                  <li className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle className="text-[#2874F0]" size={20}/> Promo Strategy</li>
+                  <li className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle className="text-[#2874F0]" size={20}/> Margin Optimization</li>
+                </ul>
+              </div>
             </div>
 
-            {/* Meesho Card */}
-            <div className="bg-white rounded-[3rem] p-10 border border-slate-200 shadow-xl hover:shadow-2xl transition-shadow relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-pink-100 rounded-bl-[100px] -z-10 transition-transform group-hover:scale-125"></div>
-              <div className="w-16 h-16 bg-gradient-to-br from-[#E72A7A] to-[#99154E] rounded-2xl flex items-center justify-center text-white mb-8 shadow-lg shadow-pink-500/30">
-                 <span className="font-black text-3xl tracking-tighter">m</span>
+            {/* Meesho Full Width Section */}
+            <div className="flex flex-col lg:flex-row gap-16 items-center">
+              <div className="lg:w-1/2 relative">
+                <div className="absolute inset-0 bg-pink-100 rounded-[3rem] transform rotate-[-3deg]"></div>
+                <div className="bg-white border border-slate-100 rounded-[3rem] p-10 shadow-2xl relative z-10">
+                  <div className="flex items-center gap-4 mb-8">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#E72A7A] to-[#99154E] rounded-3xl flex items-center justify-center text-white shadow-xl shadow-pink-500/30">
+                      <span className="font-black text-4xl tracking-tighter">m</span>
+                    </div>
+                    <div>
+                      <h3 className="text-3xl font-black text-slate-800">Meesho Mastery</h3>
+                      <p className="text-[#E72A7A] font-bold tracking-wide">The Volume Goldmine</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                      <h4 className="font-bold text-slate-800 mb-2 flex items-center gap-2"><CheckCircle size={18} className="text-[#E72A7A]"/> Bulk Uploads & Agility</h4>
+                      <p className="text-slate-600 text-sm">Managing large catalogs on Meesho can be buggy. We handle massive bulk uploads and instantly resolve listing errors so your products go live faster.</p>
+                    </div>
+                    <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                      <h4 className="font-bold text-slate-800 mb-2 flex items-center gap-2"><CheckCircle size={18} className="text-[#E72A7A]"/> Price Benchmarking</h4>
+                      <p className="text-slate-600 text-sm">Meesho is hyper-price-sensitive. We constantly benchmark competitor pricing to ensure you win the buy box while retaining healthy profit margins.</p>
+                    </div>
+                    <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
+                      <h4 className="font-bold text-slate-800 mb-2 flex items-center gap-2"><CheckCircle size={18} className="text-[#E72A7A]"/> RTO Minimization</h4>
+                      <p className="text-slate-600 text-sm">Return to Origin (RTO) kills profits. We implement strict operational checks and product quality audits to drastically lower return rates on Meesho.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-3xl font-black text-slate-800 mb-4">Meesho Mastery</h3>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3 text-slate-600 font-medium"><CheckCircle className="text-[#E72A7A] shrink-0" size={20} /> Bulk Catalog Uploading & Error Fixing</li>
-                <li className="flex items-start gap-3 text-slate-600 font-medium"><CheckCircle className="text-[#E72A7A] shrink-0" size={20} /> Price Benchmarking & Margin Optimization</li>
-                <li className="flex items-start gap-3 text-slate-600 font-medium"><CheckCircle className="text-[#E72A7A] shrink-0" size={20} /> Meesho Ads & Visibility Boost</li>
-                <li className="flex items-start gap-3 text-slate-600 font-medium"><CheckCircle className="text-[#E72A7A] shrink-0" size={20} /> Order Volume Scaling Strategies</li>
-              </ul>
+              <div className="lg:w-1/2 space-y-6">
+                <h3 className="text-4xl font-black text-slate-800 leading-tight">Capture the massive Tier 2 & 3 markets.</h3>
+                <p className="text-lg text-slate-600 leading-relaxed font-medium">Meesho operates differently than any other platform. It requires a volume-first mindset with razor-sharp margin control. We deploy aggressive, low-cost Meesho Ads to boost visibility among millions of resellers and direct buyers, unlocking unprecedented order volumes that scale your top-line revenue.</p>
+                <ul className="grid grid-cols-2 gap-4 pt-4">
+                  <li className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle className="text-[#E72A7A]" size={20}/> Low-Cost Ads Scaling</li>
+                  <li className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle className="text-[#E72A7A]" size={20}/> Supplier Rating Defense</li>
+                  <li className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle className="text-[#E72A7A]" size={20}/> Competitor Mapping</li>
+                  <li className="flex items-center gap-2 font-bold text-slate-700"><CheckCircle className="text-[#E72A7A]" size={20}/> Volume Forecasting</li>
+                </ul>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
