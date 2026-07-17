@@ -4,13 +4,22 @@ import { useState, useMemo, useEffect, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
-import { CASES_DATA } from "@/data/cases";
-
 function CasesContent() {
   const searchParams = useSearchParams();
   const urlCategory = searchParams.get("category");
   
+  const [casesData, setCasesData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [currentCategory, setCurrentCategory] = useState("all");
+
+  useEffect(() => {
+    fetch('/api/cases')
+      .then(res => res.json())
+      .then(data => {
+        setCasesData(data);
+        setIsLoading(false);
+      });
+  }, []);
 
   useEffect(() => {
     if (urlCategory) {
@@ -53,7 +62,7 @@ function CasesContent() {
 
   // Filter and sort logic
   const filteredCases = useMemo(() => {
-    let result = [...CASES_DATA];
+    let result = [...casesData];
 
     // Filter by Category
     if (currentCategory !== "all") {
@@ -177,7 +186,11 @@ function CasesContent() {
 
         {/* Grid of Cards */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {filteredCases.length === 0 ? (
+          {isLoading ? (
+             <div className="col-span-full py-20 text-center font-bold text-slate-500">
+               Loading case studies...
+             </div>
+          ) : filteredCases.length === 0 ? (
             <div className="col-span-full py-16 text-center space-y-4 bg-white border border-dashed border-slate-300 rounded-3xl">
               <span className="material-symbols-outlined text-4xl text-slate-400">search_off</span>
               <h3 className="font-bold text-xl text-slate-800">No Case Studies Found</h3>
