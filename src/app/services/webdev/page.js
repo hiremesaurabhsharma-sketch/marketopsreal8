@@ -126,7 +126,7 @@ export default function WebsiteDevelopment() {
             {[
               { icon: ShoppingBag, title: 'Shopify Development', desc: 'Custom themes, headless commerce, and app integrations to build high-converting e-commerce machines.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' },
               { icon: LayoutDashboard, title: 'WordPress & CMS', desc: 'Highly customizable, SEO-friendly, and easy-to-manage content systems for blogs and corporate sites.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' },
-              { icon: Zap, title: 'Custom Next.js & React', desc: 'Blazing fast, server-side rendered web applications built from the ground up for maximum scale and speed.', gradient: 'from-slate-700 to-slate-900', shadow: 'shadow-slate-700/30' },
+              { icon: Zap, title: 'Custom Next.js & React', desc: 'Blazing fast, server-side rendered web applications built from the ground up for maximum scale and speed.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' },
               { icon: Palette, title: 'Webflow Development', desc: 'Pixel-perfect, animation-rich marketing websites launched with rapid speed without sacrificing quality.', gradient: 'from-blue-500 to-blue-700', shadow: 'shadow-blue-500/30' },
               { icon: Smartphone, title: 'UI/UX Design', desc: 'User-centric wireframes and stunning interfaces designed in Figma to guarantee smooth customer journeys.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' },
               { icon: Link2, title: 'API & Integrations', desc: 'Connecting your CRM, payment gateways, and third-party software for seamless automated operations.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' }

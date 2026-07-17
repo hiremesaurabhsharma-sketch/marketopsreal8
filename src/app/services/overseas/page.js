@@ -125,7 +125,7 @@ export default function OverseasBusiness() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               { icon: Globe, title: 'Market Entry Strategy', desc: 'Comprehensive research on local competitors, consumer purchasing power, and cultural buying habits.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' },
-              { icon: Building2, title: 'Company Formation', desc: 'Guidance on legal entities, tax implications, and remote company registration in the target country.', gradient: 'from-slate-700 to-slate-900', shadow: 'shadow-slate-700/30' },
+              { icon: Building2, title: 'Company Formation', desc: 'Guidance on legal entities, tax implications, and remote company registration in the target country.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' },
               { icon: Languages, title: 'Cultural Localization', desc: 'Translating and transcreating your website, ads, and packaging so it resonates with native speakers.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30' },
               { icon: CreditCard, title: 'Payment Gateways', desc: 'Setting up local merchant accounts and localized checkout experiences to reduce cart abandonment.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' },
               { icon: Ship, title: 'Logistics & 3PL', desc: 'Connecting you with vetted international fulfillment centers to ensure fast, cheap delivery.', gradient: 'from-blue-400 to-blue-500', shadow: 'shadow-blue-500/30' },

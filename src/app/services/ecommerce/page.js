@@ -158,7 +158,7 @@ export default function EcommerceSolutions() {
                 editorial: 'Your most profitable customers are the ones you already have. We build highly sophisticated retention engines using Klaviyo and SMS to maximize your Customer Lifetime Value (LTV). From multi-step abandoned cart recoveries that claw back lost revenue, to hyper-personalized post-purchase flows that build brand loyalty, we ensure you stay top-of-mind. We automate revenue generation so your brand makes money on autopilot, 24/7.'
               },
               { 
-                icon: Server, title: 'Headless Commerce', desc: 'Decoupled frontend architectures using Next.js for blazing fast load times and limitless customization.', gradient: 'from-slate-700 to-slate-900', shadow: 'shadow-slate-700/30',
+                icon: Server, title: 'Headless Commerce', desc: 'Decoupled frontend architectures using Next.js for blazing fast load times and limitless customization.', gradient: 'from-blue-500 to-blue-600', shadow: 'shadow-blue-500/30',
                 editorial: 'Traditional monolithic eCommerce platforms often limit creativity and suffer from poor page load speeds. Headless Commerce solves this by decoupling your frontend storefront from the backend logic. We utilize modern frameworks like Next.js and React to build bespoke, lightning-fast interfaces while relying on robust backends like Shopify or BigCommerce for order management. The result? Unprecedented speed, limitless design freedom, and a significantly higher conversion rate.'
               },
               { 
