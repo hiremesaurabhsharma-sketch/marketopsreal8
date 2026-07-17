@@ -12,22 +12,41 @@ export default function ScaleBrandPage() {
   const currentFrame = (index) => 
     `/frames/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`;
 
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   return (
-    <>
-      <main className="max-w-[1200px] mx-auto px-margin-mobile md:px-12 py-[60px] select-none text-left relative z-10">
+    <div className="bg-[#f8fafc] min-h-screen relative text-[#0f172a] font-inter">
+      
+      {/* Intro text - Clean Premium Hero */}
+      <div className="pt-40 pb-32 text-center px-6 relative z-20 bg-gradient-to-b from-blue-50 to-[#f8fafc] overflow-hidden">
         
-        {/* Header Section */}
-        <header className="max-w-3xl mb-16 space-y-4">
-          <span className="inline-block bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 text-on-surface-variant px-3 py-1 rounded-lg text-xs font-semibold tracking-wider uppercase">
+        {/* Animated Background Orbs */}
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+           <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[120%] bg-blue-400/20 blur-[140px] rounded-full mix-blend-multiply animate-[pulse_8s_ease-in-out_infinite]"></div>
+           <div className="absolute top-[20%] right-[-10%] w-[50%] h-[100%] bg-cyan-300/20 blur-[120px] rounded-full mix-blend-multiply animate-[pulse_10s_ease-in-out_infinite_delay-2000]"></div>
+           <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.05)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_20%,transparent_100%)]"></div>
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto space-y-8 mt-8">
+          <div className="inline-flex items-center gap-2 bg-blue-100/50 backdrop-blur-md border border-blue-200/50 text-blue-700 text-xs px-5 py-2 rounded-full font-bold uppercase tracking-widest shadow-sm">
+            <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
             The MarketOps Blueprint
-          </span>
-          <h1 className="font-be-vietnam-pro font-black text-5xl md:text-7xl leading-tight tracking-tight text-on-surface">
-            How We Scale Your Brand
+          </div>
+          
+          <h1 className="text-5xl md:text-[6rem] font-black tracking-tight text-slate-900 pb-4 leading-[1.1] drop-shadow-sm">
+            How We Scale <br className="hidden md:block"/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 animate-[gradient_8s_ease_infinite] bg-[length:200%_auto]">
+              Your Brand
+            </span>
           </h1>
-          <p className="text-on-surface-variant text-base md:text-lg font-inter leading-relaxed max-w-xl">
-            We don't just run ads. We build highly scalable, data-driven growth engines that turn clicks into loyal customers and revenue.
+          
+          <p className="text-slate-600 text-xl md:text-2xl font-medium max-w-2xl mx-auto leading-relaxed">
+            We don&apos;t just run ads. We build highly scalable, data-driven growth engines that turn clicks into loyal customers and revenue.
           </p>
-        </header>
+        </div>
+      </div>
 
 
       
@@ -401,7 +420,7 @@ export default function ScaleBrandPage() {
           </div>
         </section>
 
-      </main>
-    </>
+      </div>
+    </div>
   );
 }
