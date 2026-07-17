@@ -29,30 +29,7 @@ export default function ScaleBrandPage() {
           </p>
         </header>
 
-      {/* Hero Graphic / Core Concept */}
-      <div className="relative w-full max-w-6xl mx-auto z-10 mb-20">
-        <div className="w-full glass-card rounded-[28px] shadow-sm border border-black/5 dark:border-white/5 p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 overflow-hidden relative group">
-          <div className="flex-1 space-y-6 relative z-10">
-            <span className="inline-block bg-primary/10 text-primary border border-primary/20 text-xs px-3 py-1 rounded-lg font-semibold uppercase tracking-wider">
-              The Engine
-            </span>
-            <h2 className="font-be-vietnam-pro text-4xl md:text-5xl font-black text-on-surface tracking-tight leading-tight">
-              Precision <br/> Targeting.
-            </h2>
-            <p className="text-sm md:text-base font-medium text-on-surface-variant max-w-sm">
-              Every pixel, every audience, and every creative optimized for maximum conversion and ROAS.
-            </p>
-          </div>
-          
-          <div className="flex-1 relative z-10 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 bg-primary/5 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-700">
-               <div className="absolute inset-4 border border-primary/20 rounded-full border-dashed animate-[spin_20s_linear_infinite]"></div>
-               <div className="absolute inset-10 bg-primary/10 rounded-full animate-pulse"></div>
-               <span className="material-symbols-outlined text-8xl text-primary relative z-10 drop-shadow-sm group-hover:rotate-12 transition-transform duration-500">track_changes</span>
-            </div>
-          </div>
-        </div>
-      </div>
+
       
       {/* The Strategy Engine - Bento Box Layout */}
       <div className="relative z-10 bg-[#f8fafc] py-32 overflow-hidden">
