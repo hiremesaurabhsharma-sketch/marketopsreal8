@@ -12,64 +12,43 @@ export default function ScaleBrandPage() {
   const currentFrame = (index) => 
     `/frames/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`;
 
-  useEffect(() => {
-    setLoaded(true);
-  }, []);
-
   return (
-    <div className="bg-[#f8fafc] min-h-screen relative text-[#0f172a] font-inter">
-      
-      {/* Intro text - Clean Premium Hero */}
-      <div className="pt-40 pb-32 text-center px-6 relative z-20 bg-gradient-to-b from-blue-50 to-[#f8fafc] overflow-hidden">
+    <>
+      <main className="max-w-[1200px] mx-auto px-margin-mobile md:px-12 py-[60px] select-none text-left relative z-10">
         
-        {/* Animated Background Orbs */}
-        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-           <div className="absolute top-[-10%] left-[-10%] w-[60%] h-[120%] bg-blue-400/20 blur-[140px] rounded-full mix-blend-multiply animate-[pulse_8s_ease-in-out_infinite]"></div>
-           <div className="absolute top-[20%] right-[-10%] w-[50%] h-[100%] bg-cyan-300/20 blur-[120px] rounded-full mix-blend-multiply animate-[pulse_10s_ease-in-out_infinite_delay-2000]"></div>
-           <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.05)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_20%,transparent_100%)]"></div>
-        </div>
-
-        <div className="relative z-10 max-w-4xl mx-auto space-y-8 mt-8">
-          <div className="inline-flex items-center gap-2 bg-blue-100/50 backdrop-blur-md border border-blue-200/50 text-blue-700 text-xs px-5 py-2 rounded-full font-bold uppercase tracking-widest shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+        {/* Header Section */}
+        <header className="max-w-3xl mb-16 space-y-4">
+          <span className="inline-block bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/5 text-on-surface-variant px-3 py-1 rounded-lg text-xs font-semibold tracking-wider uppercase">
             The MarketOps Blueprint
-          </div>
-          
-          <h1 className="text-5xl md:text-[6rem] font-black tracking-tight text-slate-900 pb-4 leading-[1.1] drop-shadow-sm">
-            How We Scale <br className="hidden md:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 animate-[gradient_8s_ease_infinite] bg-[length:200%_auto]">
-              Your Brand
-            </span>
+          </span>
+          <h1 className="font-be-vietnam-pro font-black text-5xl md:text-7xl leading-tight tracking-tight text-on-surface">
+            How We Scale Your Brand
           </h1>
-          
-          <p className="text-slate-600 text-xl md:text-2xl font-medium max-w-2xl mx-auto leading-relaxed">
-            We don&apos;t just run ads. We build highly scalable, data-driven growth engines that turn clicks into loyal customers and revenue.
+          <p className="text-on-surface-variant text-base md:text-lg font-inter leading-relaxed max-w-xl">
+            We don't just run ads. We build highly scalable, data-driven growth engines that turn clicks into loyal customers and revenue.
           </p>
-        </div>
-      </div>
+        </header>
 
       {/* Hero Graphic / Core Concept */}
-      <div className="relative w-full max-w-6xl mx-auto px-6 z-10 -mt-10 mb-20">
-        <div className="w-full bg-white rounded-[3rem] shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-slate-100 p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 overflow-hidden relative group">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-cyan-50 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none"></div>
-          
+      <div className="relative w-full max-w-6xl mx-auto z-10 mb-20">
+        <div className="w-full glass-card rounded-[28px] shadow-sm border border-black/5 dark:border-white/5 p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 overflow-hidden relative group">
           <div className="flex-1 space-y-6 relative z-10">
-            <span className="bg-slate-100 text-slate-600 text-xs px-4 py-1.5 rounded-full font-bold uppercase tracking-widest border border-slate-200">
+            <span className="inline-block bg-primary/10 text-primary border border-primary/20 text-xs px-3 py-1 rounded-lg font-semibold uppercase tracking-wider">
               The Engine
             </span>
-            <h2 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+            <h2 className="font-be-vietnam-pro text-4xl md:text-5xl font-black text-on-surface tracking-tight leading-tight">
               Precision <br/> Targeting.
             </h2>
-            <p className="text-lg md:text-xl font-medium text-slate-500">
+            <p className="text-sm md:text-base font-medium text-on-surface-variant max-w-sm">
               Every pixel, every audience, and every creative optimized for maximum conversion and ROAS.
             </p>
           </div>
           
           <div className="flex-1 relative z-10 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 bg-blue-50 rounded-full flex items-center justify-center shadow-inner group-hover:scale-105 transition-transform duration-700">
-               <div className="absolute inset-4 border border-blue-200 rounded-full border-dashed animate-[spin_20s_linear_infinite]"></div>
-               <div className="absolute inset-10 bg-blue-100 rounded-full animate-pulse"></div>
-               <span className="material-symbols-outlined text-8xl text-blue-600 relative z-10 drop-shadow-xl group-hover:rotate-12 transition-transform duration-500">track_changes</span>
+            <div className="relative w-64 h-64 md:w-80 md:h-80 bg-primary/5 rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-700">
+               <div className="absolute inset-4 border border-primary/20 rounded-full border-dashed animate-[spin_20s_linear_infinite]"></div>
+               <div className="absolute inset-10 bg-primary/10 rounded-full animate-pulse"></div>
+               <span className="material-symbols-outlined text-8xl text-primary relative z-10 drop-shadow-sm group-hover:rotate-12 transition-transform duration-500">track_changes</span>
             </div>
           </div>
         </div>
